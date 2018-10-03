@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Starter Kit</title>
+    <title>Buran pechi</title>
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
@@ -15,13 +15,13 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Web Starter Kit">
+    <meta name="application-name" content="Buran">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <meta name="apple-mobile-web-app-title" content="Buran">
     <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -36,23 +36,64 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <!-- Material Design icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
-    <!-- Material Design Lite page styles:
-    You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
-    Format: material.color1-color2.min.css, some examples:
-    material.red-teal.min.css
-    material.blue-orange.min.css
-    material.purple-indigo.min.css
-    -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
 
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <p>Skeleton for new project...</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h1>Header 1</h1>
+                <h2>Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+                <h5>Header 5</h5>
+                <h6>Header 6</h6>
+                <p>Skeleton for new project...</p>
+            </div>
+            <div class="col-6">
+              <h2>Breadcrumb</h2>
+                <div style="padding: 1rem;">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active">Data</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col">
+              <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="alert alert-success" role="alert">
+                A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/main.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
   </body>
 </html>
