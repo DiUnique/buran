@@ -1,0 +1,107 @@
+#pay-delivery {
+	padding-top: rem(70);
+
+	.nav-pills {
+
+		.nav-item {
+
+			a.nav-link {
+				font-family: $rubik;
+				font-weight: 500;
+				font-size: rem(16);
+				line-height: rem(19);
+				background: none;
+				color: #000;
+				text-transform: uppercase;
+				&.active {
+					border-bottom: 3px solid $yellow;
+				}
+			}
+		}
+	} // nav-pills
+
+	.tab-content {
+
+		.tab-pane {
+			.tab-pane-header {
+				font-family: $rubik;
+				font-weight: 600;
+				font-size: rem(36);
+				line-height: rem(43);
+				padding-bottom: rem(42);
+				padding-top: rem(57);
+			}
+
+			p {
+				font-family: $roboto;
+				line-height: rem(23);
+				font-size: rem(16);
+				padding-bottom: rem(20);
+			}
+
+			.short-descr {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	} // tab-content
+
+	.mo-section {
+
+		.mo-section__list {
+			padding-top: rem(45);
+			li {
+				font-size: rem(16);
+				line-height: rem(28);
+				list-style-type: none;
+				padding-bottom: rem(10);
+				position: relative;
+				padding-left: rem(25);
+				&:before {
+						content: '';
+						background: url(../images/pay-delivery/shipped.png) no-repeat top center;
+						height: 15px;
+						width: 26.25px;
+						position: absolute;
+						left: -15px;
+				    top: 6px;
+				}
+			}
+		} // .mo-section__list
+
+		&.pay-pill {
+
+			p {
+				padding-top: rem(46);
+				padding-bottom: 0;
+				font-weight: bold;
+			}
+
+			.mo-section__list {
+				padding-top: rem(15);
+			}
+		}
+
+	} // .mo-section
+
+	.prices {
+		padding-top: rem(95);
+
+		.prices-container {
+			p {
+				line-height: rem(28);
+				padding-top: rem(16);
+				padding-bottom: 0;
+			}
+		}
+	} // prices
+
+	.button-wrapper {
+			padding-top: rem(70);
+		.button {
+			color: #000;
+		}
+	} // .button-wrapper
+
+} // endpay-delivery

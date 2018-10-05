@@ -10,31 +10,13 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Buran">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Buran">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
-
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#2F3BA2">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
+    <link rel="manifest" href="images/touch/site.webmanifest">
+    <link rel="mask-icon" href="images/touch/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
@@ -43,57 +25,598 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6">
-                <h1>Header 1</h1>
-                <h2>Header 2</h2>
-                <h3>Header 3</h3>
-                <h4>Header 4</h4>
-                <h5>Header 5</h5>
-                <h6>Header 6</h6>
-                <p>Skeleton for new project...</p>
+
+    <section id="block-1">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-3 first">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <!-- /.logo -->
+                    <div class="contacts">
+                        <p class="phone">+7 (985) 170-98-02</p>
+                        <p class="advice"><a href="#">Получить консультацию</a></p>
+                    </div>
+                    <!-- /.contacts -->
+                    <div class="block-1_navigation">
+                        <ul class="block-1_navigation-list">
+                            <li><a href="#">ПЕЧИ Длительного горения</a></li>
+                            <li><a href="#">Печи отопительные</a></li>
+                            <li><a href="#">Печи банные</a></li>
+                            <li><a href="#">Мангалы</a></li>
+                            <li><a href="#">Дымоходы</a></li>
+                            <li><a href="#">Сопутствующие товары</a></li>
+                            <li><a href="#">аксессуары</a></li>
+                            <li><a href="#">Товары для бани и сауны</a></li>
+                            <li><a href="#pay-delivery">Оплата и доставка</a></li>
+                            <li><a href="#">Где купить</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.block-1_navigation -->
+                    <div class="shopping-cart">
+                        <div class="cart">
+                            <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.1592 3.63634C27.0456 3.52272 26.9319 3.40905 26.7047 3.40905H5.11365L4.54545 0.454529C4.54545 0.227238 4.20454 9.36063e-09 3.97725 9.36063e-09H0.568148C0.227291 -5.32578e-05 0 0.227238 0 0.568148C0 0.909058 0.227291 1.13635 0.568201 1.13635H3.52277L6.25005 15C6.59096 16.8182 8.29552 18.1819 10.1137 18.1819H23.1819C23.5228 18.1819 23.7501 17.9546 23.7501 17.6137C23.7501 17.2727 23.5228 17.0455 23.1819 17.0455H10.2273C9.31819 17.0455 8.40913 16.5909 7.95455 15.7954L24.5455 13.5227C24.7728 13.5227 25.0001 13.2954 25.0001 13.0682L27.2728 3.97725C27.2728 3.97725 27.2728 3.74996 27.1592 3.63634ZM23.9773 12.5L7.38635 14.6591L5.34089 4.43178H25.9092L23.9773 12.5Z" fill="#333333"/>
+                            <path d="M9.65926 19.3182C8.06838 19.3182 6.81836 20.5682 6.81836 22.1591C6.81836 23.75 8.06838 25 9.65926 25C11.2502 25 12.5002 23.75 12.5002 22.1591C12.5002 20.5682 11.2502 19.3182 9.65926 19.3182ZM9.65926 23.8636C8.75015 23.8636 7.95471 23.0681 7.95471 22.1591C7.95471 21.25 8.75015 20.4545 9.65926 20.4545C10.5684 20.4545 11.3638 21.25 11.3638 22.1591C11.3638 23.0681 10.5684 23.8636 9.65926 23.8636Z" fill="#333333"/>
+                            <path d="M21.0225 19.3182C19.4316 19.3182 18.1816 20.5682 18.1816 22.1591C18.1816 23.75 19.4317 25 21.0225 25C22.6135 25 23.8634 23.75 23.8634 22.1591C23.8634 20.5682 22.6134 19.3182 21.0225 19.3182ZM21.0225 23.8636C20.1134 23.8636 19.318 23.0681 19.318 22.1591C19.318 21.25 20.1134 20.4545 21.0225 20.4545C21.9317 20.4545 22.7271 21.25 22.7271 22.1591C22.7271 23.0681 21.9316 23.8636 21.0225 23.8636Z" fill="#333333"/>
+                            <circle cx="13.5" cy="9.5" r="2.5" fill="#FFAA2F"/>
+                            </svg>
+
+
+                        </div>
+                        <!-- /.cart -->
+                        <div class="cart_descr">
+                            <p>1 товар</p>
+                        </div>
+                        <!-- /.cart_descr -->
+                    </div>
+                    <!-- /.shopping-cart -->
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-6 second">
+                    <div class="row no-gutters slider">
+                        <div class="col-md-12">
+
+                        </div>
+                        <!-- /.col-md-12 -->
+                    </div>
+                    <!-- /.slider -->
+                    <div class="row no-gutters underslider">
+                        <div class="col-md-4">
+                            <div class="underslider-catalog">
+                                <h2>Каталог</h2>
+                                <p>Бюджетные печи и мангалы</p>
+                            </div>
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="underslider-about">
+                                <h2>О компании</h2>
+                                <p>25 лет на рынке!</p>
+                            </div>
+                        </div>
+                        <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="underslider-pechi">
+                                <h2>Печи буран</h2>
+                                <p>от 9 450 Р</p>
+                            </div>
+                        </div>
+                        <!-- /.col-md-4 -->
+                    </div>
+                    <!-- /.underslider-menu -->
+                </div><!-- /.second -->
+                <div class="col-md-3 third">
+                    <div class="pech">
+                        <span class="overlay"></span>
+                        <div class="pech-description">
+                            <h2>ПЕЧЬ ДАЧНАЯ</h2>
+                            <p>до 12 часов работы <br>на одной закладке</p>
+                        </div>
+                    </div>
+                    <!-- /.pech -->
+                    <div class="delivery">
+                        <div class="delivery-description">
+                            <h2>Доставка</h2>
+                            <p>от 1 до 3 дней по Москве 700 Р, <br>самовывоз бесплатно</p>
+                        </div>
+                    </div>
+                    <!-- /.delivery -->
+                    <div class="opening-hours">
+                        <div class="opening-hours-description">
+                            <h2>Режим работы</h2>
+                            <p>Пн.-пт. 9:00 – 17:00</p>
+                            <p>Заказы в интернет-магазине</p>
+                            <p>принимаем круглосуточно</p>
+                        </div>
+                    </div>
+                    <!-- /.opening-hours -->
+                </div>
+                <!-- /.third -->
+
             </div>
-            <div class="col-6">
-              <h2>Breadcrumb</h2>
-                <div style="padding: 1rem;">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item"><a href="#">Library</a></li>
-                      <li class="breadcrumb-item active">Data</li>
-                    </ol>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section><!-- /#block-1 -->
+
+
+
+    <!-- Navigation -->
+        <nav id="sticky-nav" class="navbar navbar-expand-lg navbar-light     container">
+          <a class="navbar-brand" href="#">
+            <svg width="83" height="15" viewBox="0 0 83 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.54 0.0399997H7.32C8.48 0.0399997 9.38 0.366666 10.02 1.02C10.6733 1.67333 11 2.54 11 3.62C11 4.15333 10.9267 4.60667 10.78 4.98C10.6467 5.35333 10.46 5.66 10.22 5.9C9.99333 6.14 9.72 6.32 9.4 6.44C9.09333 6.54667 8.76 6.60667 8.4 6.62V6.74C8.73333 6.74 9.08 6.8 9.44 6.92C9.81333 7.04 10.1533 7.23333 10.46 7.5C10.7667 7.75333 11.02 8.08667 11.22 8.5C11.4333 8.91333 11.54 9.42 11.54 10.02C11.54 10.5667 11.4467 11.0867 11.26 11.58C11.0867 12.06 10.84 12.48 10.52 12.84C10.2 13.2 9.82 13.4867 9.38 13.7C8.94 13.9 8.46 14 7.94 14H0.54V0.0399997ZM3.58 11.44H7.08C7.48 11.44 7.79333 11.3333 8.02 11.12C8.26 10.8933 8.38 10.58 8.38 10.18V9.5C8.38 9.1 8.26 8.79333 8.02 8.58C7.79333 8.35333 7.48 8.24 7.08 8.24H3.58V11.44ZM3.58 5.76H6.6C7 5.76 7.31333 5.64667 7.54 5.42C7.76667 5.19333 7.88 4.88 7.88 4.48V3.88C7.88 3.48 7.76667 3.16667 7.54 2.94C7.31333 2.71333 7 2.6 6.6 2.6H3.58V5.76ZM20.7598 0.0399997V8.6C20.7598 9.58667 20.9532 10.3267 21.3398 10.82C21.7265 11.3 22.3732 11.54 23.2798 11.54C24.1865 11.54 24.8332 11.3 25.2198 10.82C25.6065 10.3267 25.7998 9.58667 25.7998 8.6V0.0399997H28.7598V8.28C28.7598 9.30667 28.6598 10.2 28.4598 10.96C28.2732 11.7067 27.9598 12.3267 27.5198 12.82C27.0798 13.3 26.5132 13.66 25.8198 13.9C25.1265 14.1267 24.2798 14.24 23.2798 14.24C22.2798 14.24 21.4332 14.1267 20.7398 13.9C20.0465 13.66 19.4798 13.3 19.0398 12.82C18.5998 12.3267 18.2798 11.7067 18.0798 10.96C17.8932 10.2 17.7998 9.30667 17.7998 8.28V0.0399997H20.7598ZM38.8066 14H35.7666V0.0399997H42.3866C43.0266 0.0399997 43.6066 0.146666 44.1266 0.359999C44.6466 0.573333 45.0866 0.88 45.4466 1.28C45.8199 1.66667 46.1066 2.13333 46.3066 2.68C46.5066 3.22667 46.6066 3.83333 46.6066 4.5C46.6066 5.44667 46.3932 6.27333 45.9666 6.98C45.5532 7.68667 44.9199 8.2 44.0666 8.52L46.8066 14H43.4266L40.9866 8.88H38.8066V14ZM42.0066 6.32C42.4599 6.32 42.8132 6.20667 43.0666 5.98C43.3332 5.74 43.4666 5.39333 43.4666 4.94V4.06C43.4666 3.60667 43.3332 3.26667 43.0666 3.04C42.8132 2.8 42.4599 2.68 42.0066 2.68H38.8066V6.32H42.0066ZM75.1945 7.4L73.8545 4.6H73.7945V14H70.9345V0.0399997H74.2545L78.0745 6.64L79.4145 9.44H79.4745V0.0399997H82.3345V14H79.0145L75.1945 7.4Z" fill="black"/>
+              <path d="M61.8431 14L60.8431 10.68H56.1831L55.1831 14H52.1031L56.7031 0.0399997H60.4631L65.0031 14H61.8431ZM58.5431 2.8H58.4431L56.9031 8.1H60.1031L58.5431 2.8Z" fill="#CC2C11"/>
+          </svg>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pay-delivery">Оплата и доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Где купить</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="cart">
+                <svg width="39" height="35" viewBox="0 0 39 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.0229 5.09087C37.8638 4.93181 37.7047 4.77267 37.3865 4.77267H7.15911L6.36363 0.636341C6.36363 0.318133 5.88636 1.31049e-08 5.56815 1.31049e-08H0.795407C0.318208 -7.4561e-05 0 0.318133 0 0.795407C0 1.27268 0.318208 1.59089 0.795482 1.59089H4.93188L8.75008 21.0001C9.22735 23.5455 11.6137 25.4546 14.1592 25.4546H32.4546C32.9319 25.4546 33.2501 25.1364 33.2501 24.6591C33.2501 24.1818 32.9319 23.8636 32.4546 23.8636H14.3182C13.0455 23.8636 11.7728 23.2273 11.1364 22.1136L34.3637 18.9318C34.6819 18.9318 35.0001 18.6136 35.0001 18.2955L38.1819 5.56815C38.1819 5.56815 38.1819 5.24994 38.0229 5.09087ZM33.5683 17.5L10.3409 20.5227L7.47724 6.20449H36.2728L33.5683 17.5Z" fill="#333333"/>
+                <path d="M13.5232 27.0455C11.2959 27.0455 9.5459 28.7955 9.5459 31.0228C9.5459 33.2501 11.2959 35 13.5232 35C15.7505 35 17.5004 33.25 17.5004 31.0228C17.5005 28.7955 15.7505 27.0455 13.5232 27.0455ZM13.5232 33.4091C12.2504 33.4091 11.1368 32.2954 11.1368 31.0228C11.1368 29.7501 12.2504 28.6364 13.5232 28.6364C14.7959 28.6364 15.9095 29.7501 15.9095 31.0228C15.9095 32.2954 14.7959 33.4091 13.5232 33.4091Z" fill="#333333"/>
+                <path d="M29.4314 27.0455C27.2041 27.0455 25.4541 28.7955 25.4541 31.0228C25.4541 33.2501 27.2041 35 29.4314 35C31.6587 35 33.4086 33.25 33.4086 31.0228C33.4086 28.7955 31.6586 27.0455 29.4314 27.0455ZM29.4314 33.4091C28.1586 33.4091 27.045 32.2954 27.045 31.0228C27.045 29.7501 28.1586 28.6364 29.4314 28.6364C30.7041 28.6364 31.8177 29.7501 31.8177 31.0228C31.8177 32.2954 30.704 33.4091 29.4314 33.4091Z" fill="#333333"/>
+                <circle cx="20.5" cy="12.5" r="3.5" fill="#FFAA2F"/>
+                </svg>
+            </div>
+            <div class="contacts">
+                <p class="phone">+7 (985) 170-98-02</p>
+                <p class="advice"><a href="#">Получить консультацию</a></p>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navigation -->
+
+        <section id="block-2">
+            <div class="container">
+                <div class="row">
+                   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                     <li class="nav-item">
+                       <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">О компании</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Преимущества</a>
+                     </li>
+                   </ul>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="row about">
+                                 <div class="col-md-6 about-description">
+                                    <h2 class="tab-pane-header">Тёплый дом круглый год без проблем и забот</h2>
+                                 <p>Продукция, выпускаемая нашей компанией, присутствует на Российском рынке с 1993 года.</p>
+                                 <p>Только наши печи производятся на основе высоких стандартов квалифицированными специалистами по оригинальным чертежам и на высокотехнологичном оборудовании.</p>
+                                 <p>Идя в ногу со временем, учитывая потребности рынка и меняющуюся социально-экономическую ситуацию в стране, мы запустили новую линейку бюджетных печей и мангалов под маркой «БУРАН».</p></div>
+                                <div class="col-md-6 about-preview">
+                                    <div class="yellow"></div>
+                                    <div class="image-wrapper">
+                                        <img class="image" src="images/block-2/block2-pech-about.png">
+                                        <div class="black">
+                                            <div class="black-1">
+                                                <h3>Печь длительного горения БУРАН</h3>
+                                                <p>Объем отапливаемого помещения до 400 м3</p>
+                                            </div> <!-- .black-1 -->
+                                            <div class="black-2">
+                                                <p class="price">17 300 Р</p>
+                                                <div class="inCart">
+                                                    <a href="#" class="inCart">+ в корзину</a>
+                                                </div>
+                                            </div> <!-- .black-2 -->
+                                        </div> <!-- .black -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="row">
+                                <div class="col-md-6 advantages">
+                                    <h2 class="tab-pane-header">Мы — надежный производитель</h2>
+                                    <div class="row advantages-description">
+                                        <div class="col-md-6">
+                                            <div class="advantages-item">
+                                                <img src="images/block-2/advantages/day-25-on-daily-calendar-page.png">
+                                                <p>25 лет на рынке</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="advantages-item">
+                                                <img src="images/block-2/advantages/first.png">
+                                                <p>Первые производители печей длительного горения в России</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="advantages-item">
+                                                <img src="images/block-2/advantages/010-contract.png">
+                                                <p>Вся продукция сертифицирована</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="advantages-item">
+                                                <img src="images/block-2/advantages/002-worker.png">
+                                                <p>Обязательный контроль ОТК</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="advantages-item">
+                                                <img src="images/block-2/advantages/003-factory.png">
+                                                <p>Заводское качество</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="advantages-item">
+                                                <img src="images/block-2/advantages/001-conveyor.png">
+                                                <p>Серийное производство</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 advantages-preview">
+                                    <div class="red"></div>
+                                    <div class="image-wrapper">
+                                        <img class="image" src="images/block-2/block2-pech-advantages.png">
+                                        <div class="black">
+                                            <div class="black-1">
+                                                <h3>Печь-мангал "БУРАН"-2 ("BURAN"-2)</h3>
+                                                <p>с откидной крышкой</p>
+                                            </div> <!-- .black-1 -->
+                                            <div class="black-2">
+                                                <p class="price">10 600 Р</p>
+                                                <div class="inCart">
+                                                    <a href="#" class="inCart">+ в корзину</a>
+                                                </div>
+                                            </div> <!-- .black-2 -->
+                                        </div> <!-- .black -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- tab-content -->
                 </div>
             </div>
-
-            <div class="col">
-              <div class="alert alert-success" role="alert">
-                A simple success alert—check it out!
-              </div>
+                <!-- /.row -->
             </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#block-2 -->
 
-            <div class="col">
-              <div class="alert alert-success" role="alert">
-                A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-              </div>
+        <section id="pay-delivery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Оплата и доставка</h2>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-mo-tab" data-toggle="pill" href="#pills-mo" role="tab" aria-controls="pills-mo" aria-selected="true">Москва и МО</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-at-tab" data-toggle="pill" href="#pills-at" role="tab" aria-controls="pills-at" aria-selected="false">Другие города России</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-pay-tab" data-toggle="pill" href="#pills-pay" role="tab" aria-controls="pills-pay" aria-selected="false">Оплата</a>
+                      </li>
+                    </ul>
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-mo" role="tabpanel" aria-labelledby="pills-mo-tab">
+                                <div class="col-md-12 mo-section">
+                                    <ul class="mo-section__list">
+                                        <li>Осуществляем доставку в течение 1-4 рабочих дней с момента поступления заказа (оплаты).</li>
+                                        <li>График доставкис 9:00 до 20:00 пн-сб (кроме праздничных дней).</li>
+                                        <li>Доставка осуществляетсядо подъезда (ворот). Разгрузка, перенос и подъем осуществляется силами заказчика.</li>
+                                    </ul>
+                                </div>
+                                <div class="row prices">
+                                    <div class="col-md-4">
+                                        <div class="prices-container">
+                                            <h3>В пределах МКАД</h3>
+                                            <p>Груз массой до 130 кг. — 700руб.</p>
+                                            <p>Груз свыше 130 кг. — 1000руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="prices-container">
+                                            <h3>За пределы МКАД</h3>
+                                            <p>Груз массой до 130 кг. — 700руб. + 30руб./км</p>
+                                            <p>Груз свыше 130 кг. — 1000руб. + 40руб./км</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="prices-container">
+                                            <h3>Самовывоз</h3>
+                                            <p>Бесплатно из склада-магазина</p>
+                                            <p>Алтуфьевское шоссе 53 стр. 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+
+                            <div class="tab-pane fade show" id="pills-at" role="tabpanel" aria-labelledby="pills-at-tab">
+                                <div class="col-md-12 mo-section">
+                                    <ul class="mo-section__list">
+                                        <li>Для розничных покупателей осуществляем доставку до транспортных компаний по г. Москве. Доставка заказов осуществляется силами транспортных компаний.</li>
+                                        <li>Стоимость доставки до транспортной компании: груз до 130 кг — 700руб.,  Груз свыше  130 кг — 1000руб.</li>
+                                        <li>С момента передачи груза в транспортную компанию (по Вашему выбору) обязательства по доставке и сохранности груза переходят на перевозчика.</li>
+                                        <li>Окончательная стоимость доставки зависит от тарифов транспортной компании.</li>
+                                        <li>Услуги транспортной компании оплачиваются покупателем в момент забора груза.</li>
+                                        <li>Компании, проверенные долгим сотрудничеством: <a href="#">ПЭК ВОСТОК</a>, <a href="#">ДЕЛОВЫЕ ЛИНИИ</a>.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="pills-pay" role="tabpanel" aria-labelledby="pills-pay-tab">
+                                <div class="col-md-12 mo-section pay-pill">
+                                    <p>Оплата может осуществлятся путём:</p>
+                                    <ul class="mo-section__list">
+                                        <li>Безналичной оплаты по счёту.</li>
+                                        <li>Наличной оплаты курьеру при осуществлении доставки (МКАД, МО).</li>
+                                        <li>Путём перечисления на карту Сбербанк-онлайн.</li>
+                                        <li>Оплата картой на сайте.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            </div> <!-- tab-content -->
+                        </div>
+                    </div> <!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="button-wrapper">
+                            <a href="#" class="button">Остались вопросы?</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#pay-delivery -->
 
-            <div class="col">
-              <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+        <section id="block-4">
+            <div class="red"></div>
+            <div class="container">
+                <div class="row options">
+                    <div class="col-sm-12 col-md-4 option">
+                        <div class="option-item">
+                            <img src="images/block-4/015-house.png">
+                            <h3>Печи</h3>
+                            <p>Ассортимент печей широкого назначения</p>
+                            <p>Длительного горения, банные, отопительные</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 option">
+                        <div class="option-item">
+                            <img src="images/block-4/014-barbecue.png">
+                            <h3>Мангалы</h3>
+                            <p>Для уютных дачных вечеров</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 option">
+                        <img src="images/block-4/glue.png">
+                        <div class="option-item">
+                            <h3>Сопутствующие товары</h3>
+                            <p>Сопутствующий текст</p>
+                            <p>в две строки</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 option">
+                        <div class="option-item">
+                            <img src="images/block-4/spa.png">
+                            <h3>Товары для бани и сауны</h3>
+                            <p>Сопутствующий текст</p>
+                            <p>в две строки</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 option">
+                        <div class="option-item">
+                            <img src="images/block-4/chimney.png">
+                            <h3>Комплектующие</h3>
+                            <p>Сопутствующий текст</p>
+                            <p>в две строки</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 option">
+                        <img src="images/block-4/settings.png">
+                        <div class="option-item">
+                            <h3>Аксессуары</h3>
+                            <p>Сопутствующий текст</p>
+                            <p>в две строки</p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </section>
+        <!-- End block-4 -->
 
-
+        <section id="block-5">
+            <div class="yellow"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-container">
+                            <h2>Популярные товары</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="good-item">
+                            <img src="images/block-5/image frame.png">
+                            <h3>Печь газогенераторная АОТ-14 тип 01</h3>
+                            <p>Объем помещения до 200 м3</p>
+                            <div class="buy-info">
+                                <p class="price">14 300 Р</p>
+                                <div class="button-wrapper">
+                                    <a href="#" class="button">+ в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="good-item">
+                            <img src="images/block-5/image frame.png">
+                            <h3>Печь газогенераторная АОТ-14 тип 01</h3>
+                            <p>Объем помещения до 200 м3</p>
+                            <div class="buy-info">
+                                <p class="price">14 300 Р</p>
+                                <div class="button-wrapper">
+                                    <a href="#" class="button">+ в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="good-item">
+                            <img src="images/block-5/image frame.png">
+                            <h3>Печь газогенераторная АОТ-14 тип 01</h3>
+                            <p>Объем помещения до 200 м3</p>
+                            <div class="buy-info">
+                                <p class="price">14 300 Р</p>
+                                <div class="button-wrapper">
+                                    <a href="#" class="button">+ в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="goods-wrapper">
+                            <a href="#" class="button">Все товары</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
             </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#block-5 -->
 
-        </div>
-    </div>
+        <section id="block-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                     <div class="contacts">
+                        <h2>Контакты</h2>
+
+                        <h4>Магазин-склад</h4>
+                        <p>Москва, Алтуфьевское ш., 53, стр. 2 <br>Пн-пт, 9:00-17:00</p>
+
+                        <h4>Справки</h4>
+                        <p>+7 (985)  071 71 33</p>
+
+                        <h4>Консультации</h4>
+                        <p>+7 (985) 170 98 02</p>
+
+                        <h4>Купить</h4>
+                        <p>+7 (915) 111 3 222</p>
+
+                        <p>buran-pechi@mail.ru</p>
+
+                        <div class="button-wrapper">
+                            <a href="#" class="button">Найти продавца в своём городе</a>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col-md-4">
+                     <div class="map">
+                        <p>Карта</p>
+                     </div>
+                    </div>
+                    <div class="col-md-4">
+                     <div class="feedback">
+                        <h2>Получите скидку 3%</h2>
+                        <p>на покупку печи или мангала, <br>заполнив форму ниже</p>
+
+                        <div class="button-wrapper">
+                            <a href="#" class="button">
+                                Получить
+                            </a>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /#block-6 -->
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-logo">
+                            <img src="images/logo_white-text.png">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-list">
+                            <ul>
+                                <li><a href="#">Каталог</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Правовая информация</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-contacts">
+                            <ul>
+                                <li>+7 (985) 170 98 02</li>
+                                <li>buran-pechi@mail.ru</li>
+                                <li>Москва, Алтуфьевское ш., 53, стр. 2</li>
+                                <li>Пн-пт, 9:00-17:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-copyright">
+                            <p>&copy;&nbsp;&nbsp;&nbsp;ООО Лаотерм 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </footer>
+        <!-- /#footer -->
 
     <!-- Scripts -->
-    <script type="text/javascript" src="scripts/main.min.js"></script>
     <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/main.min.js"></script>
   </body>
 </html>

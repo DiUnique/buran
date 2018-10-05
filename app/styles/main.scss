@@ -1,1 +1,14 @@
-@import './node_modules/bootstrap/scss/bootstrap.scss';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/base';
+
+// Layout
+@import 'partials/layout/block-1';
+@import 'partials/layout/sticky_nav';
+@import 'partials/layout/block-2';
+@import 'partials/layout/pay-delivery';
+@import 'partials/layout/block-4';
+@import 'partials/layout/block-5';
+@import 'partials/layout/block-6';
+
+@import 'partials/layout/footer';

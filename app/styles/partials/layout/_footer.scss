@@ -1,0 +1,45 @@
+#footer {
+	color: #fff;
+	padding-top: rem(75);
+	background-color: #000;
+
+	.footer-logo {
+		width: rem(181);
+		height: rem(130);
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	} // .footer-logo
+
+	.footer-list {
+		ul {
+			padding-bottom: rem(50);
+
+			li {
+				font-weight: 500;
+				font-size: rem(18);
+				line-height: rem(21);
+				text-transform: uppercase;
+				padding-bottom: rem(15);
+			}
+		}
+	} // .footer-list
+
+	.footer-contacts {
+		li {
+			font-size: rem(18);
+			line-height: rem(21);
+			padding-bottom: rem(15);
+		}
+	} // .footer-contacts
+
+	.footer-copyright {
+		p {
+			font-family: $roboto;
+			font-size: rem(16);
+			line-height: rem(19);
+		}
+	} // .footer-copyright
+}

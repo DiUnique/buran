@@ -1,0 +1,179 @@
+#block-2 {
+	position: relative;
+
+	.yellow {
+		height: 100%;
+		width: rem(583);
+		position: absolute;
+		right: rem(50);
+		background-color: $yellow;
+		z-index: -1;
+	}
+
+	.red {
+		height: 100%;
+		width: rem(369);
+		position: absolute;
+		left: 0;
+		background-color: $red;
+		z-index: -1;
+	}
+
+.nav-pills {
+
+	.nav-item {
+
+		a.nav-link {
+			font-family: $rubik;
+			font-weight: 500;
+			font-size: rem(16);
+			line-height: rem(19);
+			background: none;
+			color: #000;
+			text-transform: uppercase;
+			&.active {
+				border-bottom: 3px solid $yellow;
+			}
+		}
+	}
+} // nav-pills
+
+.tab-content {
+
+	.tab-pane {
+		.tab-pane-header {
+			font-family: $rubik;
+			font-weight: 600;
+			font-size: rem(36);
+			line-height: rem(43);
+			padding-bottom: rem(42);
+			padding-top: rem(57);
+		}
+
+		p {
+			font-family: $roboto;
+			line-height: rem(23);
+			font-size: rem(16);
+			padding-bottom: rem(20);
+		}
+
+		.short-descr {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+} // tab-content
+
+.image-wrapper {
+	color: #fff;
+	width: rem(741);
+	height: rem(557);
+	position: relative;
+
+	.image {
+		width: 100%;
+		height: 100%;
+	}
+
+	.black {
+		font-family: $roboto;
+		display: flex;
+		position: absolute;
+		background-color: #000;
+		width: rem(556);
+		height: rem(115);
+		bottom: 0;
+		right: 0;
+
+		.black-1 {
+			width: 50%;
+			padding-top: rem(19);
+			padding-bottom: rem(19);
+			padding-left: rem(15.74);
+
+			h3 {
+				font-size: rem(16);
+				line-height: rem(19);
+				font-weight: 500;
+			}
+
+			p {
+				font-size: rem(16);
+				line-height: rem(19);
+			}
+		} // black-1
+
+		.black-2 {
+			font-family: $rubik;
+			width: 50%;
+			padding-top: rem(16);
+			padding-bottom: rem(16);
+			text-align: center;
+
+			.price {
+				font-weight: 600;
+				font-size: rem(22);
+				line-height: rem(26);
+			}
+
+			.inCart {
+				width: rem(135);
+				text-align: center;
+				margin: 0 auto;
+				padding-top: rem(8);
+
+				a {
+					border: 3px solid $yellow;
+					color: #fff;
+					font-size: rem(16);
+					font-family: $ubuntu;
+					font-weight: 600;
+					line-height: rem(18);
+					padding-top: rem(14);
+					padding-right: rem(8.52);
+					padding-bottom: rem(13);
+					padding-left: rem(9);
+					text-transform: uppercase;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about {
+	.about-preview {
+		position: relative;
+
+	}
+} // about
+
+	.advantages-description {
+
+		.advantages-item {
+			display: flex;
+
+			img {
+				padding-bottom: rem(48);
+			}
+
+			p {
+				font-size: rem(16);
+				line-height: rem(19);
+				padding-left: rem(30);
+			}
+		}
+	} // .advantages-description
+
+	.advantages-preview {
+		position: relative;
+
+	} // .advantages-preview
+
+
+
+} // block-1

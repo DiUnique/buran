@@ -1,0 +1,61 @@
+#block-5 {
+	padding-top: rem(75);
+	position: relative;
+
+	.yellow {
+		background-color: $yellow;
+		position: absolute; top: 0; left: 0;
+		width: 100%;
+		height: rem(348);
+	}
+
+	.header-container {
+		text-align: center;
+		padding-bottom: rem(51);
+	}
+
+	.good-item {
+
+		h3 {
+			font-weight: 500;
+			font-size: rem(16);
+			line-height: rem(28);
+		}
+
+		p {
+			font-size: rem(16);
+			line-height: rem(19);
+		}
+
+		.buy-info {
+			display: flex;
+			justify-content: space-between;
+			padding-top: rem(24);
+
+				.price {
+					font-weight: 700;
+					font-size: rem(18);
+					line-height: rem(75);
+				}
+		} // .buy-info
+
+		.button-wrapper {
+			padding-top: rem(24);
+			.button {
+				color: #000;
+			}
+		}
+
+	} // good-item
+
+	.goods-wrapper {
+		text-align: center;
+		padding-top: rem(42);
+		.button {
+			color: #000;
+			border: unset;
+			border-bottom: 3px solid $yellow;
+			padding-top: rem(10);
+		}
+	}
+} // #block-5
