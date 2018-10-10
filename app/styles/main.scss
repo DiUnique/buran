@@ -2,6 +2,15 @@
 @import 'partials/mixins';
 @import 'partials/base';
 
+@import 'partials/menu-catalog';
+@import 'partials/preview';
+
+// Pages
+@import 'partials/catalog';
+@import 'partials/product';
+@import 'partials/checkout';
+@import 'partials/where-to-buy';
+
 // Layout
 @import 'partials/layout/block-1';
 @import 'partials/layout/sticky_nav';

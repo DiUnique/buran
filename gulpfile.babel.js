@@ -47,7 +47,7 @@ gulp.task('copy', () =>
 // Copy all files from libs
 gulp.task('libs', () =>
   gulp.src([
-    'app/libs/*'
+    'app/libs/**/*'
   ], {
     dot: true
   }).pipe(gulp.dest('dist/libs'))

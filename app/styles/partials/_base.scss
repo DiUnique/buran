@@ -18,12 +18,17 @@ h1 {
 h2 {
 	font-family: $rubik;
 	font-weight: 600;
-	font-size: rem(36);
+	font-size: rem(28);
 	line-height: rem(43);
 }
 
 h3 {
+	font-size: rem(26);
+	padding-bottom: rem(25);
+}
 
+h4 {
+	padding-bottom: rem(25);
 }
 
 p {
@@ -42,6 +47,11 @@ dl, ol, ul {
 
 ul li {
 	list-style-type: none;
+	font-size: rem(16);
+}
+
+table {
+	font-size: rem(16);
 }
 
 a.button {
@@ -51,13 +61,38 @@ a.button {
 		font-family: $ubuntu;
 		font-weight: 600;
 		line-height: rem(18);
-		padding-top: rem(14);
-		padding-right: rem(8.52);
-		padding-bottom: rem(13);
-		padding-left: rem(9);
+		padding-top: rem(10);
+		padding-right: rem(25);
+		padding-bottom: rem(12);
+		padding-left: rem(25);
 		text-transform: uppercase;
 
 		&:hover {
 			text-decoration: none;
+			background-color: $yellow;
 		}
 	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.red {
+		color: $red;
+	}
+
+	.cart {
+		padding-left: 5.3125rem;
+
+		a {
+
+			svg {
+				&:hover #circle {
+					fill: rgba(255,170,47,.4);
+				}
+				&:hover path {
+					fill: rgba(0,0,0,.4)
+				}
+			}
+		}
+	} // cart

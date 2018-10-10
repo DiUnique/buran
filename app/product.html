@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог БУРАН</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
+  <link rel="manifest" href="images/touch/site.webmanifest">
+  <link rel="mask-icon" href="images/touch/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
+
+  <!-- Your styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav id="sticky-nav" class="navbar navbar-expand-lg navbar-light sticky-top container">
+	  <a class="navbar-brand" href="/">
+	    <img src="images/buran.svg">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="/catalog.html">Каталог</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/#pay-delivery">Оплата и доставка</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">О компании</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/where-to-buy.html">Где купить</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Контакты</a>
+	      </li>
+	    </ul>
+	    <div class="cart">
+	        <a href="/checkout.html">
+	        	<svg width="39" height="35" viewBox="0 0 39 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+	        	<path d="M38.0229 5.09087C37.8638 4.93181 37.7047 4.77267 37.3865 4.77267H7.15911L6.36363 0.636341C6.36363 0.318133 5.88636 1.31049e-08 5.56815 1.31049e-08H0.795407C0.318208 -7.4561e-05 0 0.318133 0 0.795407C0 1.27268 0.318208 1.59089 0.795482 1.59089H4.93188L8.75008 21.0001C9.22735 23.5455 11.6137 25.4546 14.1592 25.4546H32.4546C32.9319 25.4546 33.2501 25.1364 33.2501 24.6591C33.2501 24.1818 32.9319 23.8636 32.4546 23.8636H14.3182C13.0455 23.8636 11.7728 23.2273 11.1364 22.1136L34.3637 18.9318C34.6819 18.9318 35.0001 18.6136 35.0001 18.2955L38.1819 5.56815C38.1819 5.56815 38.1819 5.24994 38.0229 5.09087ZM33.5683 17.5L10.3409 20.5227L7.47724 6.20449H36.2728L33.5683 17.5Z" fill="#333333"/>
+	        	<path d="M13.5229 27.0459C11.2957 27.0459 9.54565 28.7959 9.54565 31.0232C9.54565 33.2505 11.2957 35.0004 13.5229 35.0004C15.7502 35.0004 17.5002 33.2504 17.5002 31.0232C17.5002 28.7959 15.7502 27.0459 13.5229 27.0459ZM13.5229 33.4095C12.2502 33.4095 11.1365 32.2958 11.1365 31.0232C11.1365 29.7505 12.2502 28.6368 13.5229 28.6368C14.7957 28.6368 15.9093 29.7505 15.9093 31.0232C15.9093 32.2958 14.7957 33.4095 13.5229 33.4095Z" fill="#333333"/>
+	        	<path d="M29.4316 27.0459C27.2043 27.0459 25.4543 28.7959 25.4543 31.0232C25.4543 33.2505 27.2044 35.0004 29.4316 35.0004C31.6589 35.0004 33.4089 33.2504 33.4089 31.0232C33.4089 28.7959 31.6588 27.0459 29.4316 27.0459ZM29.4316 33.4095C28.1588 33.4095 27.0452 32.2958 27.0452 31.0232C27.0452 29.7505 28.1588 28.6368 29.4316 28.6368C30.7044 28.6368 31.818 29.7505 31.818 31.0232C31.818 32.2958 30.7043 33.4095 29.4316 33.4095Z" fill="#333333"/>
+	        	<circle id="circle" cx="20.5" cy="12.5" r="3.5" fill="#FFAA2F"/>
+	        	</svg>
+	        </a>
+	    </div>
+	    <div class="contacts">
+	        <p class="phone">+7 (985) 170-98-02</p>
+	        <p class="advice"><a href="#">Получить консультацию</a></p>
+	    </div>
+	  </div>
+	</nav>
+	<!-- End Navigation -->
+
+	<div class="menu-catalog">
+		<div class="container">
+			<div class="row">
+				<ul class="catalog-items">
+					<li class="catalog-item"><a href="#">Печи длительного горения</a></li>
+					<li class="catalog-item"><a href="#">Печи отопительные</a></li>
+					<li class="catalog-item"><a href="#">Банные печи</a></li>
+					<li class="catalog-item"><a href="#">Мангалы</a></li>
+					<li class="catalog-item"><a href="#">Дымоходы</a></li>
+					<li class="catalog-item"><a href="#">Аксессуары</a></li>
+					<li class="catalog-item"><a href="#">Товары для бани и сауны</a></li>
+					<li class="catalog-item"><a href="#">Сопутствующие товары</a></li>
+				</ul>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.menu-catalog -->
+
+	<section id="product">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="images/product/product.png" class="img-fluid">
+				</div>
+				<div class="col-lg-6">
+					<div class="short-descr">
+						<div class="product-header">
+							<h1>Печь-Мангал  «Буран-2» с крышкой</h1>
+						</div> <!-- product-header -->
+						<div class="product-sku">
+							<p>Артикул: 123 456</p>
+						</div> <!-- product-sku -->
+						<div class="price-quantity">
+							<p class="price">10 600 Р</p>
+							<div class="quantity">
+								<span class="minus">-</span>
+								<div class="quant">1</div>
+								<span class="plus">+</span>
+							</div>
+						</div> <!-- price-quantity -->
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+						<!-- /.button-wrapper -->
+						<div class="product-delivery">
+							<p>Доставка 700 Р по Москве, 1-4 дня с момента поступления заказа. Доставка по МО: 700 Р + 30Р/км от МКАД. Возможна доставка в другие города России. <a href="/#pay-delivery">Подробнее о доставке</a></p>
+						</div>
+						<!-- /.product-delivery -->
+						<a href="#" class="button to-descr">К описанию</a>
+					</div> <!-- short-descr -->
+				</div>
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-features-tab" data-toggle="pill" href="#pills-features" role="tab" aria-controls="pills-features" aria-selected="true">Характеристики</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-photo-tab" data-toggle="pill" href="#pills-photo" role="tab" aria-controls="pills-photo" aria-selected="false">Фото</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-equipment-tab" data-toggle="pill" href="#pills-equipment" role="tab" aria-controls="pills-equipment" aria-selected="false">Комплектация</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-schema-tab" data-toggle="pill" href="#pills-schema" role="tab" aria-controls="pills-schema" aria-selected="false">Схема установки и эксплуатации</a>
+            </li>
+          </ul>
+				</div>
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="tab-content" id="pills-tabContent">
+				    <div class="tab-pane fade show active" id="pills-features" role="tabpanel" aria-labelledby="pills-features-tab">
+							<div class="features-content">
+								<h3>Назначение</h3>
+								<p>Печь-мангал «Буран-2» с крышкой — это комбинированная конструкция, состоящая из печи, мангала и крышки-столика.</p>
+								<p>Печь-мангал  «Буран-2» с крышкой может использоваться как в раздельном режиме эксплуатации (печь или мангал), так и одновременно (печь и мангал).</p>
+
+								<h4>Печь-мангал "БУРАН" 2("BURAN" 2) С КРЫШКОЙ  предназначена:</h4>
+								<h5>Печь:</h5>
+								<ul>
+									<li>Для приготовления пищи на варочной панели в кастрюле, сковороде.</li>
+									<li>Для приготовления пищи в казане.</li>
+									<li>Для приготовления угля.</li>
+								</ul>
+
+								<h5>Мангал:</h5>
+								<ul>
+									<li>Для приготовления пищи на открытом огне и углях(шашлык, барбекю).</li>
+								</ul>
+
+								<h4>Технические характеристики</h4>
+								<table>
+									<tr>
+										<td>Д*Ш*В:</td>
+										<td>1600*530*1040 мм</td>
+									</tr>
+									<tr>
+										<td>Масса:</td>
+										<td>59 кг</td>
+									</tr>
+									<tr>
+										<td>Тип топлива: </td>
+										<td>дрова, древесный уголь</td>
+									</tr>
+									<tr>
+										<td>Диаметр дымохода:</td>
+										<td>120 мм, внешний</td>
+									</tr>
+									<tr>
+										<td>Толщина металла, мм</td>
+										<td>3мм-отсек мангал, 4мм печь</td>
+									</tr>
+									<tr>
+										<td>Диаметр конфорок</td>
+										<td>100/170/270 мм</td>
+									</tr>
+								</table>
+								<p>Размеры указаны по выступающим частям изделия. Производитель оставляет за собой право изменять конструкцию, характеристики и размеры без уведомления.</p>
+
+								<h4>Внешний вид</h4>
+								<p>Печь-мангал "БУРАН" 2("BURAN" 2) С КРЫШКОЙ  покрыта жаропрочной краской (при первой протопке происходит полная её полимеризация, которая сопровождается характерным запахом).</p>
+								<p>Печь-мангал "БУРАН" 2("BURAN" 2) С КРЫШКОЙ предназначена для бытового использования
+								на открытом пространстве или в продуваемых беседках!</p>
+								<p>Ножки  Печи-мангала "БУРАН" 2("BURAN" 2) С КРЫШКОЙ легко снимаются для удобства хранения
+								и транспортировки.</p>
+								<p>Для использования Печи-мангала "БУРАН" 2("BURAN" 2) С КРЫШКОЙ необходима установка дымохода.</p>
+							</div>
+				    </div> <!-- tab-pane -->
+				    <div class="tab-pane fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab">
+								<div class="image-gallery">
+									<main class="primary" style="background-image: url('images/product/image-gallery/image-big.png');"></main>
+
+								  <aside class="thumbnails">
+								    <a href="#" class="selected thumbnail" data-big="images/product/image-gallery/image-big.png">
+								      <div class="thumbnail-image" style="background-image: url('images/product/image-gallery/image-small.png')"></div>
+								    </a>
+								    <a href="#" class="selected thumbnail" data-big="images/product/image-gallery/image-big.png">
+								      <div class="thumbnail-image" style="background-image: url('images/product/image-gallery/image-small.png')"></div>
+								    </a>
+								    <a href="#" class="selected thumbnail" data-big="images/product/image-gallery/image-big.png">
+								      <div class="thumbnail-image" style="background-image: url('images/product/image-gallery/image-small.png')"></div>
+								    </a>
+								  </aside>
+							</div>
+							<!-- /.image-gallery -->
+				    </div> <!-- tab-pane -->
+				    <div class="tab-pane fade" id="pills-equipment" role="tabpanel" aria-labelledby="pills-equipment-tab">
+				    	<div class="equipment-content">
+				    		<ul>
+				    			<li>Корпус Печи-мангала «Буран-2» ("BURAN" 2) С КРЫШКОЙ ;</li>
+				    			<li>Съёмная крышка печи;</li>
+				    			<li>Конфорка №1 и №2;</li>
+				    			<li>Кочерга;</li>
+				    			<li>Совок для золы;</li>
+				    			<li>Зольный ящик;</li>
+				    			<li>Заслонка;</li>
+				    			<li>Ножка с креплением 4 шт.</li>
+				    		</ul>
+				    	</div><!-- equipment-content -->
+				    </div> <!-- tab-pane -->
+				    <div class="tab-pane fade" id="pills-schema" role="tabpanel" aria-labelledby="pills-schema-tab">
+				    	<div class="schema-content">
+				    		<h4>Установка</h4>
+				    		<p>Газогенераторную печь следует устанавливать в соответствии с правилами пожарной безопасности по установке печей длительного горения. Необходимо установить печь на специальный фундамент (основание из негорючего материала), это обеспечит лучшую циркуляцию воздуха, также обязательно наличие дымохода. Перед топкой нужно выстлать металлический лист.</p>
+
+				    		<h4>Эксплуатация</h4>
+				    		<ul>
+				    			<li>Убедившись в герметичности дымового канала и наличии тяги, можно приступать к растопке.</li>
+				    			<li>Установите оба регулятора в открытое положение и начинайте топить печь бумагой и щепками.</li>
+				    			<li>Затем заполняете нижнюю камеру основным топливом и ждете, когда оно разогреется. </li>
+				    			<li>Через 15-20 минут необходимо закрыть регулятор-газификатор на 45 градусов, для перевода в режим газификации. Именно в этом режимеотопительные печиобладают наибольшим КПД и только в таком положении разрешена эксплуатация. </li>
+				    			<li>Прежде, чем  открыть дверцу работающей печи и подложить топливо, откройте обе заслонки и подождите 5 минут, проведя закладку, снова закройте заслонки.</li>
+				    			<li>Чтобы погасить печь, установите регулятор-газификатор в открытое положение, а регулятор мощности — в закрытое.</li>
+				    			<li>Как и любые отопительные устройства, используемые в качестве дополнительного источника тепла, печи «Буран» должны эксплуатироваться строго в соответствии с инструкцией.</li>
+				    		</ul>
+				    	</div> <!-- schema-content -->
+				    </div> <!-- tab-pane -->
+				  </div> <!-- tab-content -->
+				</div>
+				<!-- /.col-lg-9 -->
+				<div class="col-lg-3">
+					<div class="stocks">
+						<div class="stock">
+							<img src="images/product/stock.png" class="img-fluid">
+						</div>
+						<!-- /.stock -->
+					</div>
+					<!-- /.stocks -->
+				</div>
+				<!-- /.col-lg-3 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /#product -->
+
+	<section id="preview">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="preview-header">Товары для установки</h2>
+				</div>
+			</div>
+			<!-- /.row -->
+			<div class="row no-gutters">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/installation-good-1.png">
+						</a>
+						<h3 class="item-header">Сушка (верхняя решетка) для подставки "Новая" под АОТ-14 тип 02</h3>
+						<p class="price">1 000 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">+ В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/installation-good-2.png">
+						</a>
+						<h3 class="item-header">Крепёжный кронштейн для боковых экранов 1 шт</h3>
+						<p class="price">70 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">+ В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/installation-good-3.png">
+						</a>
+						<h3 class="item-header">Сушка сетка верхняя тип 00</h3>
+						<p class="price">450 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">+ В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/installation-good-4.png">
+						</a>
+						<h3 class="item-header">Крепёжный кронштейн для боковых экранов 1 шт</h3>
+						<p class="price">70 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /# preview -->
+
+	<section id="preview">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="preview-header">Похожие товары</h2>
+				</div>
+			</div>
+			<!-- /.row -->
+			<div class="row no-gutters">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/similar-product-1.png">
+						</a>
+						<h3 class="item-header">Печь дачная «Буран»</h3>
+						<p class="short-descr">Объем помещения до 80 м3</p>
+						<div class="price-content">
+							<p class="price">5 350 Р</p>
+						</div>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/similar-product-2.png">
+						</a>
+						<h3 class="item-header">Печь буржуйка «Буран»</h3>
+						<p class="short-descr">Объем помещения до 100 м3</p>
+						<div class="price-content">
+							<p class="price">16 200 Р</p>
+							<p class="old-price">17 300 Р</p>
+							<span class="economy">-900 Р</span>
+						</div>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/similar-product-3.png">
+						</a>
+						<h3 class="item-header">Печь дачная «Буран»</h3>
+						<p class="short-descr">Объем помещения до 70 м3</p>
+						<p class="price">8 000 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="preview-item">
+						<a href="/product.html">
+							<img src="images/product/similar-product-4.png">
+						</a>
+						<h3 class="item-header">Печь буржуйка «Буран» со стеклом</h3>
+						<p class="short-descr">Объем помещения до 80 м3</p>
+						<p class="price">5 350 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
+						</div>
+					</div>
+					<!-- /.preview-item -->
+				</div>
+				<!-- /.col-lg-3 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /# preview -->
+
+		<footer id="footer">
+		    <div class="container-fluid">
+		        <div class="row">
+		            <div class="col-lg-3">
+		                <div class="footer-logo">
+		                    <img src="images/logo_white-text.svg">
+		                </div>
+		            </div>
+		            <div class="col-lg-3">
+		                <div class="footer-list">
+		                    <ul>
+		                        <li><a href="#">Каталог</a></li>
+		                        <li><a href="#">О компании</a></li>
+		                        <li><a href="#">Доставка и оплата</a></li>
+		                        <li><a href="#">Где купить</a></li>
+		                        <li><a href="#">Правовая информация</a></li>
+		                        <li><a href="#">Контакты</a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		            <div class="col-lg-3">
+		                <div class="footer-contacts">
+		                    <ul>
+		                        <li>+7 (985) 170 98 02</li>
+		                        <li>buran-pechi@mail.ru</li>
+		                        <li>Москва, Алтуфьевское ш., 53, стр. 2</li>
+		                        <li>Пн-пт, 9:00-17:00</li>
+		                    </ul>
+		                </div>
+		            </div>
+		            <div class="col-lg-3">
+		                <div class="footer-copyright">
+		                    <p>&copy;&nbsp;&nbsp;&nbsp;ООО Лаотерм 2018</p>
+		                </div>
+		            </div>
+		        </div>
+		        <!-- /.row -->
+		    </div>
+		    <!-- /.container-fluid -->
+		</footer>
+		<!-- /#footer -->
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts/main.min.js"></script>
+
+	</body>
+	</html>

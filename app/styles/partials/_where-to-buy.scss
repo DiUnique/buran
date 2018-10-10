@@ -1,0 +1,130 @@
+#where-to-buy {
+	.row {
+		padding-bottom: rem(30);
+	}
+
+	.letter {
+		width: 70px;
+		background-color: $red;
+		color: #fff;
+		font-family: $rubik;
+		font-size: rem(26);
+		line-height: rem(31);
+		padding-left: rem(5);
+		margin-bottom: rem(13);
+	}
+
+	.where-to-buy-item {
+		ul {
+
+			li {
+				padding-bottom: rem(10);
+			}
+		}
+	}
+
+	a {
+		color: #000;
+
+		&:hover {
+			color: $red;
+		}
+	}
+} // where-to-buy
+
+#where-to-buy-city {
+	padding-bottom: rem(90);
+	h1 {
+		display: inline-block;
+		padding-bottom: rem(32);
+	}
+
+	.to-map {
+		display: inline;
+		border-bottom: 1px dotted #2D9CDB;
+		font-size: rem(18);
+		line-height: rem(21);
+		margin-left: rem(70);
+		padding-bottom: 3px;
+
+		&:hover {
+			border-bottom: none;
+		}
+	}
+
+	.where-to-buy-city-items {
+
+		.where-to-buy-city-item {
+			padding-bottom: rem(50);
+
+			.title {
+				color: $red;
+				font-family: $rubik;
+				font-weight: 500;
+				font-size: rem(24);
+				line-height: rem(28);
+				padding-bottom: rem(24);
+			} // title
+
+			.contacts {
+
+				.address,
+				.phones,
+				.web {
+					padding-bottom: rem(15);
+
+					ul {
+						position: relative;
+						padding-left: 30px;
+
+						&:before {
+							height: 20px;
+							width: 20px;
+							position: absolute;
+							left: -5px;
+							top: 2px;
+						}
+					}
+				}
+
+				.address {
+
+					ul {
+
+						&:before {
+							content: '';
+							background: url(../images/where-to-buy/mark.svg) no-repeat top center;
+						}
+
+						li {
+							padding-bottom: 10px;
+						}
+					}
+				} // address
+
+				.phones {
+
+					ul {
+
+						&:before {
+							content: '';
+							background: url(../images/where-to-buy/phone.svg) no-repeat top center;
+						}
+					}
+				} // phones
+
+				.web {
+
+					ul {
+
+						&:before {
+							content: '';
+							background: url(../images/where-to-buy/www.svg) no-repeat top center;
+						}
+					}
+
+				} // web
+			} // contacts
+		} // where-to-buy-city-item
+	} // where-to-buy-city-items
+} // where-to-buy-city

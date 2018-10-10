@@ -1,5 +1,6 @@
 #block-2 {
 	position: relative;
+	overflow: hidden;
 
 	.yellow {
 		height: 100%;
@@ -138,6 +139,7 @@
 
 					&:hover {
 						text-decoration: none;
+						background-color: $yellow;
 					}
 				}
 			}

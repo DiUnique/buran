@@ -56,6 +56,10 @@
 			border: unset;
 			border-bottom: 3px solid $yellow;
 			padding-top: rem(10);
+			&:hover {
+				border-bottom: unset;
+				background-color: none;
+			}
 		}
 	}
 } // #block-5

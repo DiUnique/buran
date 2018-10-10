@@ -1,0 +1,62 @@
+#catalog {
+	padding-bottom: rem(75);
+
+	.catalog-header {
+		padding-bottom: rem(32);
+	}
+
+	.catalog-item {
+		border: 1px solid #E0E0E0;
+		text-align: center;
+		min-height: 550px;
+		position: relative;
+		padding-top: rem(17);
+		padding-right: rem(16);
+		padding-bottom: rem(32);
+		padding-left: rem(17);
+
+		.item-header {
+			padding-bottom: rem(7);
+			min-height: 60px;
+			font-size: rem(18);
+			line-height: rem(26);
+			font-weight: 700;
+		}
+
+		.short-descr {
+			padding-bottom: rem(40);
+			line-height: rem(23);
+		}
+
+		.price {
+			font-family: $rubik;
+			font-weight: 900;
+			font-size: rem(24);
+			line-height: rem(28);
+			padding-bottom: rem(20);
+
+		}
+
+		.button-wrapper {
+			position: absolute;
+			bottom: 0;
+			bottom: 32px;
+
+			.button.in-cart {
+				border: unset;
+				background-color: $yellow;
+			}
+
+			.button {
+				color: #000;
+				display: inline-block;
+				font-size: rem(14);
+				line-height: rem(17);
+				padding: 11px 19px 12px;
+				margin-bottom: rem(16);
+				width: rem(160);
+				text-align: center;
+			}
+		}
+	}
+}

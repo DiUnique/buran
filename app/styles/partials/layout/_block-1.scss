@@ -2,11 +2,16 @@
 
 	.first {
 		.logo {
+			display: flex;
+			justify-content: center;
 			padding-top: 3.125rem;
 			padding-left: 4.4375rem;
 		}
 
 		.contacts {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
 
 			.phone {
 				font-family: $roboto;
@@ -32,6 +37,9 @@
 					padding-bottom: .375rem;
 				 	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					&:hover {
+						color: #000;
+					}
 				}
 
 				a:hover {
@@ -41,6 +49,8 @@
 		} // contacts
 
 		.block-1_navigation {
+			display: flex;
+			justify-content: center;
 			font-family: $rubik;
 			padding-left: 5.3125rem;
 
@@ -58,6 +68,9 @@
 						text-transform: uppercase;
 						color: #333333;
 						line-height: 1.0625rem;
+						&:hover {
+							color: $red;
+						}
 					}
 				}
 			}
@@ -65,12 +78,25 @@
 
 		.shopping-cart {
 			display: flex;
+			justify-content: center;
 			font-family: $roboto;
 			padding-top: rem(30);
 
 			.cart {
 				padding-left: 5.3125rem;
-			}
+
+				a {
+
+					svg {
+						&:hover #circle {
+							fill: rgba(255,170,47,.4);
+						}
+						&:hover path {
+							fill: rgba(0,0,0,.4)
+						}
+					}
+				}
+			} // cart
 
 			.cart_descr {
 				padding-left: 0.75rem;
@@ -91,13 +117,26 @@
 		 	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-		.slider {
+		.carousel {
 			height: rem(530);
-			background: url(../images/block-1/slider.jpg) no-repeat center;
-			background-size: cover;
 
-			& > div {
-				background-color: rgba(0,0,0,0.45);
+			.carousel-indicators {
+				right: 5%;
+				bottom: 5%;
+				left: auto;
+				margin: 0;
+				flex-direction: column;
+
+				 li {
+				  width: 10px;
+				  height: 10px;
+				  border-radius: 100%;
+				  margin-top: rem(20);
+				}
+			}
+
+			.carousel-inner {
+				max-height: 100%;
 			}
 		}
 
@@ -113,6 +152,7 @@
 				padding-right: rem(33);
 				padding-bottom: rem(26);
 				padding-left: rem(26);
+
 				h2 {
 					font-weight: 500;
 					font-size: rem(20);
@@ -132,15 +172,33 @@
 
 			.underslider-catalog {
 				background-color: $red;
-				color: #fff;
+				&:hover {
+						background-color: lighten($red, 10%);
+					}
+
+				a {
+					color: #fff;
+				}
 			}
 
 			.underslider-about {
-
+				&:hover {
+					background-color: #E0E0E0;
+				}
+				a {
+					color: #000;
+				}
 			}
 
 			.underslider-pechi {
 				background-color: $yellow;
+				&:hover {
+					background-color: lighten($yellow, 10%);
+				}
+
+				a {
+					color: #000;
+				}
 			}
 
 			p {

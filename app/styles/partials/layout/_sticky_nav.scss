@@ -23,6 +23,21 @@
 		 }
 	}
 
+	.cart {
+
+		a {
+
+			svg {
+				&:hover #circle {
+					fill: rgba(255,170,47,.4);
+				}
+				&:hover path {
+					fill: rgba(0,0,0,.4)
+				}
+			}
+		}
+	} // cart
+
 	.contacts {
 
 		.phone {
@@ -45,6 +60,9 @@
 				padding-bottom: .375rem;
 			 	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+				&:hover {
+					color: #000;
+				}
 			}
 
 			a:hover {

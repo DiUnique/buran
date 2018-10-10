@@ -6,6 +6,8 @@
 	.footer-logo {
 		width: rem(181);
 		height: rem(130);
+		margin-left: auto;
+		margin-right: auto;
 
 		img {
 			width: 100%;
@@ -23,6 +25,14 @@
 				line-height: rem(21);
 				text-transform: uppercase;
 				padding-bottom: rem(15);
+
+				a {
+					color: #fff;
+					&:hover {
+						color: darken(#fff, 25%);
+						text-decoration: none;
+					}
+				}
 			}
 		}
 	} // .footer-list

@@ -1,0 +1,279 @@
+#product {
+
+	.short-descr {
+
+		.product-header {
+			padding-bottom: rem(12);
+		}
+
+		.product-sku {
+			padding-bottom: rem(25);
+
+			p {
+				color: #BDBDBD;
+				font-size: rem(12);
+				line-height: rem(14);
+			}
+		} // product-sku
+
+		.price-quantity {
+			padding-bottom: rem(30);
+			display: flex;
+
+			.price {
+				font-family: $rubik;
+				font-size: rem(32);
+				line-height: rem(38);
+				font-weight: 900;
+				margin-right: 53px;
+			}
+
+			.quantity {
+				border: 1px solid #BDBDBD;
+				text-align: center;
+				width: 160px;
+				height: 40px;
+				display: flex;
+				justify-content: space-around;
+
+				.minus {
+					color: $red;
+					line-height: rem(40);
+					font-size: rem(31);
+					padding-right: rem(39);
+					padding-left: rem(20);
+					&:hover {
+						cursor: pointer;
+					}
+				}
+
+				.quant {
+					font-size: rem(18);
+					line-height: rem(40);
+				}
+
+				.plus {
+					color: $red;
+					line-height: rem(40);
+					font-size: rem(31);
+					padding-left: rem(39);
+					padding-right: rem(20);
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+
+		} // price-quantity
+
+		.button-wrapper {
+			padding-bottom: rem(42);
+
+			.button {
+				color: #000;
+				display: inline-block;
+				width: 160px;
+				height: 40px;
+				font-size: rem(14);
+				line-height: rem(14);
+				padding-top: rem(12);
+				padding-right: rem(19);
+				padding-bottom: rem(12);
+				padding-left: rem(19);
+				text-align: center;
+			}
+
+			.button.in-cart {
+				background-color: $yellow;
+				margin-right: rem(28);
+			}
+
+		} // button-wrapper
+
+		.product-delivery {
+			padding-bottom: rem(24);
+
+			p {
+				line-height: rem(23);
+			}
+		} // product-delivery
+
+		.button.to-descr {
+			border: unset;
+			border-bottom: 3px solid $yellow;
+			color: #000;
+			text-transform: none;
+			padding: 0 0 3px 0;
+
+			&:hover {
+				background: none;
+				border: unset;
+			}
+		}
+
+	} // short-descr
+
+	.nav-pills {
+		border-bottom: 1px solid #828282;
+		justify-content: space-between;
+
+		.nav-item {
+
+			a.nav-link {
+				font-family: $rubik;
+				font-weight: 500;
+				font-size: rem(18);
+				line-height: rem(26);
+				background: none;
+				color: #828282;
+				&.active {
+					border-bottom: 3px solid $red;
+				}
+			}
+		}
+	} // nav-pills
+
+	.tab-content {
+
+		.tab-pane {
+			.tab-pane-header {
+				font-family: $rubik;
+				font-weight: 600;
+				font-size: rem(36);
+				line-height: rem(43);
+				padding-bottom: rem(42);
+				padding-top: rem(57);
+			}
+
+			p {
+				font-family: $roboto;
+				line-height: rem(23);
+				font-size: rem(16);
+				padding-bottom: rem(20);
+			}
+
+			.short-descr {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	} // tab-content
+
+	.features-content {
+		text-align: justify;
+		padding-bottom: rem(90);
+
+		h3 {
+			padding-top: rem(33);
+			padding-bottom: rem(25);
+		}
+
+		h4 {
+			padding-bottom: rem(25);
+		}
+
+		p {
+			line-height: rem(23);
+		}
+
+		table {
+			font-family: $roboto;
+			margin-bottom: rem(25);
+			width: 100%;
+
+			tr {
+				border-bottom: 1px solid #828282;
+
+
+				td {
+					padding-top: rem(10);
+					padding-bottom: rem(10);
+					&:first-child {
+						color: #828282;
+					}
+				}
+			}
+		}
+
+		ul {
+			padding-top: rem(15);
+			padding-bottom: rem(25);
+
+			li {
+				list-style-image: url('../images/product/ellipse.svg');
+				margin-left: rem(15);
+				padding-bottom: rem(10);
+			}
+		}
+
+	} // features-content
+
+	.image-gallery {
+		margin: 0 auto;
+		display: table;
+		padding-bottom: rem(90);
+
+		.primary,
+		.thumbnails {
+		  display: table-cell;
+		}
+
+		.thumbnails {
+		  width: 300px;
+		}
+
+		.primary {
+		  width: 600px;
+		  height: 400px;
+		  background-color: #fff;
+		  background-size: cover;
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		}
+
+		.thumbnail:hover .thumbnail-image,
+		.selected .thumbnail-image {
+		  border: 1px solid $red;
+		}
+
+		.thumbnail-image {
+		  width: 100px;
+		  height: 100px;
+		  margin: 20px auto;
+		  background-size: cover;
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  border: 4px solid transparent;
+		}
+	} // image-gallery
+
+	.equipment-content {
+		ul {
+			padding-top: rem(15);
+			padding-bottom: rem(25);
+
+			li {
+				list-style-image: url('../images/product/ellipse.svg');
+				margin-left: rem(15);
+				padding-bottom: rem(10);
+				padding-left: rem(5);
+			}
+		}
+	} // equipment
+
+	.schema-content {
+		ul {
+			padding-top: rem(15);
+			padding-bottom: rem(25);
+
+			li {
+				list-style-image: url('../images/product/ellipse.svg');
+				margin-left: rem(15);
+				padding-bottom: rem(10);
+				padding-left: rem(5);
+			}
+		}
+	} // schema-content
+
+} // product
