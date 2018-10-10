@@ -39,17 +39,29 @@
 
 		.button-wrapper {
 			position: absolute;
-			bottom: 0;
-			bottom: 32px;
+			bottom: 3%;
+			@media (max-width: 576px) {
+				align-items: center;
+				width: 100%;
+			}
 
 			.button.in-cart {
 				border: unset;
 				background-color: $yellow;
+				@media (max-width: 576px) {
+					margin-left: auto;
+					margin-right: auto;
+				}
 			}
 
 			.button {
 				color: #000;
 				display: inline-block;
+				@media (max-width: 576px) {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
 				font-size: rem(14);
 				line-height: rem(17);
 				padding: 11px 19px 12px;

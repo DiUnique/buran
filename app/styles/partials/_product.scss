@@ -19,6 +19,7 @@
 		.price-quantity {
 			padding-bottom: rem(30);
 			display: flex;
+			justify-content: space-between;
 
 			.price {
 				font-family: $rubik;
@@ -26,6 +27,10 @@
 				line-height: rem(38);
 				font-weight: 900;
 				margin-right: 53px;
+
+				@media (max-width: 576px) {
+					font-size: rem(24);
+				}
 			}
 
 			.quantity {
@@ -68,6 +73,7 @@
 
 		.button-wrapper {
 			padding-bottom: rem(42);
+			display: flex;
 
 			.button {
 				color: #000;
@@ -81,6 +87,10 @@
 				padding-bottom: rem(12);
 				padding-left: rem(19);
 				text-align: center;
+
+				@media (max-width: 576px) {
+					font-size: rem(12);
+				}
 			}
 
 			.button.in-cart {
@@ -211,16 +221,20 @@
 
 	.image-gallery {
 		margin: 0 auto;
-		display: table;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		padding-bottom: rem(90);
 
 		.primary,
 		.thumbnails {
-		  display: table-cell;
+		  display: flex;
 		}
 
 		.thumbnails {
-		  width: 300px;
+		  a {
+		  	margin: 10px;
+		  }
 		}
 
 		.primary {
@@ -275,5 +289,12 @@
 			}
 		}
 	} // schema-content
+
+	.stocks {
+
+		.stock {
+			text-align: center;
+		}
+	} // stocks
 
 } // product

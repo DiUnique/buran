@@ -22,12 +22,13 @@
 			li {
 				font-weight: 500;
 				font-size: rem(18);
-				line-height: rem(21);
+				line-height: rem(30);
 				text-transform: uppercase;
 				padding-bottom: rem(15);
 
 				a {
 					color: #fff;
+					letter-spacing: 1px;
 					&:hover {
 						color: darken(#fff, 25%);
 						text-decoration: none;
@@ -52,4 +53,20 @@
 			line-height: rem(19);
 		}
 	} // .footer-copyright
-}
+
+	@media screen and (max-width: 768px) {
+		text-align: center;
+
+		.footer-list {
+
+			ul {
+				padding-top: rem(20);
+			}
+		} // footer-list
+
+		.footer-copyright {
+			padding-bottom: rem(20);
+		} // footer-copyright
+	}
+
+} // #footer

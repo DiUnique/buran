@@ -1,6 +1,10 @@
 #block-1 {
+	.container-fluid {
+		padding: 0;
+	}
 
 	.first {
+		max-height: 100%;
 		.logo {
 			display: flex;
 			justify-content: center;
@@ -52,6 +56,7 @@
 			display: flex;
 			justify-content: center;
 			font-family: $rubik;
+			padding-top: rem(10);
 			padding-left: 5.3125rem;
 
 			.block-1_navigation-list {
@@ -59,7 +64,7 @@
 				padding: 0;
 
 				li {
-					padding-top: 0.9375rem;
+					padding-top: rem(10);
 					 -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
@@ -117,9 +122,11 @@
 		 	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-		.carousel {
-			height: rem(530);
+		.slider {
+			height: 81.53%;
+		}
 
+		.carousel {
 			.carousel-indicators {
 				right: 5%;
 				bottom: 5%;
@@ -137,20 +144,63 @@
 
 			.carousel-inner {
 				max-height: 100%;
-			}
-		}
+
+				.carousel-item {
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				} // carousel-item
+
+				.overlay {
+					position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    z-index: 2;
+			    background-color: #080d15;
+			    opacity: .35;
+				}
+
+				.carousel-caption {
+					right: auto;
+					left: 16%;
+					bottom: 50px;
+					text-align: left;
+
+					h5 {
+						font-family: $rubik;
+						font-weight: 700;
+						font-size: rem(48);
+						line-height: rem(57);
+						text-transform: uppercase;
+					}
+
+					p {
+						font-family: $rubik;
+						font-weight: 500;
+						font-size: rem(32);
+						line-height: rem(38);
+						text-transform: uppercase;
+						padding-bottom: rem(38);
+					}
+				}
+
+			} // carousel-inner
+		} // carousel
 
 		.underslider {
+			 height: 18.46%;
 
 			.underslider-catalog,
 			.underslider-about,
 			.underslider-pechi {
+			 &:hover {
 			 	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-				height: rem(120);
+			 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+			 }
+				height: 100%;
 				padding-top: rem(28);
-				padding-right: rem(33);
-				padding-bottom: rem(26);
 				padding-left: rem(26);
 
 				h2 {
@@ -159,7 +209,6 @@
 					line-height: rem(24);
 					padding-bottom: rem(15);
 					text-transform: uppercase;
-					padding-bottom: rem(25);
 					margin-bottom: 0;
 				}
 
@@ -208,12 +257,10 @@
 	} // second
 
 	.third {
-		 	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 		.pech {
 			background: url(../images/block-1/pech.png) no-repeat center;
-			height: 16.5rem;
+			height: 40.61%;
 			position: relative;
 
 			.overlay {
@@ -233,7 +280,6 @@
 			.pech-description {
 				color: #fff;
 				padding-top: rem(42);
-				padding-right: rem(144);
 				padding-bottom: rem(52);
 				padding-left: rem(30);
 			}
@@ -242,23 +288,21 @@
 		.delivery {
 			background-color: $red;
 			color: #fff;
-			height: 12.0625rem;
+			height: 29.69%;
 
 			.delivery-description {
 				padding-top: rem(42);
-				padding-right: rem(144);
 				padding-bottom: rem(52);
 				padding-left: rem(30);
 			}
 		} // delivery
 
 		.opening-hours {
-			height: 12.0625rem;
+			height: 29.7%;
 			color: #000;
 
 			.opening-hours-description {
 				padding-top: rem(42);
-				padding-right: rem(144);
 				padding-bottom: rem(52);
 				padding-left: rem(30);
 			}
@@ -284,5 +328,11 @@
 			}
 		}
 	} // third
+
+	@media screen and (max-width: 992px) {
+		.second .slider {
+			height: auto;
+		}
+	}
 
 } // block-1
