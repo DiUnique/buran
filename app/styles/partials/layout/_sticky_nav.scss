@@ -17,6 +17,18 @@ nav#sticky-nav {
 
 		 .navbar-nav {
 
+			.catalog-link {
+				@media (min-width: 992px) {
+					display: none;
+				}
+			}
+
+			.catalog-link-desctop {
+				@media (max-width: 992px) {
+					display: none;
+				}
+			}
+
 		 	.nav-item {
 		 		position: relative;
 
@@ -100,6 +112,13 @@ nav#sticky-nav {
 	}
 
 	// Dropdown menu
+
+	.dropdown-menu {
+
+		li {
+			padding-left: rem(10);
+		}
+	}
 
 	.dropdown-submenu {
 	    position: relative;
