@@ -122,11 +122,8 @@
 		 	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-		.slider {
-			height: 81.53%;
-		}
-
 		.carousel {
+			max-height: 100%;
 			.carousel-indicators {
 				right: 5%;
 				bottom: 5%;
@@ -174,6 +171,9 @@
 						font-size: rem(48);
 						line-height: rem(57);
 						text-transform: uppercase;
+						@media (max-width: 576px) {
+							font-size: 36px;
+						}
 					}
 
 					p {
@@ -210,14 +210,24 @@
 					padding-bottom: rem(15);
 					text-transform: uppercase;
 					margin-bottom: 0;
+					@media (max-width: 992px) {
+						font-size: rem(16);
+						line-height: rem(19);
+					}
 				}
 
 				p {
 					font-size: rem(14);
 					line-height: rem(16);
 					padding-bottom: rem(15);
+					@media (max-width: 992px) {
+						font-size: rem(12);
+						line-height: rem(14);
+					}
 				}
-			}
+
+
+			} // underslider
 
 			.underslider-catalog {
 				background-color: $red;
@@ -240,6 +250,9 @@
 			}
 
 			.underslider-pechi {
+				@media (max-width: 576px) {
+					text-align: center;
+				}
 				background-color: $yellow;
 				&:hover {
 					background-color: lighten($yellow, 10%);
@@ -258,9 +271,14 @@
 
 	.third {
 
+		.right-column {
+			height: 100%;
+		}
+
 		.pech {
 			background: url(../images/block-1/pech.png) no-repeat center;
-			height: 40.61%;
+			background-size: cover;
+			height: 100%;
 			position: relative;
 
 			.overlay {
@@ -280,31 +298,89 @@
 			.pech-description {
 				color: #fff;
 				padding-top: rem(42);
-				padding-bottom: rem(52);
 				padding-left: rem(30);
+				@media (max-width: 992px) {
+					padding-top: rem(32);
+					padding-left: rem(30);
+				}
+
+				h2 {
+					@media (max-width: 992px) {
+						font-size: rem(16);
+						line-height: rem(19);
+						padding-bottom: rem(5);
+					}
+				}
+
+				p {
+					@media (max-width: 992px) {
+						font-size: rem(12);
+						line-height: rem(21);
+					}
+				}
 			}
 		} // pech
 
 		.delivery {
 			background-color: $red;
 			color: #fff;
-			height: 29.69%;
+			height: 100%;
 
 			.delivery-description {
 				padding-top: rem(42);
-				padding-bottom: rem(52);
 				padding-left: rem(30);
+				@media (max-width: 992px) {
+					padding-top: rem(32);
+					padding-left: rem(30);
+				}
+
+				h2 {
+					@media (max-width: 992px) {
+						font-size: rem(16);
+						line-height: rem(19);
+						padding-bottom: rem(5);
+					}
+				}
+
+				p {
+					padding-bottom: 10px;
+					@media (max-width: 992px) {
+						font-size: rem(12);
+						line-height: rem(21);
+					}
+				}
 			}
 		} // delivery
 
 		.opening-hours {
-			height: 29.7%;
+			height: 100%;
 			color: #000;
+			@media (max-width: 576px) {
+				text-align: center;
+			}
 
 			.opening-hours-description {
 				padding-top: rem(42);
-				padding-bottom: rem(52);
 				padding-left: rem(30);
+				@media (max-width: 992px) {
+					padding-top: rem(32);
+					padding-left: rem(30);
+				}
+
+				h2 {
+					@media (max-width: 992px) {
+						font-size: rem(16);
+						line-height: rem(19);
+						padding-bottom: rem(5);
+					}
+				}
+
+				p {
+					@media (max-width: 992px) {
+						font-size: rem(12);
+						line-height: rem(21);
+					}
+				}
 			}
 		} // opening-hours
 

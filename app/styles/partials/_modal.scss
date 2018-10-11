@@ -1,0 +1,52 @@
+#ModalCenter {
+
+	.form {
+
+		.form-label {
+			font-size: 12px;
+			color: #5e9bfc;
+			margin: 0;
+			display: block;
+			opacity: 1;
+			-webkit-transition: .333s ease top, .333s ease opacity;
+			transition: .333s ease top, .333s ease opacity;
+		}
+		.form-control {
+			border-radius: 0;
+			border-color: #ccc;
+		   	border-width: 0 0 2px 0;
+		   	border-style: none none solid none;
+		   	box-shadow: none;
+		}
+		.form-control:focus {
+			box-shadow: none;
+			border-color: $yellow;
+		}
+
+		.button-wrapper {
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 20px;
+
+
+			.button {
+				background-color: transparent;
+				&:hover {
+					background-color: $yellow;
+				}
+			}
+		}
+
+		.form-check {
+			padding-top: rem(40);
+			padding-bottom: rem(40);
+
+			.form-check-label {
+				p {
+					font-size: rem(12);
+					line-height: rem(17);
+				}
+			}
+		}
+	}
+} // ModalCenter

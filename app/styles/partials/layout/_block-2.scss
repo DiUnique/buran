@@ -4,7 +4,7 @@
 
 	.yellow {
 		height: 100%;
-		width: rem(583);
+		width: 100%;
 		position: absolute;
 		right: rem(50);
 		background-color: $yellow;
@@ -49,6 +49,10 @@
 			line-height: rem(43);
 			padding-bottom: rem(42);
 			padding-top: rem(57);
+			@media (max-width: 992px) {
+				font-size: rem(34);
+				line-height: rem(40);
+			}
 		}
 
 		p {
@@ -66,31 +70,36 @@
 	}
 } // tab-content
 
+
 .image-wrapper {
 	color: #fff;
-	width: rem(741);
-	height: rem(557);
 	position: relative;
-
-	.image {
-		width: 100%;
-		height: 100%;
+	@media (max-width: 992px) {
+		padding-top: 70px;
 	}
+
+	@media (max-width: 576px) {
+		display: none;
+	}
+	width: 100%;
+	height: 100%;
 
 	.black {
 		font-family: $roboto;
 		display: flex;
 		position: absolute;
 		background-color: #000;
-		width: rem(556);
-		height: rem(115);
+		@media (max-width: 576px) {
+			background-color: rgba(0,0,0,.4);
+		}
 		bottom: 0;
 		right: 0;
+		width: 90%;
 
 		.black-1 {
 			width: 50%;
 			padding-top: rem(19);
-			padding-bottom: rem(19);
+			// padding-bottom: rem(19);
 			padding-left: rem(15.74);
 
 			h3 {

@@ -1,5 +1,8 @@
 #block-4 {
 	padding-top: rem(197);
+	@media (max-width: 992px) {
+		padding-top: rem(70);
+	}
 	padding-bottom: rem(30);
 	position: relative;
 

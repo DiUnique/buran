@@ -19,7 +19,6 @@
 		.price-quantity {
 			padding-bottom: rem(30);
 			display: flex;
-			justify-content: space-between;
 
 			.price {
 				font-family: $rubik;
@@ -29,7 +28,7 @@
 				margin-right: 53px;
 
 				@media (max-width: 576px) {
-					font-size: rem(24);
+					font-size: rem(22);
 				}
 			}
 
@@ -40,6 +39,7 @@
 				height: 40px;
 				display: flex;
 				justify-content: space-around;
+				margin-left: rem(35);
 
 				.minus {
 					color: $red;
@@ -78,7 +78,7 @@
 			.button {
 				color: #000;
 				display: inline-block;
-				width: 160px;
+				width: 200px;
 				height: 40px;
 				font-size: rem(14);
 				line-height: rem(14);

@@ -67,10 +67,18 @@
 			bottom: 0;
 			bottom: 32px;
 			text-align: center;
+			@media (max-width: 576px) {
+				width: 100%;
+			}
 
 			.button.in-cart {
 				border: unset;
 				background-color: $yellow;
+				@media (max-width: 576px) {
+					display: block;
+					margin: 0 auto 10px;
+					margin-bottom: 10px;
+				}
 			}
 
 			.button {

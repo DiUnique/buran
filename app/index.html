@@ -33,14 +33,14 @@
     <section id="block-1">
         <div class="container-fluid">
             <div class="row no-gutters">
-                <div class="col-12 col-lg-3 d-none d-xl-block first">
+                <div class="col-12 col-md-3 col-lg-3 d-none d-lg-block first">
                     <div class="logo">
                         <img src="images/logo.svg" alt="logo">
                     </div>
                     <!-- /.logo -->
                     <div class="contacts">
                         <p class="phone">+7 (985) 170-98-02</p>
-                        <p class="advice"><a href="#">Получить консультацию</a></p>
+                        <p class="advice"><a href="#" data-toggle="modal" data-target="#ModalCenter">Получить консультацию</a></p>
                     </div>
                     <!-- /.contacts -->
                     <div class="block-1_navigation">
@@ -78,7 +78,7 @@
                     <!-- /.shopping-cart -->
                 </div>
                 <!-- /.col-md-4 -->
-                <div class="col-12 col-lg-6 second">
+                <div class="col-12  col-md-9 col-lg-6 second">
                     <div class="row no-gutters slider">
                         <div class="col-12">
                             <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -90,7 +90,7 @@
                               <div class="carousel-inner">
                                 <div class="carousel-item active">
                                   <div class="overlay"></div>
-                                  <img class="d-block w-100 img-fluid" src="images/block-1/slider.jpg" alt="First slide">
+                                  <img class="d-block" src="images/block-1/slider.jpg" alt="First slide">
                                   <div class="carousel-caption">
                                       <h5>ПЕЧь-мангал</h5>
                                       <p>от 9 800 Р</p>
@@ -99,7 +99,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="overlay"></div>
-                                  <img class="d-block w-100 img-fluid" src="images/block-1/slider.jpg" alt="Second slide">
+                                  <img class="d-block" src="images/block-1/slider.jpg" alt="Second slide">
                                   <div class="carousel-caption">
                                       <h5>ПЕЧь-мангал</h5>
                                       <p>от 9 800 Р</p>
@@ -108,7 +108,7 @@
                                 </div>
                                 <div class="carousel-item">
                                   <div class="overlay"></div>
-                                  <img class="d-block w-100 img-fluid" src="images/block-1/slider.jpg" alt="Third slide">
+                                  <img class="d-block" src="images/block-1/slider.jpg" alt="Third slide">
                                   <div class="carousel-caption">
                                       <h5>ПЕЧь-мангал</h5>
                                       <p>от 9 800 Р</p>
@@ -130,7 +130,7 @@
                     </div>
                     <!-- /.slider -->
                     <div class="row no-gutters underslider">
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4">
                             <div class="underslider-catalog">
                                 <a href="/catalog.html">
                                     <h2>Каталог</h2>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-12 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4">
                             <div class="underslider-about">
                                 <a href="#">
                                     <h2>О компании</h2>
@@ -148,7 +148,7 @@
                             </div>
                         </div>
                         <!-- /.col-md-4 -->
-                        <div class="col-12 col-lg-4">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
                             <div class="underslider-pechi">
                                 <a href="#">
                                     <h2>Печи буран</h2>
@@ -160,34 +160,42 @@
                     </div>
                     <!-- /.underslider-menu -->
                 </div><!-- /.second -->
-                <div class="col-12 col-lg-3 third">
-                    <div class="pech">
-                        <span class="overlay"></span>
-                        <div class="pech-description">
-                            <h2>ПЕЧЬ ДАЧНАЯ</h2>
-                            <p>до 12 часов работы <br>на одной закладке</p>
+                <div class="col-12 col-md-3 col-lg-3 third">
+                    <div class="row no-gutters right-column">
+                      <div class="col-6 col-md-12">
+                        <div class="pech">
+                            <span class="overlay"></span>
+                            <div class="pech-description">
+                                <h2>ПЕЧЬ ДАЧНАЯ</h2>
+                                <p>до 12 часов работы <br>на одной закладке</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- /.pech -->
-                    <div class="delivery">
-                        <div class="delivery-description">
-                            <h2>Доставка</h2>
-                            <p>от 1 до 3 дней по Москве 700 Р, <br>самовывоз бесплатно</p>
-                        </div>
-                    </div>
-                    <!-- /.delivery -->
-                    <div class="opening-hours">
-                        <div class="opening-hours-description">
-                            <h2>Режим работы</h2>
-                            <p>Пн.-пт. 9:00 – 17:00</p>
-                            <p>Заказы в интернет-магазине</p>
-                            <p>принимаем круглосуточно</p>
-                        </div>
-                    </div>
-                    <!-- /.opening-hours -->
-                </div>
-                <!-- /.third -->
+                        <!-- /.pech -->
+                      </div>
 
+                      <div class="col-6 col-md-12">
+                        <div class="delivery">
+                            <div class="delivery-description">
+                                <h2>Доставка</h2>
+                                <p>от 1 до 3 дней по Москве 700 Р, <br>самовывоз бесплатно</p>
+                            </div>
+                        </div>
+                        <!-- /.delivery -->
+                      </div>
+                      <div class="col-12 col-md-12">
+                        <div class="opening-hours">
+                            <div class="opening-hours-description">
+                                <h2>Режим работы</h2>
+                                <p>Пн.-пт. 9:00 – 17:00</p>
+                                <p>Заказы в интернет-магазине</p>
+                                <p>принимаем круглосуточно</p>
+                            </div>
+                        </div>
+                        <!-- /.opening-hours -->
+                      </div>
+                    </div>
+                    <!-- /.third -->
+                  </div>
             </div>
             <!-- /.row -->
         </div>
@@ -203,7 +211,7 @@
         </button>
 
 
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <img src="images/buran.svg">
           </a>
 
@@ -216,13 +224,13 @@
                   <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Каталог <b class="caret"></b></a>
                   <ul class="dropdown-menu multi-level">
                       <li class="nav-item"><a class="nav-link" href="/catalog.html">Печи длительного горения</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Печи отопительные</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Банные печи</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Мангалы</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Дымоходы</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Аксессуары</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Товары для бани и сауны</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Сопутствующие товары</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product.html">Печи отопительные</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product.html">Банные печи</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product.html">Мангалы</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product.html">Дымоходы</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product.html">Аксессуары</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product.html">Товары для бани и сауны</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/product.html">Сопутствующие товары</a></li>
                   </ul>
               </li>
               <li class="nav-item">
@@ -252,10 +260,10 @@
           </div>
           <div class="contacts">
               <p class="phone">+7 (985) 170-98-02</p>
-              <p class="advice"><a href="#">Получить консультацию</a></p>
+              <p class="advice"><a href="#" data-toggle="modal" data-target="#ModalCenter">Получить консультацию</a></p>
           </div>
           <div class="contacts-mobile">
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#ModalCenter">
                 <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.5 1.8125C21.4951 1.8125 27.1875 7.50488 27.1875 14.5C27.1875 21.4951 21.4951 27.1875 14.5 27.1875C7.50488 27.1875 1.8125 21.4951 1.8125 14.5C1.8125 7.50488 7.50488 1.8125 14.5 1.8125ZM14.5 0C6.49243 0 0 6.49243 0 14.5C0 22.5076 6.49243 29 14.5 29C22.5076 29 29 22.5076 29 14.5C29 6.49243 22.5076 0 14.5 0ZM22.5837 19.3481L22.5022 19.1003C22.3111 18.5304 21.681 17.9356 21.1004 17.7763L18.9569 17.1904C18.3764 17.0329 17.548 17.2453 17.1215 17.6719L16.3462 18.4472C13.5283 17.6843 11.3176 15.4735 10.5565 12.6557L11.3317 11.8804C11.7566 11.4556 11.969 10.6272 11.8114 10.0449L11.2272 7.90137C11.0697 7.3208 10.4714 6.69067 9.90152 6.49951L9.65723 6.41806C9.0855 6.2269 8.26953 6.41982 7.84473 6.84644L6.68359 8.00757C6.47652 8.21289 6.34375 8.80229 6.34375 8.80411C6.30478 12.4893 7.74917 16.0382 10.3546 18.6454C12.953 21.2438 16.4896 22.6864 20.1623 22.6545C20.1818 22.6545 20.7889 22.5253 20.996 22.3182L22.1571 21.157C22.5819 20.734 22.773 19.918 22.5837 19.3481Z" fill="#CC2C11"/>
                 </svg>
@@ -285,7 +293,7 @@
                         <div class="tab-content" id="pills-tabContent">
                           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div class="row about">
-                                 <div class="col-md-6 about-description">
+                                 <div class="col-12 col-md-6 about-description">
                                     <h2 class="tab-pane-header">Тёплый дом круглый год без проблем и забот</h2>
                                  <p>Продукция, выпускаемая нашей компанией, присутствует на Российском рынке с 1993 года.</p>
                                  <p>Только наши печи производятся на основе высоких стандартов квалифицированными специалистами по оригинальным чертежам и на высокотехнологичном оборудовании.</p>
@@ -293,47 +301,47 @@
                                 <div class="col-md-6 about-preview">
                                     <div class="yellow"></div>
                                     <div class="image-wrapper">
-                                        <img class="image" src="images/block-2/block2-pech-about.png" class="img-fluid">
+                                        <img class="image img-fluid" src="images/block-2/block2-pech-about.png" class="img-fluid">
                                         <div class="black">
-                                            <div class="black-1">
-                                                <h3>Печь длительного горения БУРАН</h3>
-                                                <p>Объем отапливаемого помещения до 400 м3</p>
-                                            </div> <!-- .black-1 -->
-                                            <div class="black-2">
-                                                <p class="price">17 300 Р</p>
-                                                <div class="inCart">
-                                                    <a href="#" class="inCart">+ в корзину</a>
-                                                </div>
-                                            </div> <!-- .black-2 -->
-                                        </div> <!-- .black -->
+                                             <div class="black-1">
+                                                 <h3>Печь длительного горения БУРАН</h3>
+                                                 <p>Объем отапливаемого помещения до 400 м3</p>
+                                             </div> <!-- .black-1 -->
+                                             <div class="black-2">
+                                                 <p class="price">17 300 Р</p>
+                                                 <div class="inCart">
+                                                     <a href="#" class="inCart">+ в корзину</a>
+                                                 </div>
+                                             </div> <!-- .black-2 -->
+                                         </div> <!-- .black -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <div class="row">
-                                <div class="col-md-6 advantages">
+                                <div class="col-12 col-md-6 advantages">
                                     <h2 class="tab-pane-header">Мы — надежный производитель</h2>
                                     <div class="row advantages-description">
-                                        <div class="col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <div class="advantages-item">
                                                 <img src="images/block-2/advantages/day-25-on-daily-calendar-page.png">
                                                 <p>25 лет на рынке</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <div class="advantages-item">
                                                 <img src="images/block-2/advantages/first.png">
                                                 <p>Первые производители печей длительного горения в России</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <div class="advantages-item">
                                                 <img src="images/block-2/advantages/010-contract.png">
                                                 <p>Вся продукция сертифицирована</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-12 col-md-6">
                                             <div class="advantages-item">
                                                 <img src="images/block-2/advantages/002-worker.png">
                                                 <p>Обязательный контроль ОТК</p>
@@ -353,10 +361,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 advantages-preview">
+                                <div class="col-12 col-md-6 advantages-preview">
                                     <div class="red"></div>
                                     <div class="image-wrapper">
-                                        <img class="image" src="images/block-2/block2-pech-advantages.png">
+                                        <img class="image img-fluid" src="images/block-2/block2-pech-advantages.png">
                                         <div class="black">
                                             <div class="black-1">
                                                 <h3>Печь-мангал "БУРАН"-2 ("BURAN"-2)</h3>
@@ -416,7 +424,7 @@
                                         <li>Доставка осуществляетсядо подъезда (ворот). Разгрузка, перенос и подъем осуществляется силами заказчика.</li>
                                     </ul>
                                 </div>
-                                <div class="row prices">
+                                <div class="row mx-auto prices">
                                     <div class="col-md-4">
                                         <div class="prices-container">
                                             <h3>В пределах МКАД</h3>
@@ -588,7 +596,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mx-auto">
                         <div class="good-item">
                             <img src="images/block-5/image frame.png">
                             <h3>Печь газогенераторная АОТ-14 тип 01</h3>
@@ -646,7 +654,7 @@
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55b6123621d5e6a363761f33f08c0cf9b759aac030ee9bbcca0d558501cfdccd&amp;width=100%&amp;height=670&amp;lang=ru_RU&amp;scroll=true"></script>
                      </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4 mx-auto">
                      <div class="feedback">
                         <h2>Получите скидку 3%</h2>
                         <p>на покупку печи или мангала, <br>заполнив форму ниже</p>
@@ -720,6 +728,58 @@
             <!-- /.container-fluid -->
         </footer>
         <!-- /#footer -->
+
+
+    <!-- Modal section -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mx-auto" id="ModalLongTitle">Укажите свои контакты, <br>
+                <small>мы обязательно с вами свяжемся.</small></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="modal-contact-form" class="form" action="#" method="GET" role="form">
+                  <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="ИМЯ*" tabindex="1" required>
+                  </div>
+
+                  <div class="form-group">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="E-MAIL*" tabindex="2" required>
+                  </div>
+
+                  <div class="form-group">
+                      <textarea class="form-control" placeholder="Вопрос" id="question" rows="3"></textarea>
+                    </div>
+
+                  <div class="button-wrapper">
+                      <a href="#" class="button" style="color: #000;">
+                          Жду ответа
+                      </a>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      <p>Нажимая на кнопку «Получить» вы соглашаетесь <a href="#">с пользовательским соглашением</a></p>
+                    </label>
+                  </div>
+              </form>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    <!-- End Modal section -->
+
+
 
     <!-- Scripts -->
     <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
