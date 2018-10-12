@@ -10,6 +10,10 @@ body {
   font-size: 62.5%;
 }
 
+::selection {
+  	color: $yellow;
+  }
+
 h1 {
 	font-weight: bold;
 	font-size: rem(34);
@@ -96,3 +100,21 @@ a.button {
 			}
 		}
 	} // cart
+
+	.invalid-feedback {
+		font-size: rem(12);
+	}
+
+	.btn-warning {
+		font-family: $roboto;
+		font-weight: 600;
+		background: transparent;
+		border: 3px solid $yellow;
+		text-transform: uppercase;
+		padding: 10px 45px;
+		&:hover {
+			background-color: $yellow;
+			color: #000;
+			border: 3px solid $yellow;
+		}
+	}

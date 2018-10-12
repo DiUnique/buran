@@ -89,10 +89,10 @@
 	      </div>
 	      <div class="contacts">
 	          <p class="phone">+7 (985) 170-98-02</p>
-	          <p class="advice"><a href="#">Получить консультацию</a></p>
+	          <p class="advice"><a href="#" data-toggle="modal" data-target="#ModalCenter">Получить консультацию</a></p>
 	      </div>
 	      <div class="contacts-mobile">
-	          <a href="#">
+	          <a href="#" data-toggle="modal" data-target="#ModalCenter">
 	            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 	            <path d="M14.5 1.8125C21.4951 1.8125 27.1875 7.50488 27.1875 14.5C27.1875 21.4951 21.4951 27.1875 14.5 27.1875C7.50488 27.1875 1.8125 21.4951 1.8125 14.5C1.8125 7.50488 7.50488 1.8125 14.5 1.8125ZM14.5 0C6.49243 0 0 6.49243 0 14.5C0 22.5076 6.49243 29 14.5 29C22.5076 29 29 22.5076 29 14.5C29 6.49243 22.5076 0 14.5 0ZM22.5837 19.3481L22.5022 19.1003C22.3111 18.5304 21.681 17.9356 21.1004 17.7763L18.9569 17.1904C18.3764 17.0329 17.548 17.2453 17.1215 17.6719L16.3462 18.4472C13.5283 17.6843 11.3176 15.4735 10.5565 12.6557L11.3317 11.8804C11.7566 11.4556 11.969 10.6272 11.8114 10.0449L11.2272 7.90137C11.0697 7.3208 10.4714 6.69067 9.90152 6.49951L9.65723 6.41806C9.0855 6.2269 8.26953 6.41982 7.84473 6.84644L6.68359 8.00757C6.47652 8.21289 6.34375 8.80229 6.34375 8.80411C6.30478 12.4893 7.74917 16.0382 10.3546 18.6454C12.953 21.2438 16.4896 22.6864 20.1623 22.6545C20.1818 22.6545 20.7889 22.5253 20.996 22.3182L22.1571 21.157C22.5819 20.734 22.773 19.918 22.5837 19.3481Z" fill="#CC2C11"/>
 	            </svg>
@@ -129,7 +129,7 @@
 						<h1 class="page-header">Оформление заказа</h1>
 					</div>
 				</div>
-				<form class="row">
+				<form class="row needs-validation" novalidate>
 					<div class="col-lg-8">
 						<div class="col-12">
 							<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -149,23 +149,27 @@
 
 									  <div class="form-group">
 									    <label for="name">Имя*</label>
-									    <input type="text" name="name" id="name" class="form-control">
+									    <input type="text" name="name" id="name" class="form-control" required>
+									    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 									  </div>
 									  <div class="form-group">
 									    <label for="surname">Фамилия</label>
-									    <input type="text" name="surname" id="surname" class="form-control">
+									    <input type="text" name="surname" id="surname" class="form-control" required>
+									    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 									  </div>
 									  <div class="row">
 									      <div class="col">
 									        <div class="form-group">
 	      								    <label for="email">Email*</label>
-	      								    <input type="email" name="email" id="email" class="form-control">
+	      								    <input type="email" name="email" id="email" class="form-control" required>
+	      								    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 	      								  </div>
 									      </div>
 									      <div class="col">
 									        <div class="form-group">
 	      								    <label for="phone">Телефон*</label>
-	      								    <input type="tel" name="phone" id="phone" class="form-control">
+	      								    <input type="tel" name="phone" id="phone" class="form-control" required>
+	      								    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 	      								  </div>
 									      </div>
 									    </div>
@@ -201,11 +205,13 @@
 
 									<div class="form-group">
 									  <label for="city">Населенный пункт*</label>
-									  <input type="text" name="city" id="city" class="form-control">
+									  <input type="text" name="city" id="city" class="form-control" required>
+									  <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 									</div>
 									<div class="form-group">
 									  <label for="address">Улица, дом, строение/корпус, подъезд*</label>
-									  <input type="text" name="address" id="address" class="form-control">
+									  <input type="text" name="address" id="address" class="form-control" required>
+									  <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 									</div>
 								</div>
 								<!-- /.delivery-information -->
@@ -247,23 +253,27 @@
 
 									  <div class="form-group">
 									    <label for="name">Имя*</label>
-									    <input type="text" name="name" id="name" class="form-control">
+									    <input type="text" name="name" id="name" class="form-control" required>
+									    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 									  </div>
 									  <div class="form-group">
 									    <label for="surname">Фамилия</label>
-									    <input type="text" name="surname" id="surname" class="form-control">
+									    <input type="text" name="surname" id="surname" class="form-control" required>
+									    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 									  </div>
 									  <div class="row">
 									      <div class="col">
 									        <div class="form-group">
 	      								    <label for="email">E-mail*</label>
-	      								    <input type="email" name="email" id="email" class="form-control">
+	      								    <input type="email" name="email" id="email" class="form-control" required>
+	      								    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 	      								  </div>
 									      </div>
 									      <div class="col">
 									        <div class="form-group">
 	      								    <label for="phone">Телефон*</label>
-	      								    <input type="tel" name="phone" id="phone" class="form-control">
+	      								    <input type="tel" name="phone" id="phone" class="form-control" required>
+	      								    <div class="invalid-feedback">Это поле обязательное для заполнения</div>
 	      								  </div>
 									      </div>
 									    </div>
@@ -359,47 +369,124 @@
 		</section>
 		<!-- /#checkout -->
 
-	<footer id="footer">
-	    <div class="container-fluid">
-	        <div class="row">
-	            <div class="col-lg-3">
-	                <div class="footer-logo">
-	                    <img src="images/logo_white-text.svg">
+	    <footer id="footer">
+	        <div class="container-fluid">
+	            <div class="row">
+	                <div class="col-lg-3">
+	                    <div class="footer-logo">
+	                        <img src="images/logo_white-text.svg">
+	                    </div>
+	                </div>
+	                <div class="col-lg-3">
+	                    <div class="footer-list">
+	                        <ul>
+	                            <li><a href="/catalog.html">Каталог</a></li>
+	                            <li><a href="#">О компании</a></li>
+	                            <li><a href="#">Доставка и оплата</a></li>
+	                            <li><a href="/where-to-buy.html">Где купить</a></li>
+	                            <li><a href="#">Правовая информация</a></li>
+	                            <li><a href="#">Контакты</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	                <div class="col-lg-3">
+	                    <div class="footer-contacts">
+	                        <ul>
+	                            <li>+7 (985) 170 98 02</li>
+	                            <li>buran-pechi@mail.ru</li>
+	                            <li>Москва, Алтуфьевское ш., 53, стр. 2</li>
+	                            <li>Пн-пт, 9:00-17:00</li>
+	                        </ul>
+	                    </div>
+	                </div>
+	                <div class="col-lg-3">
+	                    <div class="footer-copyright">
+	                        <p>&copy;&nbsp;&nbsp;&nbsp;ООО Лаотерм 2018</p>
+	                    </div>
+	                    <div class="social-icons">
+	                      <ul class="social-icons-list">
+	                        <li class="social-icon">
+	                          <a href="#">
+	                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                            <path class="white" d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z" fill="white"/>
+	                            <path class="black" d="M21.8998 18.1851H18.7771V29.625H14.046V18.1851H11.7959V14.1646H14.046V11.5629C14.046 9.7024 14.9298 6.78906 18.8192 6.78906L22.3237 6.80372V10.7063H19.781C19.3639 10.7063 18.7774 10.9147 18.7774 11.8022V14.1683H22.3131L21.8998 18.1851Z" fill="black"/>
+	                            </svg>
+	                          </a>
+	                        </li>
+	                        <li class="social-icon">
+	                          <a href="#">
+	                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                            <path class="white" d="M22.7159 9.31152H12.2843C10.6193 9.31152 9.26465 10.6662 9.26465 12.3312V22.7628C9.26465 24.4278 10.6193 25.7829 12.2843 25.7829H22.7159C24.381 25.7829 25.736 24.4282 25.736 22.7628V12.3312C25.736 10.6662 24.3814 9.31152 22.7159 9.31152ZM17.5001 22.9695C14.5105 22.9695 12.078 20.537 12.078 17.547C12.078 14.5574 14.5105 12.1249 17.5001 12.1249C20.4902 12.1249 22.9226 14.5574 22.9226 17.547C22.9226 20.5367 20.4898 22.9695 17.5001 22.9695ZM23.0969 13.246C22.3892 13.246 21.8136 12.6704 21.8136 11.9631C21.8136 11.2558 22.3892 10.6802 23.0969 10.6802C23.8042 10.6802 24.3798 11.2558 24.3798 11.9631C24.3798 12.6704 23.8042 13.246 23.0969 13.246Z" fill="white"/>
+	                            <path class="white" d="M17.5003 14.4165C15.7745 14.4165 14.3691 15.8211 14.3691 17.5469C14.3691 19.2736 15.7745 20.6785 17.5003 20.6785C19.227 20.6785 20.6311 19.2736 20.6311 17.5469C20.6311 15.8214 19.2266 14.4165 17.5003 14.4165Z" fill="white"/>
+	                            <path class="white" d="M17.5 0C7.8354 0 0 7.8354 0 17.5C0 27.1646 7.8354 35 17.5 35C27.1646 35 35 27.1646 35 17.5C35 7.8354 27.1646 0 17.5 0ZM28.0267 22.763C28.0267 25.6918 25.6446 28.0739 22.7158 28.0739H12.2842C9.35577 28.0739 6.97325 25.6918 6.97325 22.763V12.3314C6.97325 9.40295 9.35577 7.02043 12.2842 7.02043H22.7158C25.6446 7.02043 28.0267 9.40295 28.0267 12.3314V22.763Z" fill="white"/>
+	                            </svg>
+	                          </a>
+	                        </li>
+	                      </ul>
+	                    </div>
+	                    <!-- /.social-icons -->
 	                </div>
 	            </div>
-	            <div class="col-lg-3">
-	                <div class="footer-list">
-	                    <ul>
-	                        <li><a href="#">Каталог</a></li>
-	                        <li><a href="#">О компании</a></li>
-	                        <li><a href="#">Доставка и оплата</a></li>
-	                        <li><a href="#">Где купить</a></li>
-	                        <li><a href="#">Правовая информация</a></li>
-	                        <li><a href="#">Контакты</a></li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="col-lg-3">
-	                <div class="footer-contacts">
-	                    <ul>
-	                        <li>+7 (985) 170 98 02</li>
-	                        <li>buran-pechi@mail.ru</li>
-	                        <li>Москва, Алтуфьевское ш., 53, стр. 2</li>
-	                        <li>Пн-пт, 9:00-17:00</li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="col-lg-3">
-	                <div class="footer-copyright">
-	                    <p class="letter">&copy;&nbsp;&nbsp;&nbsp;ООО Лаотерм 2018</p>
-	                </div>
-	            </div>
+	            <!-- /.row -->
 	        </div>
-	        <!-- /.row -->
+	        <!-- /.container-fluid -->
+	    </footer>
+	    <!-- /#footer -->
+
+
+	<!-- Modal section -->
+
+	  <!-- Modal -->
+	  <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	    <div class="modal-dialog modal-dialog-centered" role="document">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <h5 class="modal-title mx-auto" id="ModalLongTitle">Укажите свои контакты, <br>
+	            <small>мы обязательно с вами свяжемся.</small></h5>
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	          </button>
+	        </div>
+	        <div class="modal-body">
+	          <form id="modal-contact-form" class="form needs-validation" role="form" novalidate>
+	              <div class="form-group">
+	                  <input type="text" class="form-control" id="name" name="name" placeholder="ИМЯ*" tabindex="1" required>
+	                  <div class="invalid-feedback">Укажите Ваше имя</div>
+	              </div>
+
+	              <div class="form-group">
+	                  <input type="email" class="form-control" id="email" name="email" placeholder="E-MAIL*" tabindex="2" required>
+	                  <div class="invalid-feedback">Адрес электронной почты указан неверно.</div>
+	              </div>
+
+	              <div class="form-group">
+	                  <textarea class="form-control" placeholder="Вопрос" id="question" rows="3"></textarea>
+	                </div>
+
+	              <div class="button-wrapper">
+	                  <button href="#" type="submit" class="btn btn-warning">
+	                      Жду ответа
+	                  </button>
+	              </div>
+
+	              <div class="form-check">
+	                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+	                <label class="form-check-label" for="defaultCheck1">
+	                  <p>Нажимая на кнопку «Получить» вы соглашаетесь <a href="#">с пользовательским соглашением</a></p>
+	                  <div class="invalid-feedback">Обязательное поле</div>
+	                </label>
+	              </div>
+
+	          </form>
+	        </div>
+	        <!-- <div class="modal-footer">
+	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	          <button type="button" class="btn btn-primary">Save changes</button>
+	        </div> -->
+	      </div>
 	    </div>
-	    <!-- /.container-fluid -->
-	</footer>
-	<!-- /#footer -->
+	  </div>
+	<!-- End Modal section -->
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>

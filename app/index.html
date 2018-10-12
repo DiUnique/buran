@@ -325,37 +325,37 @@
                                     <div class="row advantages-description">
                                         <div class="col-12 col-md-6">
                                             <div class="advantages-item">
-                                                <img src="images/block-2/advantages/day-25-on-daily-calendar-page.png">
+                                                <img src="images/block-2/advantages/day-25-on-daily-calendar-page.svg">
                                                 <p>25 лет на рынке</p>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="advantages-item">
-                                                <img src="images/block-2/advantages/first.png">
+                                                <img src="images/block-2/advantages/first.svg">
                                                 <p>Первые производители печей длительного горения в России</p>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="advantages-item">
-                                                <img src="images/block-2/advantages/010-contract.png">
+                                                <img src="images/block-2/advantages/010-contract.svg">
                                                 <p>Вся продукция сертифицирована</p>
                                             </div>
                                         </div>
                                         <div class="col-12 col-md-6">
                                             <div class="advantages-item">
-                                                <img src="images/block-2/advantages/002-worker.png">
+                                                <img src="images/block-2/advantages/002-worker.svg">
                                                 <p>Обязательный контроль ОТК</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="advantages-item">
-                                                <img src="images/block-2/advantages/003-factory.png">
+                                                <img src="images/block-2/advantages/003-factory.svg">
                                                 <p>Заводское качество</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="advantages-item">
-                                                <img src="images/block-2/advantages/001-conveyor.png">
+                                                <img src="images/block-2/advantages/001-conveyor.svg">
                                                 <p>Серийное производство</p>
                                             </div>
                                         </div>
@@ -658,21 +658,21 @@
                      <div class="feedback">
                         <h2>Получите скидку 3%</h2>
                         <p>на покупку печи или мангала, <br>заполнив форму ниже</p>
-                          <form id="contact-form" class="form" action="#" method="POST" role="form">
+                          <form id="contact-form" class="form needs-validation" role="form" novalidate>
                               <div class="form-group">
                                   <input type="text" class="form-control" id="name" name="name" placeholder="ИМЯ*" tabindex="1" required>
+                                  <div class="invalid-feedback">Укажите Ваше имя</div>
                               </div>
                               <div class="form-group">
                                   <input type="email" class="form-control" id="email" name="email" placeholder="E-MAIL*" tabindex="2" required>
+                                  <div class="invalid-feedback">Адрес электронной почты указан неверно.</div>
                               </div>
 
                               <div class="button-wrapper">
-                                  <a href="#" class="button">
-                                      Получить
-                                  </a>
+                                  <button class="btn btn-warning">ПОЛУЧИТЬ</button>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                                 <label class="form-check-label" for="defaultCheck1">
                                   <p>Нажимая на кнопку «Получить» вы соглашаетесь <a href="#">с пользовательским соглашением</a></p>
                                 </label>
@@ -698,10 +698,10 @@
                     <div class="col-lg-3">
                         <div class="footer-list">
                             <ul>
-                                <li><a href="#">Каталог</a></li>
+                                <li><a href="/catalog.html">Каталог</a></li>
                                 <li><a href="#">О компании</a></li>
                                 <li><a href="#">Доставка и оплата</a></li>
-                                <li><a href="#">Где купить</a></li>
+                                <li><a href="/where-to-buy.html">Где купить</a></li>
                                 <li><a href="#">Правовая информация</a></li>
                                 <li><a href="#">Контакты</a></li>
                             </ul>
@@ -721,6 +721,28 @@
                         <div class="footer-copyright">
                             <p>&copy;&nbsp;&nbsp;&nbsp;ООО Лаотерм 2018</p>
                         </div>
+                        <div class="social-icons">
+                          <ul class="social-icons-list">
+                            <li class="social-icon">
+                              <a href="#">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="white" d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z" fill="white"/>
+                                <path class="black" d="M21.8998 18.1851H18.7771V29.625H14.046V18.1851H11.7959V14.1646H14.046V11.5629C14.046 9.7024 14.9298 6.78906 18.8192 6.78906L22.3237 6.80372V10.7063H19.781C19.3639 10.7063 18.7774 10.9147 18.7774 11.8022V14.1683H22.3131L21.8998 18.1851Z" fill="black"/>
+                                </svg>
+                              </a>
+                            </li>
+                            <li class="social-icon">
+                              <a href="#">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="white" d="M22.7159 9.31152H12.2843C10.6193 9.31152 9.26465 10.6662 9.26465 12.3312V22.7628C9.26465 24.4278 10.6193 25.7829 12.2843 25.7829H22.7159C24.381 25.7829 25.736 24.4282 25.736 22.7628V12.3312C25.736 10.6662 24.3814 9.31152 22.7159 9.31152ZM17.5001 22.9695C14.5105 22.9695 12.078 20.537 12.078 17.547C12.078 14.5574 14.5105 12.1249 17.5001 12.1249C20.4902 12.1249 22.9226 14.5574 22.9226 17.547C22.9226 20.5367 20.4898 22.9695 17.5001 22.9695ZM23.0969 13.246C22.3892 13.246 21.8136 12.6704 21.8136 11.9631C21.8136 11.2558 22.3892 10.6802 23.0969 10.6802C23.8042 10.6802 24.3798 11.2558 24.3798 11.9631C24.3798 12.6704 23.8042 13.246 23.0969 13.246Z" fill="white"/>
+                                <path class="white" d="M17.5003 14.4165C15.7745 14.4165 14.3691 15.8211 14.3691 17.5469C14.3691 19.2736 15.7745 20.6785 17.5003 20.6785C19.227 20.6785 20.6311 19.2736 20.6311 17.5469C20.6311 15.8214 19.2266 14.4165 17.5003 14.4165Z" fill="white"/>
+                                <path class="white" d="M17.5 0C7.8354 0 0 7.8354 0 17.5C0 27.1646 7.8354 35 17.5 35C27.1646 35 35 27.1646 35 17.5C35 7.8354 27.1646 0 17.5 0ZM28.0267 22.763C28.0267 25.6918 25.6446 28.0739 22.7158 28.0739H12.2842C9.35577 28.0739 6.97325 25.6918 6.97325 22.763V12.3314C6.97325 9.40295 9.35577 7.02043 12.2842 7.02043H22.7158C25.6446 7.02043 28.0267 9.40295 28.0267 12.3314V22.763Z" fill="white"/>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.social-icons -->
                     </div>
                 </div>
                 <!-- /.row -->
@@ -744,13 +766,15 @@
               </button>
             </div>
             <div class="modal-body">
-              <form id="modal-contact-form" class="form" action="#" method="GET" role="form">
+              <form id="modal-contact-form" class="form needs-validation" role="form" novalidate>
                   <div class="form-group">
                       <input type="text" class="form-control" id="name" name="name" placeholder="ИМЯ*" tabindex="1" required>
+                      <div class="invalid-feedback">Укажите Ваше имя</div>
                   </div>
 
                   <div class="form-group">
                       <input type="email" class="form-control" id="email" name="email" placeholder="E-MAIL*" tabindex="2" required>
+                      <div class="invalid-feedback">Адрес электронной почты указан неверно.</div>
                   </div>
 
                   <div class="form-group">
@@ -758,16 +782,19 @@
                     </div>
 
                   <div class="button-wrapper">
-                      <a href="#" class="button" style="color: #000;">
+                      <button href="#" type="submit" class="btn btn-warning">
                           Жду ответа
-                      </a>
+                      </button>
                   </div>
+
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                     <label class="form-check-label" for="defaultCheck1">
                       <p>Нажимая на кнопку «Получить» вы соглашаетесь <a href="#">с пользовательским соглашением</a></p>
+                      <div class="invalid-feedback">Обязательное поле</div>
                     </label>
                   </div>
+
               </form>
             </div>
             <!-- <div class="modal-footer">
