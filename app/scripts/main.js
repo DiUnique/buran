@@ -64,7 +64,6 @@
       });
     }, false);
 
-
     if ($('.nav-pills').length) {
       $('.nav-pills').scrollingTabs({
         ignoreTabPanes: true,
@@ -90,6 +89,25 @@
             navbar.removeClass('fixed-top');
             $('#block-2').css('margin-top', '0px');
         }
+    });
+
+    $('#quant_up').click(function()
+    {
+      $('#quantity').val(parseInt($('#quantity').val()) + 1);
+      $('#quantit').val(parseInt($('#quantit').val())+ 1);
+    });
+
+    $('#quant_down').click(function()
+    {
+      if ($('#quantity').val() == '1')
+      {
+        return false;
+      }
+      else
+      {
+        $('#quantity').val(parseInt($('#quantity').val()) - 1);
+        $('#quantit').val(parseInt($('#quantit').val())- 1);
+      }
     });
 
   })

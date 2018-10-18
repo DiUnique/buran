@@ -14,3 +14,67 @@
 		background: none;
 	}
 }
+
+.buy_block {
+	font-family: $ubuntu;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	.buy {
+		border: 3px solid $yellow;
+		background-color: $yellow;
+		color: #000;
+		font-size: rem(16);
+		line-height: rem(18);
+		min-width: 80%;
+		&:hover {
+			background: transparent;
+		}
+	} // buy
+
+	.fast-buy {
+		border: 3px solid $yellow;
+		color: #000;
+		font-size: rem(16);
+		line-height: rem(18);
+		min-width: 80%;
+		margin-top: 15px;
+	} // fast-buy
+} // buy_block
+
+.breadcrumb {
+	background: transparent;
+	padding-left: 0;
+
+	li {
+
+		a {
+			color: #000;
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
+} // breadcrumb
+
+.filters {
+	display: flex;
+
+	.filters-list {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 15px;
+
+		li {
+			margin-left: 10px;
+
+			.filter-link {
+				color: #000;
+				line-height: rem(35);
+				&:hover {
+					color: $yellow;
+				}
+			}
+		}
+	}
+}

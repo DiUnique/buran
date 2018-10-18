@@ -25,7 +25,6 @@
 				font-size: rem(32);
 				line-height: rem(38);
 				font-weight: 900;
-				margin-right: 53px;
 
 				@media (max-width: 576px) {
 					font-size: rem(22);
@@ -35,11 +34,12 @@
 			.quantity {
 				border: 1px solid #BDBDBD;
 				text-align: center;
-				width: 160px;
 				height: 40px;
 				display: flex;
 				justify-content: space-around;
-				margin-left: rem(35);
+				margin-left: rem(50);
+				overflow: hidden;
+				width: 200px;
 
 				.minus {
 					color: $red;
@@ -55,6 +55,9 @@
 				.quant {
 					font-size: rem(18);
 					line-height: rem(40);
+					background: transparent;
+					border: unset;
+					width: 20px;
 				}
 
 				.plus {
@@ -74,6 +77,28 @@
 		.button-wrapper {
 			padding-bottom: rem(42);
 			display: flex;
+
+			button#buy {
+				border: unset;
+				color: #000;
+				display: inline-block;
+				font-family: $roboto;
+				font-weight: 700;
+				text-transform: uppercase;
+				width: 200px;
+				height: 40px;
+				font-size: rem(14);
+				line-height: rem(14);
+				padding-top: rem(12);
+				padding-right: rem(19);
+				padding-bottom: rem(12);
+				padding-left: rem(19);
+				text-align: center;
+				&:hover {
+					background: transparent;
+					border: 3px solid $yellow;
+				}
+			}
 
 			.button {
 				color: #000;

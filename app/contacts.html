@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Корзина</title>
+	<title>Где купить</title>
 
 	<!-- Disable tap highlight on IE -->
 	<meta name="msapplication-tap-highlight" content="no">
@@ -21,10 +21,6 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
-
-	<!-- Plugins -->
-	<link rel="stylesheet" type="text/css" href="libs/jquery.scrolling-tabs/jquery.scrolling-tabs.min.css">
-	<link href="libs/webfonts/all.css" rel="stylesheet">
 
 	<!-- Your styles -->
 	<link rel="stylesheet" href="styles/main.css">
@@ -122,173 +118,40 @@
 	</div>
 	<!-- /.menu-catalog -->
 
-	<section id="cart">
+	<section id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="page-title">
-						<h1>Корзина</h1>
+					<div class="contacts-header">
+						<h1>Контакты</h1>
 					</div>
-					<!-- /.page-title -->
+					<!-- /.contacts-header -->
 				</div>
+				<!-- /.col-12 -->
 			</div>
 			<!-- /.row -->
 			<div class="row">
 				<div class="col-12">
-					<div class="row cart-header">
-						<div class="col-6">
-							<div class="cart-head">
-								<p>Товар</p>
-							</div>
-							<!-- /.cart-head -->
-						</div>
-						<div class="col-1">
-							<div class="price-head">
-								<p>Цена</p>
-							</div> <!-- price-head -->
-						</div>
-						<div class="col-2">
-							<div class="quantity-head">
-								<p>Количество</p>
-							</div> <!-- quantity-head -->
-						</div>
-						<div class="col-1">
-							<p>Итог</p>
-						</div>
-					</div> <!-- row cart-header -->
-
-				<div class="row products-container">
-				  <div class="col-12">
-				    <div class="row product">
-						  <div class="col-10 col-md-6">
-						    <div class="product-container">
-					        <img src="images/cart/cart-image-1.png">
-					        <div class="product-description">
-						        <h4>Печь газогенераторная «Буран» АОТ-14 тип 02</h4>
-						        <p>Тут еще может быть описание</p>
-						      </div> <!-- product-description -->
-						    </div>
-						    <!-- /.product-container -->
-						  </div>
-						  <div class="col-3 col-md-1">
-						    <p class="price">16 200 Р</p> <!-- price -->
-						  </div>
-						  <div class="col-6 col-md-2">
-
-						    <div class="quantity">
-			          	<a id="quant_down">
-			          		<span class="minus">
-			    						<svg width="13" height="5" viewBox="0 0 13 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-			    						<path d="M1.132 4.072C0.941333 4.072 0.785333 4.01133 0.664 3.89C0.542667 3.76867 0.482 3.61267 0.482 3.422V0.978C0.482 0.787333 0.542667 0.631333 0.664 0.51C0.785333 0.388666 0.941333 0.328 1.132 0.328H11.61C11.8007 0.328 11.9567 0.388666 12.078 0.51C12.2167 0.631333 12.286 0.787333 12.286 0.978V3.422C12.286 3.61267 12.2167 3.76867 12.078 3.89C11.9567 4.01133 11.8007 4.072 11.61 4.072H1.132Z" fill="#CC2C11"/>
-			    						</svg>
-			    					</span>
-			    				</a>
-				          <input type="text" name="amo" value="1" data-ratio="1" class="quant" id="quantity" disabled>
-				          <input type="text" id="quantit" value="1" name="amount" style="display:none">
-				          <a id="quant_up">
-				          	<span class="plus">
-				    					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-				    					<path d="M6.838 14.142C6.66467 14.142 6.50867 14.0813 6.37 13.96C6.24867 13.8213 6.188 13.6653 6.188 13.492V8.734H1.56C1.36933 8.734 1.20467 8.67333 1.066 8.552C0.944667 8.43067 0.884 8.27467 0.884 8.084V6.186C0.884 5.99533 0.944667 5.83933 1.066 5.718C1.20467 5.57933 1.36933 5.51 1.56 5.51H6.188V0.907999C6.188 0.717332 6.24867 0.561333 6.37 0.44C6.50867 0.318666 6.66467 0.257999 6.838 0.257999H8.97C9.16067 0.257999 9.31667 0.318666 9.438 0.44C9.55933 0.561333 9.62 0.717332 9.62 0.907999V5.51H14.222C14.4127 5.51 14.5687 5.57933 14.69 5.718C14.8113 5.83933 14.872 5.99533 14.872 6.186V8.084C14.872 8.27467 14.8113 8.43067 14.69 8.552C14.5687 8.67333 14.4127 8.734 14.222 8.734H9.62V13.492C9.62 13.6653 9.55933 13.8213 9.438 13.96C9.31667 14.0813 9.16067 14.142 8.97 14.142H6.838Z" fill="#CC2C11"/>
-				    					</svg>
-				    				</span>
-				    			</a>
-				        </div> <!-- quantity -->
-						  </div>
-						  <div class="col-3 col-md-1">
-						    <p class="total">16 200 Р</p> <!-- total -->
-						  </div> <!-- col-2 -->
-						  <div class="col-2 col-md-2 text-center">
-						    <span class="delete">
-						    	<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-						    	<path opacity="0.3" d="M10.0035 8.50018L16.6885 1.81486C17.1038 1.39986 17.1038 0.726511 16.6885 0.311514C16.2732 -0.103838 15.6005 -0.103838 15.1852 0.311514L8.50018 6.99683L1.81478 0.311514C1.39945 -0.103838 0.726835 -0.103838 0.311501 0.311514C-0.103834 0.726511 -0.103834 1.39986 0.311501 1.81486L6.99689 8.50018L0.311501 15.1855C-0.103834 15.6005 -0.103834 16.2738 0.311501 16.6888C0.519168 16.8962 0.791332 17 1.06314 17C1.33495 17 1.60712 16.8962 1.81478 16.6885L8.50018 10.0032L15.1852 16.6885C15.3929 16.8962 15.665 17 15.9369 17C16.2087 17 16.4808 16.8962 16.6885 16.6885C17.1038 16.2735 17.1038 15.6001 16.6885 15.1851L10.0035 8.50018Z" fill="#828282"/>
-						    	</svg>
-						    </span>
-						  </div> <!-- col-2 delete -->
-						</div> <!-- row -->
-						<div class="row product">
-						  <div class="col-6">
-						    <div class="product-container">
-					        <img src="images/cart/cart-image-1.png">
-					        <div class="product-description">
-						        <h4>Печь газогенераторная «Буран» АОТ-14 тип 02</h4>
-						        <p>Тут еще может быть описание</p>
-						      </div> <!-- product-description -->
-						    </div>
-						    <!-- /.product-container -->
-						  </div>
-						  <div class="col-1">
-						    <p class="price">16 200 Р</p> <!-- price -->
-						  </div>
-						  <div class="col-2">
-				        <div class="quantity">
-				          	<a class="minus-it">
-				          		<span class="minus">
-				    						<svg width="13" height="5" viewBox="0 0 13 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-				    						<path d="M1.132 4.072C0.941333 4.072 0.785333 4.01133 0.664 3.89C0.542667 3.76867 0.482 3.61267 0.482 3.422V0.978C0.482 0.787333 0.542667 0.631333 0.664 0.51C0.785333 0.388666 0.941333 0.328 1.132 0.328H11.61C11.8007 0.328 11.9567 0.388666 12.078 0.51C12.2167 0.631333 12.286 0.787333 12.286 0.978V3.422C12.286 3.61267 12.2167 3.76867 12.078 3.89C11.9567 4.01133 11.8007 4.072 11.61 4.072H1.132Z" fill="#CC2C11"/>
-				    						</svg>
-				    					</span>
-				    				</a>
-				          <input type="text" name="amo" value="1" data-ratio="1" class="quant" id="quantity" disabled>
-				          <input type="text" id="quantit" value="1" name="amount" style="display:none">
-				          <a class="plus-it">
-				          	<span class="plus">
-				    					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-				    					<path d="M6.838 14.142C6.66467 14.142 6.50867 14.0813 6.37 13.96C6.24867 13.8213 6.188 13.6653 6.188 13.492V8.734H1.56C1.36933 8.734 1.20467 8.67333 1.066 8.552C0.944667 8.43067 0.884 8.27467 0.884 8.084V6.186C0.884 5.99533 0.944667 5.83933 1.066 5.718C1.20467 5.57933 1.36933 5.51 1.56 5.51H6.188V0.907999C6.188 0.717332 6.24867 0.561333 6.37 0.44C6.50867 0.318666 6.66467 0.257999 6.838 0.257999H8.97C9.16067 0.257999 9.31667 0.318666 9.438 0.44C9.55933 0.561333 9.62 0.717332 9.62 0.907999V5.51H14.222C14.4127 5.51 14.5687 5.57933 14.69 5.718C14.8113 5.83933 14.872 5.99533 14.872 6.186V8.084C14.872 8.27467 14.8113 8.43067 14.69 8.552C14.5687 8.67333 14.4127 8.734 14.222 8.734H9.62V13.492C9.62 13.6653 9.55933 13.8213 9.438 13.96C9.31667 14.0813 9.16067 14.142 8.97 14.142H6.838Z" fill="#CC2C11"/>
-				    					</svg>
-				    				</span>
-				    			</a>
-				        </div> <!-- quantity -->
-						  </div>
-						  <div class="col-1">
-						    <p class="total">16 200 Р</p> <!-- total -->
-						  </div> <!-- col-2 -->
-						  <div class="col-2 text-center">
-						    <p class="delete">
-						    	<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-						    	<path opacity="0.3" d="M10.0035 8.50018L16.6885 1.81486C17.1038 1.39986 17.1038 0.726511 16.6885 0.311514C16.2732 -0.103838 15.6005 -0.103838 15.1852 0.311514L8.50018 6.99683L1.81478 0.311514C1.39945 -0.103838 0.726835 -0.103838 0.311501 0.311514C-0.103834 0.726511 -0.103834 1.39986 0.311501 1.81486L6.99689 8.50018L0.311501 15.1855C-0.103834 15.6005 -0.103834 16.2738 0.311501 16.6888C0.519168 16.8962 0.791332 17 1.06314 17C1.33495 17 1.60712 16.8962 1.81478 16.6885L8.50018 10.0032L15.1852 16.6885C15.3929 16.8962 15.665 17 15.9369 17C16.2087 17 16.4808 16.8962 16.6885 16.6885C17.1038 16.2735 17.1038 15.6001 16.6885 15.1851L10.0035 8.50018Z" fill="#828282"/>
-						    	</svg>
-						    </p>
-						  </div> <!-- col-2 delete -->
-						</div> <!-- row -->
-					</div> <!-- col-12 -->
-				</div> <!-- row cart-body -->
-
-					<div class="row cart-footer">
-						<div class="col">
-							<div class="row promo-total-block">
-								<div class="col-12 col-md-4">
-									<div class="promo">
-										<input type="text" name="promo-code" placeholder="Промокод" />
-										<a href="#" class="promo-code-apply">Применить</a>
-									</div>
-									<!-- /.promo -->
-								</div>
-								<div class="col-12 col-md-4 offset-md-2">
-									<div class="total-price">
-										<p class="total-price-label">Стоимость заказа</p>
-										<p class="total-price-value">32 400 Р</p>
-									</div>
-								</div> <!-- order -->
-							</div> <!-- row promo-total-block -->
-
-							<div class="row">
-								<div class="col-12 col-md-4 continue-btn">
-									<a class="btn btn-warning">Продолжить покупки</a>
-								</div>
-								<div class="col-12 col-md-4 offset-2 order-btn">
-									<a class="btn btn-warning">Оформить заказ</a>
-								</div>
-							</div> <!-- row -->
-						</div>
-					</div> <!-- row -->
-
+					<p>Главный офис: ЗАО "Лаотерм" (Москва)</p>
+					<p>Адрес: г. Москва, Алтуфьевское шоссе, дом 53, стр 2</p>
+					<p>Телефон: +7(985)170-98-02</p>
+				</div>
+				<!-- /.col-12 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-12">
+					<div class="map">
+					   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55b6123621d5e6a363761f33f08c0cf9b759aac030ee9bbcca0d558501cfdccd&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
 				</div>
 				<!-- /.col-12 -->
 			</div>
 			<!-- /.row -->
 		</div>
 		<!-- /.container -->
-	</section> <!-- cart -->
+	</section>
+	<!-- /#contacts -->
 
   <footer id="footer">
       <div class="container-fluid">
@@ -412,7 +275,6 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
-	<script type="text/javascript" src="libs/jquery.scrolling-tabs/jquery.scrolling-tabs.min.js"></script>
 	<script type="text/javascript" src="scripts/main.min.js"></script>
 </body>
 </html>
