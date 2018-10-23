@@ -117,3 +117,17 @@ a.button {
 			border: 3px solid $yellow;
 		}
 	}
+
+	.cart {
+
+		.cart_descr {
+
+			p {
+				color: #333;
+		    font-weight: 500;
+		    font-size: .875rem;
+		    line-height: 2rem;
+		    filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
+			}
+		} // cart_descr
+	} // cart

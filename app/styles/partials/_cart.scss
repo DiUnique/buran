@@ -32,14 +32,19 @@
 			padding-bottom: rem(30);
 
 			.product-description {
-
-				h4 {
-					font-family: $roboto;
-					font-weight: 600;
-					font-size: rem(18);
-					line-height: rem(25);
+				a {
+					font-family: Roboto,sans-serif;
+					font-weight: 700;
 					padding-bottom: 5px;
 					margin: 0;
+					color: #212529;
+
+					h4 {
+						font-size: 1.125rem;
+						line-height: 1.5625rem;
+						font-weight: 700;
+						padding-bottom: 0;
+					}
 				}
 
 				p {
