@@ -39,6 +39,7 @@
 
   // Your custom JavaScript goes here
   jQuery(document).ready(function($) {
+    // Thumbnail on the product page
     $('.thumbnail').on('click', function() {
       var clicked = $(this);
       var newSelection = clicked.data('big');
@@ -49,6 +50,7 @@
       return false;
     });
 
+    // Scroll Bootstrap tabs
     window.addEventListener('load', function() {
       // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.getElementsByClassName('needs-validation');
@@ -63,7 +65,8 @@
         }, false);
       });
     }, false);
-
+    
+    // jquery scrolling bootstrap tabs
     if ($('.nav-pills').length) {
       $('.nav-pills').scrollingTabs({
         ignoreTabPanes: true,
@@ -74,6 +77,7 @@
       });
     }
 
+    // sticky nav
     var navbar = $('#sticky-nav'),
         y_pos = navbar.offset().top,
         height = navbar.height();
@@ -90,7 +94,8 @@
             $('#block-2').css('margin-top', '0px');
         }
     });
-
+    
+    // Increase and decrease amount of products
     $('#quant_up').click(function()
     {
       $('#quantity').val(parseInt($('#quantity').val()) + 1);
@@ -110,6 +115,21 @@
       }
     });
 
-  })
+    // Footer to the bottom
+    function autoHeight() {
+      var body = $('body').innerHeight(),
+          windowHeight = $(window).innerHeight(),
+          footer = $('#footer');
 
+      var footerMarginTop = windowHeight - body;
+      if (footerMarginTop > 0) {
+        footer.css('margin-top', footerMarginTop);
+      } else {
+        footer.css('margin-top', '0');
+      }
+    }
+
+    $(document).ready(autoHeight);
+    $(window).resize(autoHeight);
+  });
 })();

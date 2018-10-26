@@ -4,6 +4,28 @@
 		display: flex;
 		flex-flow: row wrap;
 		border-bottom: 0.75px solid #e0e0e0;
+
+		@media (max-width: 576px) {
+			.cart_1 {
+				order: 1;
+			}
+
+			.cart_2 {
+				order: 2;
+			}
+
+			.cart_3 {
+				order: 3;
+			}
+
+			.cart_4 {
+				order: 4;
+			}
+
+			.cart_5 {
+				order: 5;
+			}
+		}
 	} // product
 
 	.page-title {
@@ -19,6 +41,9 @@
 		text-transform: uppercase;
 		border-bottom: 0.75px solid #e0e0e0;
 		padding-bottom: 10px;
+		@media(max-width: 576px) {
+			display: none;
+		}
 
 		.price-head, .quantity-head {
 			text-align: center;
@@ -65,6 +90,13 @@
 		    justify-content: space-around;
 		    line-height: 23px;
 
+		    .quant_down, .quant_up {
+
+		    	&:hover {
+		    		cursor: pointer;
+		    	}
+		    }
+
 		    .quant {
 		    	font-family: $roboto;
 					font-size: rem(18);
@@ -97,15 +129,26 @@
 	.cart-footer {
 		padding-top: rem(40);
 		padding-bottom: rem(40);
-		.promo-total-block {
-			margin-bottom: 25px;
-		} // promo-total-block
+		@media (max-width: 762px) {
+			text-align: center;
+		}
+
+		.cart-footer-content {
+			display: flex;
+			flex-wrap: wrap;
+
+			& > div {
+				margin-bottom: 15px;
+			}
+		}
 
 		.promo {
 			line-height: 40px;
 			height: 40px;
 			display: flex;
-			width: 300px;
+			@media (max-width: 762px) {
+				justify-content: center;
+			}
 
 			input {
 				border: 1px solid $red;
@@ -126,7 +169,7 @@
 				font-size: rem(16);
 				text-transform: uppercase;
 				background-color: $red;
-				width: 128px;
+				width: 141px;
 				text-align: center;
 				height: 100%;
 				padding-left: rem(14);
@@ -136,10 +179,6 @@
 		} // promo
 
 		.total-price {
-			display: flex;
-			justify-content: space-between;
-			width: 300px;
-    	margin-left: auto;
 
     	.total-price-label {
     		font-family: $rubik;
@@ -159,6 +198,7 @@
 		.continue-btn {
 
 			a {
+				min-width: 300px;
 				&:hover {
 					background-color: $yellow;
 				}
@@ -166,11 +206,11 @@
 		} // continue-btn
 
 		.order-btn {
-			text-align: right;
+			
 			a {
 				background-color: $yellow;
 				display: inline-block;
-				width: 300px;
+				min-width: 300px;
 				&:hover {
 					background: transparent;
 					border: 3px solid $yellow;

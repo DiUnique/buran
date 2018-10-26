@@ -1,0 +1,70 @@
+.form {
+	font-family: $roboto;
+	font-size: 16px;
+	color: #495057;
+
+	.form-label {
+		font-size: 12px;
+		color: #5e9bfc;
+		margin: 0;
+		display: block;
+		opacity: 1;
+		-webkit-transition: .333s ease top, .333s ease opacity;
+		transition: .333s ease top, .333s ease opacity;
+	}
+	.form-control {
+		border-radius: 0;
+		border-color: #ccc;
+	   	border-width: 0 0 2px 0;
+	   	border-style: none none solid none;
+	   	box-shadow: none;
+	}
+
+	.form-group label {
+		font-size: 14px;
+		color: #495057;
+	}
+
+	select.custom-select {
+		font-size: 14px;
+		color:#6c757d;
+		opacity:1;
+
+		&:focus {
+			box-shadow: none;
+			border-color: $yellow;
+		}
+	}
+
+	.form-control:focus {
+		box-shadow: none;
+		border-color: $yellow;
+	}
+	.js-hide-label {
+		opacity: 0;
+	}
+	.js-unhighlight-label {
+		color: #999
+	}
+
+	.button-wrapper {
+		text-align: center;
+		margin-top: 30px;
+
+		.button {
+			background-color: transparent;
+		}
+	}
+
+	.form-check {
+		padding-top: rem(40);
+		padding-bottom: rem(40);
+
+		.form-check-label {
+			p {
+				font-size: rem(12);
+				line-height: rem(17);
+			}
+		}
+	}
+}

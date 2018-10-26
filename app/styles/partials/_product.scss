@@ -1,5 +1,15 @@
 #product {
+	
+	a {
+		color: #000;
+		font-size: rem(13);
+		line-height: rem(15);
 
+		&:hover {
+			color: $red;
+		}
+	}
+	
 	.short-descr {
 
 		.product-header {

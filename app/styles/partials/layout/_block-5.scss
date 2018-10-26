@@ -15,11 +15,17 @@
 	}
 
 	.good-item {
+		@media (max-width: 576px) {
+			text-align: center;
+			padding-bottom: 40px;	
+		}
 
 		h3 {
 			font-weight: 500;
 			font-size: rem(16);
 			line-height: rem(28);
+			padding-bottom: 0px;
+			margin-bottom: 0px;
 		}
 
 		p {
@@ -30,19 +36,37 @@
 		.buy-info {
 			display: flex;
 			justify-content: space-between;
-			padding-top: rem(24);
 
 				.price {
 					font-weight: 700;
 					font-size: rem(18);
 					line-height: rem(75);
+					@media (max-width: 576px) {
+						width: 100%;
+						text-align: center;
+					}
+
 				}
 		} // .buy-info
 
 		.button-wrapper {
-			padding-top: rem(24);
 			.button {
-				color: #000;
+				border: unset;
+		    color: #000;
+		    display: inline-block;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		    width: 200px;
+		    height: 40px;
+		    font-size: 14px;
+		    background: $yellow;
+		    font-family: $roboto;
+
+				&:hover {
+					cursor: pointer;
+					background: transparent;
+					border: 3px solid $yellow;
+				}
 			}
 		}
 
