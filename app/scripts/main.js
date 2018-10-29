@@ -50,23 +50,47 @@
       return false;
     });
 
-    // Scroll Bootstrap tabs
     window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
       var validation = Array.prototype.filter.call(forms, function(form) {
         form.addEventListener('submit', function(event) {
           if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
           }
+          if ($(this).attr('id') !== 'cartForm') {
+            event.preventDefault();
+
+            var name = $(this).find('#name').val();
+            var email = $(this).find('#email').val();
+            var question = $(this).find('#question').val();
+
+            if(name && email) {
+              $.ajax({
+                url: '/ajax/consult.php',
+                type: "POST",
+                data: ({name :  name,
+                        email:  email,
+                        question: question
+                        }),
+                success: function(data) {
+                  console.log("Success");
+                  $("#ModalCenter").modal('hide');
+                  $("#successModalCenter").modal('show');
+                },
+                error: function() {
+                  console.log('Error')
+                }                  
+              });
+            }
+          }
+
           form.classList.add('was-validated');
         }, false);
       });
     }, false);
     
-    // jquery scrolling bootstrap tabs
+    // Scroll Bootstrap tabs
     if ($('.nav-pills').length) {
       $('.nav-pills').scrollingTabs({
         ignoreTabPanes: true,
@@ -131,5 +155,54 @@
 
     $(document).ready(autoHeight);
     $(window).resize(autoHeight);
+
+    if ($('#drop_zone').length) {
+      // Check for the various File API support.
+      if (window.File && window.FileReader && window.FileList && window.Blob) {
+          $('#drop_zone').on('dragover', function (e){
+            $(this).addClass('drag');
+          });
+
+          $("#drop_zone").on('dragleave', function (e){
+            $(this).removeClass('drag');
+          });
+
+          $('#add_cart, #add_cart_span').click(function() {
+            $('#add_cart_input').trigger('click');
+            return false;
+          });
+
+          function handleFileSelect(evt) {
+            evt.stopPropagation();
+            evt.preventDefault();
+
+            var files = evt.dataTransfer.files; // FileList object.
+
+            // files is a FileList of File objects. List some properties.
+            var output = [];
+            for (var i = 0, f; f = files[i]; i++) {
+              output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+                          f.size, ' bytes, last modified: ',
+                          f.lastModifiedDate.toLocaleDateString(), '</li>');
+            }
+            document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+            $('#drop_zone').removeClass('drag');
+          }
+
+          function handleDragOver(evt) {
+            evt.stopPropagation();
+            evt.preventDefault();
+            evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+          }
+
+          // Setup the dnd listeners.
+          var dropZone = document.getElementById('drop_zone');
+          dropZone.addEventListener('dragover', handleDragOver, false);
+          dropZone.addEventListener('drop', handleFileSelect, false);
+      } else {
+        console.log('The File APIs are not fully supported in this browser.');
+      }
+    }
+
   });
 })();
