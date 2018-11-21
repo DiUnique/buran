@@ -75,6 +75,9 @@
 	.goods-wrapper {
 		text-align: center;
 		padding-top: rem(42);
+		@media (max-width: 576px) {
+			padding-top: 0;
+		}
 		.button {
 			color: #000;
 			border: unset;

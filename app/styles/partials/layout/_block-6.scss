@@ -4,6 +4,9 @@
 
 	.contacts {
 		padding-top: rem(79);
+		@media (max-width: 576px) {
+			padding-top: 0;
+		}
 
 		h4 {
 			font-weight: 600;
