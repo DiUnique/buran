@@ -47,8 +47,29 @@ ul li {
 	font-size: rem(16);
 }
 
+table,ul li {
+    font-size: 1rem
+}
+
 table {
-	font-size: rem(16);
+    font-family: $roboto;
+    margin-bottom: 1.5625rem;
+    width: 100%
+}
+
+table thead {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25em
+}
+
+table tr {
+    border-bottom: 1px solid #828282
+}
+
+table tr td {
+    padding-top: .625rem;
+    padding-bottom: .625rem
 }
 
 a.button {

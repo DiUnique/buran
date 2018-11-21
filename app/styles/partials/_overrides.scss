@@ -78,3 +78,40 @@
 		}
 	}
 }
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+
+  .pagination-item {
+    padding: 5px;
+  	margin-top: 10px;
+
+    &.active {
+      border-radius: 50%;
+      background-color: #cc2c11;
+      padding: 5px 10px;
+
+      .pagination-link {
+				color: #fff;
+      }
+    }
+
+    .pagination-link {
+      color: #333;
+
+      &:hover {
+      	color: $yellow;
+      }
+    }
+  }
+}
+
+form.buys {
+	margin-top: rem(20);
+	@media (max-width: 576px) {
+		margin-top: rem(5);
+	}
+}

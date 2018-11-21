@@ -14,9 +14,13 @@
 		padding-bottom: rem(32);
 		padding-left: rem(17);
 
+		img {
+			margin-bottom: 10px;
+		}
+
 		.item-header {
 			padding-bottom: rem(7);
-			min-height: 60px;
+			min-height: rem(85);
 			font-size: rem(18);
 			line-height: rem(26);
 			font-weight: 700;
