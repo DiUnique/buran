@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Где купить</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог БУРАН</title>
 
-	<!-- Disable tap highlight on IE -->
-	<meta name="msapplication-tap-highlight" content="no">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
 
-	<link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
-	<link rel="manifest" href="images/touch/site.webmanifest">
-	<link rel="mask-icon" href="images/touch/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
+  <link rel="manifest" href="images/touch/site.webmanifest">
+  <link rel="mask-icon" href="images/touch/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
 
-	<!-- Your styles -->
-	<link rel="stylesheet" href="styles/main.css">
+  <!-- Your styles -->
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
@@ -118,385 +117,85 @@
 	</div>
 	<!-- /.menu-catalog -->
 
-	<section id="where-to-buy-city">
+	<section id="catalog">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1>Москва</h1>
-					<a href="#map" class="to-map">На карте</a>
+					<h1 class="catalog-header">Печи отопительные Буран</h1>
 				</div>
 			</div>
 			<!-- /.row -->
-			<div class="row where-to-buy-city-items">
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Ваши бани</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва , ул. Поморская, д.39</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495) 723 1265 </li>
-									<li>+7 (903) 723 1265 </li>
-									<li>+7 (903) 753 0758</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.vashibani.ru</li>
-									<li>www.decor-sauna.ru</li>
-								</ul>
-							</div> <!-- web -->
-							<div class="info">
-								<p>Email: opt@blokart.su</p>
-							</div> <!-- web -->
+			<div class="row no-gutters">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="catalog-item">
+						<a href="/product.html">
+							<img src="images/catalog/image-1.png">
+						</a>
+						<h3 class="item-header">Печь дачная «Буран»</h3>
+						<p class="short-descr">Объем помещения до 80 м3</p>
+						<p class="price">5 350 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
 						</div>
 					</div>
-					<!-- /.where-to-buy-city-item -->
+					<!-- /.catalog-item -->
 				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Группа компаний Блокарт</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва , Варшавское шоссе 265</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (915) 106-20-29</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-							</div> <!-- web -->
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="catalog-item">
+						<a href="/product.html">
+							<img src="images/catalog/image-2.png">
+						</a>
+						<h3 class="item-header">Печь буржуйка «Буран»</h3>
+						<p class="short-descr">Объем помещения до 100 м3</p>
+						<p class="price">10 200 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
 						</div>
 					</div>
-					<!-- /.where-to-buy-city-item -->
+					<!-- /.catalog-item -->
 				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Интернет магазин mamont.ru Доставка</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495) 665-01-49</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.mamont.ru</li>
-								</ul>
-							</div> <!-- web -->
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="catalog-item">
+						<a href="/product.html">
+							<img src="images/catalog/image-3.png">
+						</a>
+						<h3 class="item-header">Печь дачная «Буран»</h3>
+						<p class="short-descr">Объем помещения до 70 м3</p>
+						<p class="price">8 000 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
 						</div>
 					</div>
-					<!-- /.where-to-buy-city-item -->
+					<!-- /.catalog-item -->
 				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">ООО П4 Интернет-магазин</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Магазин печи камины на Варшавском: м. Аннино, пересечение Варшавского шоссе и внешней стороны 33-км. МКАД.</li>
-									<li>Строительный рынок "Каширский двор-3", строение "А2-1", Печи Камины.</li>
-									<li>Салон каминов и магазин печей Люберцы: МО, г. Люберцы, ул. Юбилейная, д.4а</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495) 926-26-22</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.pechilux.ru</li>
-								</ul>
-							</div> <!-- web -->
+				<!-- /.col-lg-3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="catalog-item">
+						<a href="/product.html">
+							<img src="images/catalog/image-4.png">
+						</a>
+						<h3 class="item-header">Печь буржуйка «Буран» со стеклом</h3>
+						<p class="short-descr">Объем помещения до 80 м3</p>
+						<p class="price">5 350 Р</p>
+						<div class="button-wrapper">
+							<a href="#" class="button in-cart">В корзину</a>
+							<a href="#" class="button">Быстрый заказ</a>
 						</div>
 					</div>
-					<!-- /.where-to-buy-city-item -->
+					<!-- /.catalog-item -->
 				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Норма</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495) 783-01-54</li>
-									<li>ф. 783-01-55</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">ООО Шутай - продажа и отправка печей в регионы</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (903) 121-15-53</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.xoloda-net.ru</li>
-								</ul>
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">ООО Товары для садоводов, магазин УРОЖАЙ</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва , ул. Архитектора Власова</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>128-76-23</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Мастерская Григорьевых ДОСТАВКА-УСТАНОВКА</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495)741-61-01</li>
-									<li>+7 (963)782-76-43</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.ironstove.ru</li>
-									<li>www.breneran-m.ru</li>
-								</ul>
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">ООО Трогир ДОСТАВКА-УСТАНОВКА</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495)792-15-78</li>
-									<li>+7 (909)630-54-54</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.obogreemmir.ru</li>
-								</ul>
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Интернет-магазин Никифор, доставка</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (916)217-64-48</li>
-									<li>+7 499-264-56-26</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.nikifor.ru</li>
-								</ul>
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Магазин С лёгким паром</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Ярославское шоссе, 8 км от МКАД в сторону области, мкр. Текстильщик, ул. Мичурина, д.1Б</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (498)300-45-15</li>
-									<li>+7 (498)300-45-16</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-								<ul>
-									<li>www.pechi-orlov.ru</li>
-								</ul>
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">Группа компаний Блокарт</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва, Новорижское ш., 10 км от МКАД, ТВЦ "Балтик Бриз"</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495)970-44-55</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">ООО Анкона-АК</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Ленинский район, 1-й км Киевского шоссе, рынок "Строймастер", павильоны 293 и 302</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>8(985)3607537</li>
-									<li>8(495)5421426</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">ООО Анкона-АК</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Люберецкий район, Малаховка, 7-й км Егорьевского шоссе (15 км от МКАД), строительный рынок "Егорка", павильон Р-1</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (916)390-60-41</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-				<div class="col-12 col-sm-6 col-lg-4">
-					<div class="where-to-buy-city-item">
-						<p class="title">ООО Печка-Каменка</p>
-						<div class="contacts">
-							<div class="address">
-								<ul>
-									<li>Москва, МКАД 103км, т/к "Абрамцево", Домик "Всё для Бани"</li>
-								</ul>
-							</div> <!-- address -->
-							<div class="phones">
-								<ul>
-									<li>+7 (495)979-02-52</li>
-								</ul>
-							</div> <!-- phones -->
-							<div class="web">
-							</div> <!-- web -->
-						</div>
-					</div>
-					<!-- /.where-to-buy-city-item -->
-				</div>
-
-			</div>
-			<!-- /.row -->
-			<div class="row">
-				<div class="col-12">
-					<div id="map" class="map">
-					   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A55b6123621d5e6a363761f33f08c0cf9b759aac030ee9bbcca0d558501cfdccd&amp;width=100%&amp;height=670&amp;lang=ru_RU&amp;scroll=true"></script>
-					</div>
-				</div>
-				<!-- /.col-12 -->
+				<!-- /.col-lg-3 -->
 			</div>
 			<!-- /.row -->
 		</div>
 		<!-- /.container -->
 	</section>
-	<!-- /#where-to-buy-city -->
+	<!-- /# catalog -->
 
 	    <footer id="footer">
 	        <div class="container-fluid">

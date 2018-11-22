@@ -84,6 +84,7 @@
   padding-left: 0;
   list-style: none;
   border-radius: .25rem;
+  justify-content: center;
 
   .pagination-item {
     padding: 5px;
@@ -115,3 +116,50 @@ form.buys {
 		margin-top: rem(5);
 	}
 }
+
+.filters {
+	justify-content: flex-end;
+	
+	.filter-list {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+		
+			.filter-list-content {
+			    display: block;
+			}
+    }
+	}
+
+	.filter-list-btn {
+    color: #333;
+    background-color: #fff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	}
+
+	.filter-list-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #fff;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+
+	    a {
+        color: rgba(0,0,0,.55);
+        font-size: 14px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &.active, &:hover {
+        	color: #000;
+        }
+	    }
+	}
+
+} // filters

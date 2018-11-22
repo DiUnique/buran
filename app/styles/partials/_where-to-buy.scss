@@ -70,10 +70,11 @@
 
 				.address,
 				.phones,
-				.web {
+				.web,
+				.info {
 					padding-bottom: rem(15);
 
-					ul {
+					ul, p {
 						position: relative;
 						padding-left: 30px;
 
@@ -124,6 +125,16 @@
 					}
 
 				} // web
+
+				.info {
+					p {
+						&:before {
+							content: '';
+							background: url(../images/where-to-buy/info.svg) no-repeat top center;
+						}	
+					}
+				} // info
+
 			} // contacts
 		} // where-to-buy-city-item
 	} // where-to-buy-city-items

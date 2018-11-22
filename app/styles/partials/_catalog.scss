@@ -1,6 +1,31 @@
 #catalog {
 	padding-bottom: rem(75);
 
+	.vertical_menu_advanced {
+		
+		.vertical_menu-header {
+
+		}// vertical_menu-header
+
+		.catalog-items {
+
+			.catalog-item {
+				text-align: left;
+				border: none;
+				padding: 10px 0;
+
+				.catalog-item-link {
+					color: #000;
+
+					&:hover {
+						color: $yellow;
+					}
+				} // catalog-item-link
+			} // catalog-item
+		} // catalog-items
+
+	} // vertical_menu_advanced
+
 	.catalog-header {
 		padding-bottom: rem(32);
 	}
@@ -16,11 +41,12 @@
 
 		img {
 			margin-bottom: 10px;
+			max-width: 100%;
 		}
 
 		.item-header {
 			padding-bottom: rem(7);
-			min-height: rem(85);
+			height: rem(105);
 			font-size: rem(18);
 			line-height: rem(26);
 			font-weight: 700;

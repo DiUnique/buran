@@ -10,6 +10,8 @@ body {
 h1 {
 	font-weight: bold;
 	font-size: rem(34);
+	margin-top: rem(20);
+	margin-bottom: rem(20);
 }
 
 h2 {
@@ -19,19 +21,19 @@ h2 {
 	line-height: rem(43);
 }
 
-h3 {
-	font-size: rem(26);
-	padding-bottom: rem(25);
+h2, h3, h4 {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-h4 {
-	padding-bottom: rem(25);
+h3 {
+	font-size: rem(26);
 }
 
 p {
 	font-family: $roboto;
 	font-size: rem(16);
-	line-height: 120%;
+	line-height: rem(24);
 	margin: 0;
 	padding: 0;
 }

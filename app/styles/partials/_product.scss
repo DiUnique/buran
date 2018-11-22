@@ -29,6 +29,7 @@
 		.price-quantity {
 			padding-bottom: rem(30);
 			display: flex;
+			justify-content: space-evenly;
 
 			.price {
 				font-family: $rubik;
@@ -87,6 +88,7 @@
 		.button-wrapper {
 			padding-bottom: rem(42);
 			display: flex;
+			justify-content: space-evenly;
 
 			button#buy {
 				border: unset;
@@ -208,15 +210,6 @@
 	.features-content {
 		text-align: justify;
 		padding-bottom: rem(90);
-
-		h3 {
-			padding-top: rem(33);
-			padding-bottom: rem(25);
-		}
-
-		h4 {
-			padding-bottom: rem(25);
-		}
 
 		p {
 			line-height: rem(23);
