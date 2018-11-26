@@ -162,7 +162,7 @@
 
 	.nav-pills {
 		border-bottom: 1px solid #828282;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		.nav-item {
 
@@ -322,7 +322,21 @@
 
 		.stock {
 			text-align: center;
+
+			.single-right-news {
+				margin-top: 10px;
+				.date {
+					font-weight: bold;
+					color: $red;
+					text-decoration: underline;
+				} // date
+
+				.annotation {
+					font-size: rem(14);
+				}
+			} // single-right-news
 		}
+
 	} // stocks
 
 } // product

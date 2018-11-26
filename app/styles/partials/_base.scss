@@ -74,6 +74,15 @@ table tr td {
     padding-bottom: .625rem
 }
 
+a {
+	font-size: rem(14);
+	color: $red;
+
+	&:hover {
+		color: #333;
+	}
+}
+
 a.button {
 		border: 3px solid $yellow;
 		color: #fff;
