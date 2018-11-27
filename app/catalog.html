@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог БУРАН</title>
-
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-
   <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
@@ -17,337 +16,586 @@
   <link rel="mask-icon" href="images/touch/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">
-
   <!-- Your styles -->
   <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
+  <!-- Navigation -->
+  <nav id="sticky-nav" class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+          <img src="images/buran.svg">
+        </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active catalog-link-desctop">
+            <a class="nav-link" href="/catalog.html">Каталог</a>
+          </li>
+          <li class="nav-item catalog-link">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Каталог <b class="caret"></b></a>
+            <ul class="dropdown-menu multi-level">
+              <li class="nav-item"><a class="nav-link" href="/catalog.html">Печи длительного горения</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product.html">Печи отопительные</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product.html">Банные печи</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product.html">Мангалы</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product.html">Дымоходы</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product.html">Аксессуары</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product.html">Товары для бани и сауны</a></li>
+              <li class="nav-item"><a class="nav-link" href="/product.html">Сопутствующие товары</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О компании</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/where-to-buy.html">Где купить</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div> <!-- navbar-collapse -->
+      <div class="cart">
+        <a href="/checkout.html">
+                <svg width="39" height="35" viewBox="0 0 39 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.0229 5.09087C37.8638 4.93181 37.7047 4.77267 37.3865 4.77267H7.15911L6.36363 0.636341C6.36363 0.318133 5.88636 1.31049e-08 5.56815 1.31049e-08H0.795407C0.318208 -7.4561e-05 0 0.318133 0 0.795407C0 1.27268 0.318208 1.59089 0.795482 1.59089H4.93188L8.75008 21.0001C9.22735 23.5455 11.6137 25.4546 14.1592 25.4546H32.4546C32.9319 25.4546 33.2501 25.1364 33.2501 24.6591C33.2501 24.1818 32.9319 23.8636 32.4546 23.8636H14.3182C13.0455 23.8636 11.7728 23.2273 11.1364 22.1136L34.3637 18.9318C34.6819 18.9318 35.0001 18.6136 35.0001 18.2955L38.1819 5.56815C38.1819 5.56815 38.1819 5.24994 38.0229 5.09087ZM33.5683 17.5L10.3409 20.5227L7.47724 6.20449H36.2728L33.5683 17.5Z" fill="#333333"/>
+                <path d="M13.5229 27.0459C11.2957 27.0459 9.54565 28.7959 9.54565 31.0232C9.54565 33.2505 11.2957 35.0004 13.5229 35.0004C15.7502 35.0004 17.5002 33.2504 17.5002 31.0232C17.5002 28.7959 15.7502 27.0459 13.5229 27.0459ZM13.5229 33.4095C12.2502 33.4095 11.1365 32.2958 11.1365 31.0232C11.1365 29.7505 12.2502 28.6368 13.5229 28.6368C14.7957 28.6368 15.9093 29.7505 15.9093 31.0232C15.9093 32.2958 14.7957 33.4095 13.5229 33.4095Z" fill="#333333"/>
+                <path d="M29.4316 27.0459C27.2043 27.0459 25.4543 28.7959 25.4543 31.0232C25.4543 33.2505 27.2044 35.0004 29.4316 35.0004C31.6589 35.0004 33.4089 33.2504 33.4089 31.0232C33.4089 28.7959 31.6588 27.0459 29.4316 27.0459ZM29.4316 33.4095C28.1588 33.4095 27.0452 32.2958 27.0452 31.0232C27.0452 29.7505 28.1588 28.6368 29.4316 28.6368C30.7044 28.6368 31.818 29.7505 31.818 31.0232C31.818 32.2958 30.7043 33.4095 29.4316 33.4095Z" fill="#333333"/>
+                <circle id="circle" cx="20.5" cy="12.5" r="3.5" fill="#FFAA2F"/>
+                </svg>
+            </a>
+      </div>
+      <div class="contacts">
+        <p class="phone">+7 (985) 170-98-02</p>
+        <p class="advice"><a href="#" data-toggle="modal" data-target="#ModalCenter">Получить консультацию</a></p>
+      </div>
+      <div class="contacts-mobile">
+        <a href="#" data-toggle="modal" data-target="#ModalCenter">
+              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 1.8125C21.4951 1.8125 27.1875 7.50488 27.1875 14.5C27.1875 21.4951 21.4951 27.1875 14.5 27.1875C7.50488 27.1875 1.8125 21.4951 1.8125 14.5C1.8125 7.50488 7.50488 1.8125 14.5 1.8125ZM14.5 0C6.49243 0 0 6.49243 0 14.5C0 22.5076 6.49243 29 14.5 29C22.5076 29 29 22.5076 29 14.5C29 6.49243 22.5076 0 14.5 0ZM22.5837 19.3481L22.5022 19.1003C22.3111 18.5304 21.681 17.9356 21.1004 17.7763L18.9569 17.1904C18.3764 17.0329 17.548 17.2453 17.1215 17.6719L16.3462 18.4472C13.5283 17.6843 11.3176 15.4735 10.5565 12.6557L11.3317 11.8804C11.7566 11.4556 11.969 10.6272 11.8114 10.0449L11.2272 7.90137C11.0697 7.3208 10.4714 6.69067 9.90152 6.49951L9.65723 6.41806C9.0855 6.2269 8.26953 6.41982 7.84473 6.84644L6.68359 8.00757C6.47652 8.21289 6.34375 8.80229 6.34375 8.80411C6.30478 12.4893 7.74917 16.0382 10.3546 18.6454C12.953 21.2438 16.4896 22.6864 20.1623 22.6545C20.1818 22.6545 20.7889 22.5253 20.996 22.3182L22.1571 21.157C22.5819 20.734 22.773 19.918 22.5837 19.3481Z" fill="#CC2C11"/>
+              </svg>
+            </a>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation -->
+  <div class="menu-catalog">
+    <div class="container">
+      <div class="row">
+        <ul class="catalog-items">
+          <li class="catalog-item"><a href="/product.html">Печи длительного горения</a></li>
+          <li class="catalog-item"><a href="/product.html">Печи отопительные</a></li>
+          <li class="catalog-item"><a href="/product.html">Банные печи</a></li>
+          <li class="catalog-item"><a href="/product.html">Мангалы</a></li>
+          <li class="catalog-item"><a href="/product.html">Дымоходы</a></li>
+          <li class="catalog-item"><a href="/product.html">Аксессуары</a></li>
+          <li class="catalog-item"><a href="/product.html">Товары для бани и сауны</a></li>
+          <li class="catalog-item"><a href="/product.html">Сопутствующие товары</a></li>
+        </ul>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.menu-catalog -->
+  <section id="catalog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="catalog-header">Печи отопительные Буран</h1>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-12">
+          <div class="filters">
 
-	<!-- Navigation -->
-	<nav id="sticky-nav" class="navbar navbar-expand-lg navbar-light">
+            <div class="filter-list-mobile"><button class="filter-list-btn-mobile">Фильтры</button>
+              <div class="filter-list-content-mobile">
+                <div class="filter_section" id="smartfilter">
+                  <form id="smartFilterForm" method="get">
+                    <input id="cat_id" type="hidden" name="category_id" value="6">
+                     <p class="filter_param_block-header">Длинна, мм</p>
+                  <div class="filter_container">
+                    <div class="filter_param">
+                      <div class="filter_param_block"><input type="checkbox" name="14" id="option_0" value="610"><label class="filter_param_block-label" for="option_0">610</label>
+                      </div>
+                    </div><!-- filter_param -->
+                    <div class="filter_param">
+                      <div class="filter_param_block"><input type="checkbox" name="14" id="option_1" value="720"><label class="filter_param_block-label" for="option_1">720</label>
+                      </div>
+                    </div><!-- filter_param -->
+                    <div class="filter_param">
+                      <div class="filter_param_block"><input type="checkbox" name="14" id="option_2" value="840"><label class="filter_param_block-label" for="option_2">840</label>
+                      </div>
+                    </div><!-- filter_param -->
+                    <div class="filter_param">
+                      <div class="filter_param_block"><input type="checkbox" name="14" id="option_3" value="925"><label class="filter_param_block-label" for="option_3">925</label>
+                      </div>
+                    </div><!-- filter_param -->
+                  </div><!-- filter_container -->
+                </form><!-- smartFilterForm -->
+            </div><!-- filter_section -->
+            </div>
+          </div>
 
-	  <div class="container">
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
+            <div class="sort-list"><button class="sort-list-btn">Сортировать</button>
+              <div class="sort-list-content"><a href="/catalog/pechi-gazogeneratornye?sort=price" class="active priceDown">Цена</a><a href="/catalog/pechi-gazogeneratornye?sort=price" class="priceDown">Цена</a><a href="/catalog/pechi-gazogeneratornye?sort=name">Имя</a></div>
+            </div>
+          </div><!-- filters -->
+        </div><!-- .col-12 -->
+      </div>
+      <div class="row">
+        <div class="d-none d-xl-block col-3">
+          <div class="vertical_menu_advanced">
+            <h3 class="vertical_menu-header">Категории</h3>
+            <ul class="catalog-items">
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Печи длительного горения</a></li>
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Печи отопительные</a></li>
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Банные печи</a></li>
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Мангалы</a></li>
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Дымоходы</a></li>
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Аксессуары</a></li>
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Товары для бани и сауны</a></li>
+              <li class="catalog-item"><a class="catalog-item-link" href="/product.html">Сопутствующие товары</a></li>
+            </ul>
+          </div>
+          <!-- /.vertical_menu_advanced -->
+          <div class="filter_vertical">
+            <div class="filters-header"><h3>Фильтры</h3>
+            </div>
+            <div class="filter_section" id="smartfilter">
+              <form id="smartFilterForm" method="get"><input id="cat_id" type="hidden" name="category_id" value="6">
+                <p class="filter_param_block-header">Длинна, мм</p>
+                <div class="filter_container">
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="14" id="option_0" value="610"><label for="option_0" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">610</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="14" id="option_1" value="720"><label class="filter_param_block-label" for="option_1">720</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="14" id="option_2" value="840"><label for="option_2" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">840</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="14" id="option_3" value="925"><label for="option_3" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">925</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <p class="filter_param_block-header">Ширина, мм</p>
+                <div class="filter_container">
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="6" id="option_4" value="435"><label for="option_4" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">435</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="6" id="option_5" value="580"><label for="option_5" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">580</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <p class="filter_param_block-header">Высота, мм</p>
+                <div class="filter_container">
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="5" id="option_6" value="630"><label for="option_6" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">630</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="5" id="option_7" value="835"><label for="option_7" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">835</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <p class="filter_param_block-header">Диаметр дымоотводящего патрубка, мм (внешний/внутренний)</p>
+                <div class="filter_container">
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="12" id="option_8" value="120"><label for="option_8" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">120</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="12" id="option_9" value="150"><label for="option_9" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">150</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <p class="filter_param_block-header">Масса, кг</p>
+                <div class="filter_container">
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="8" id="option_10" value="55"><label for="option_10" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">55</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="8" id="option_11" value="75"><label for="option_11" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">75</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="8" id="option_12" value="100"><label for="option_12" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">100</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="8" id="option_13" value="130"><label for="option_13" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">130</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <p class="filter_param_block-header">Мощность, кВт</p>
+                <div class="filter_container">
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="9" id="option_14" value="6"><label for="option_14" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">6</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="9" id="option_15" value="8"><label for="option_15" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">8</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="9" id="option_16" value="11"><label for="option_16" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">11</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="9" id="option_17" value="14"><label for="option_17" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">14</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <p class="filter_param_block-header">Объем помещения, куб.м.</p>
+                <div class="filter_container">
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="10" id="option_18" value="100"><label for="option_18" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">100</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="10" id="option_19" value="150"><label for="option_19" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">150</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="10" id="option_20" value="200"><label for="option_20" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">200</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                  <div class="filter_param">
+                    <div class="filter_param_block"><input type="checkbox" name="10" id="option_21" value="400"><label for="option_21" style="margin: 10px 0 0 10px; font-size: 14px; position: relative; bottom: 2px;">400</label><!-- <div class="tooltipCounter" style="display: inline-block; margin-left: 15px; position: relative; bottom: 3px;"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="filter_results">
+                  <div class="count">
+                    <script type="text/javascript">
+                    $('#filter_submit').prop('disabled', false);
 
+                    </script><span>8</span> вариантов
+                  </div>
+                  <div class="filter_results-controls">
+                    <input type="submit" value="Применить" id="filter_submit">
+                    <a href="/catalog/pechi-gazogeneratornye" class="filter_clear_button">Сбросить</a>
+                  </div>
+                </div>
+              </form><!-- /.filters-header -->
+            </div><!-- smartfilter -->
+          </div>
+        </div>
+        <!-- /.col-3 -->
+        <div class="col-sm-12 col-xl-9">
+  <div class="row no-gutters">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/catalog/image-1.png" title="Печь г\г «Буран» АОТ-14 тип 02 до 400м3"><img src="/images/catalog/image-1.png"><h3 class="item-header">Печь г\г «Буран» АОТ-14 тип 02 до 400м3</h3></a>
+        <form class="buys item_50"><input id="variants_89" name="variant" value="89" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 16 200<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="50" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_89" name="variant" value="89" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/catalog/image-2.png" title="Печь г\г «Буран» АОТ-14 тип 02 с\с до 400м3"><img src="/images/catalog/image-2.png"><h3 class="item-header">Печь г\г «Буран» АОТ-14 тип 02 с\с до 400м3</h3></a>
+        <form class="buys item_51"><input id="variants_90" name="variant" value="90" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 17 300<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="51" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_90" name="variant" value="90" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/catalog/image-3.png" title="Печь г\г «Буран» АОТ-11 тип 01 с\с до 200м3"><img src="/images/catalog/image-3.png"><h3 class="item-header">Печь г\г «Буран» АОТ-11 тип 01 с\с до 200м3</h3></a>
+        <form class="buys item_49"><input id="variants_88" name="variant" value="88" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 14 000<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="49" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_88" name="variant" value="88" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/catalog/image-4.png" title="Печь г\г «Буран» АОТ-11 тип 01 до 200м3"><img src="/images/catalog/image-4.png"><h3 class="item-header">Печь г\г «Буран» АОТ-11 тип 01 до 200м3</h3></a>
+        <form class="buys item_48"><input id="variants_87" name="variant" value="87" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 12 900<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="48" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_87" name="variant" value="87" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/product/similar-product-1.png" title="Печь г\г «Буран» АОТ-08 тип 0,05 с\с до 140м3"><img src="/images/product/similar-product-1.png"><h3 class="item-header">Печь г\г «Буран» АОТ-08 тип 0,05 с\с до 140м3</h3></a>
+        <form class="buys item_47"><input id="variants_86" name="variant" value="86" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 13 300<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="47" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_86" name="variant" value="86" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/product/similar-product-2.png" title="Печь г\г «Буран» АОТ-08 тип 0,05 до 140м3"><img src="/images/product/similar-product-2.png"><h3 class="item-header">Печь г\г «Буран» АОТ-08 тип 0,05 до 140м3</h3></a>
+        <form class="buys item_46"><input id="variants_85" name="variant" value="85" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 12 200<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="46" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_85" name="variant" value="85" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/product/similar-product-3.png" title="Печь г\г «Буран» АОТ-06 тип 00 с\с до 100м3"><img src="/images/product/similar-product-3.png"><h3 class="item-header">Печь г\г «Буран» АОТ-06 тип 00 с\с до 100м3</h3></a>
+        <form class="buys item_45"><input id="variants_84" name="variant" value="84" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 10 550<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="45" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_84" name="variant" value="84" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="catalog-item"><a class="image" href="/images/product/similar-product-4.png" title="Печь г\г «Буран» АОТ-06 тип 00 до 100м3"><img src="/images/product/similar-product-4.png"><h3 class="item-header">Печь г\г «Буран» АОТ-06 тип 00 до 100м3</h3></a>
+        <form class="buys item_44"><input id="variants_83" name="variant" value="83" type="radio" class="variant_radiobutton" checked="" style="display:none;">
+          <div class="price_block">
+            <div class="new_price price"> 9 450<span> руб.</span>
+              <div class="old_price"></div>
+            </div>
+          </div><input name="product_id" value="44" type="text" class="product_id" disabled="" style="display:none;"><input id="variants_83" name="variant" value="83" type="radio" checked="" style="display:none;">
+          <div class="buy_block"><input style="min-width: 80%;" type="submit" class="buy btn btn-warning in-cart" value="в корзину" data-result-text="добавлено"><a class="buy added btn btn-warning" href="/cart" id="buyed56" rel="nofollow" style="display:none">Добавлено</a><a class="button buy_one_click" style="display: inline-block; min-width: 80%; color: #000; margin-top: 15px;">Быстрый заказ</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="description"></div><!-- /.description -->
+  <div class="description"><h1 align="center">Печи длительного горения «Буран»</h1>
+    <p align="justify"><a href="/images/product/similar-product-2.png" class="zoom"><img src="/images/product/similar-product-2.png" style="float: left; margin-right: 5px;" width="300"></a></p>
+    <p>Современные газогенераторные&nbsp;<strong style="font-weight: normal;">дровяные печи</strong>&nbsp;«Буран» предназначены&nbsp;<strong style="font-weight: normal;">для</strong>&nbsp;отопления&nbsp;<strong style="font-weight: normal;">дома</strong>&nbsp;или гаража, бытового или производственного помещения, организации сушильных помещений. Функциональные, надежные, эргономичные и комфортные в эксплуатации&nbsp;<strong style="font-weight: normal;">печи длительного горения</strong>&nbsp;нашли своих пользователей во всех без исключения регионах России, сделав марку «Буран» популярной и востребованной.</p><h2>Общее описание</h2>
+    <p>Печи «Буран» состоят их двух камер, расположенных в цельносварном корпусе. Нижняя камера предназначена для преобразования поступающего топлива в газообразное состояние, а верхняя – для сгорания выделяемых газов. Для максимальной эффективности и безопасности в работе, передние трубы печи оборудуются инжекторами для дожигания газа. Корпус изделия покрывается специальной краской, устойчивой к воздействию температур, которая полностью полимеризуется при первой растопки печи.&nbsp;<strong style="font-weight: normal;">Печь длительного горения</strong>&nbsp;«Буран» оснащена регулятором мощности, расположенным на передней дверце конструкции и регулятором-газификатором на дымоходном патрубке.</p><h3>Технические данные</h3>
+    <table style="width: 100%;">
+      <tbody>
+        <tr>
+          <td>Технические данные</td>
+          <td>АОТ-06<br>Тип-00</td>
+          <td>АОТ-08<br>Тип-0,05</td>
+          <td>АОТ-11<br>Тип-01</td>
+          <td>АОТ-14<br>Тип-02</td>
+        </tr>
+        <tr>
+          <td>Длинна, мм</td>
+          <td>610</td>
+          <td>840</td>
+          <td>720</td>
+          <td>925</td>
+        </tr>
+        <tr>
+          <td>Ширина, мм</td>
+          <td>435</td>
+          <td>435</td>
+          <td>580</td>
+          <td>580</td>
+        </tr>
+        <tr>
+          <td>Высота, мм</td>
+          <td>630</td>
+          <td>630</td>
+          <td>835</td>
+          <td>835</td>
+        </tr>
+        <tr>
+          <td>Диаметр дымоотводящего патрубка, мм</td>
+          <td>120</td>
+          <td>120</td>
+          <td>120</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>Масса, кг (не более)</td>
+          <td>55</td>
+          <td>75</td>
+          <td>100</td>
+          <td>130</td>
+        </tr>
+        <tr>
+          <td>Мощность, кВт</td>
+          <td>6</td>
+          <td>8</td>
+          <td>11</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Обьем помещения, куб.м</td>
+          <td>100</td>
+          <td>150</td>
+          <td>200</td>
+          <td>400</td>
+        </tr>
+      </tbody>
+    </table><h3>Используемое топливо</h3>
+    <p>Наши газогенераторные&nbsp;<strong style="font-weight: normal;">печи для дома</strong>&nbsp;способны работать на всех видах твердого топлива (за исключением угля), натуральная древесина, древесные и торфяные брикеты, картон и так далее. КПД&nbsp;<strong style="font-weight: normal;">печи длительного горения</strong>&nbsp;«Буран» - 70-80%</p><h3>Установка печи</h3>
+    <p>Решившись&nbsp;<strong style="font-weight: normal;">купить печь для дома</strong>&nbsp;«Буран» необходимо ознакомиться с инструкцией и изучить правила пожарной безопасности при ее установке. В частности, определить место монтажа, сделать дымоход, установить под печь защитный лист из металла.</p><h3>Начало эксплуатации</h3>
+    <p>Внимание:&nbsp;<strong style="font-weight: normal;">дровяные печи для дома</strong>&nbsp;должны использоваться только в соответствии с требованиями, изложенными в инструкции производителя.</p>
+    <p>Перед началом эксплуатации&nbsp;<strong style="font-weight: normal;">печи для дома </strong>«Буран» необходимо убедиться в наличии тяги и герметичности дымохода. Установив регуляторы мощности и газификации в открытом положении, приступить к растопке печи. Нижнюю камеру после растопки заполнить основным топливом, дождавшись разгорания. После 15-20 минутной эксплуатации перевести печь в режим газификации, для чего перекрыть на 45 градусов регулятор-газификатор. Данный режим является рабочим, эксплуатация разрешена только в таком положении. Это не только требование безопасности, но и оптимальные условия для максимального коэффициента полезного действия изделия.</p><h3>Предложение ЗАО «Лаотерм»</h3>
+    <p>Наша компания предлагает выбрать и&nbsp;<strong style="font-weight: normal;">купить печь для дома</strong>&nbsp;«Буран» в том варианте исполнения, который соответствует вашим потребностям по отоплению объекта. Мы гарантируем функциональность, надежность и безопасность своих&nbsp;<strong style="font-weight: normal;">печей длительного горения</strong>, а также самую лучшую цену на свою продукцию.</p>
+  </div><!-- description -->
+</div>
 
-	      <a class="navbar-brand" href="/">
-	        <img src="images/buran.svg">
-	      </a>
-
-	      <div class="collapse navbar-collapse" id="navbarNav">
-	        <ul class="navbar-nav">
-	          <li class="nav-item active catalog-link-desctop">
-	            <a class="nav-link" href="/catalog.html">Каталог</a>
-	          </li>
-	          <li class="nav-item catalog-link">
-	              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Каталог <b class="caret"></b></a>
-	              <ul class="dropdown-menu multi-level">
-	                  <li class="nav-item"><a class="nav-link" href="/catalog.html">Печи длительного горения</a></li>
-	                  <li class="nav-item"><a class="nav-link" href="/product.html">Печи отопительные</a></li>
-	                  <li class="nav-item"><a class="nav-link" href="/product.html">Банные печи</a></li>
-	                  <li class="nav-item"><a class="nav-link" href="/product.html">Мангалы</a></li>
-	                  <li class="nav-item"><a class="nav-link" href="/product.html">Дымоходы</a></li>
-	                  <li class="nav-item"><a class="nav-link" href="/product.html">Аксессуары</a></li>
-	                  <li class="nav-item"><a class="nav-link" href="/product.html">Товары для бани и сауны</a></li>
-	                  <li class="nav-item"><a class="nav-link" href="/product.html">Сопутствующие товары</a></li>
-	              </ul>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">Оплата и доставка</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">О компании</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="/where-to-buy.html">Где купить</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">Контакты</a>
-	          </li>
-	        </ul>
-	      </div> <!-- navbar-collapse -->
-
-	      <div class="cart">
-	          <a href="/checkout.html">
-	              <svg width="39" height="35" viewBox="0 0 39 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-	              <path d="M38.0229 5.09087C37.8638 4.93181 37.7047 4.77267 37.3865 4.77267H7.15911L6.36363 0.636341C6.36363 0.318133 5.88636 1.31049e-08 5.56815 1.31049e-08H0.795407C0.318208 -7.4561e-05 0 0.318133 0 0.795407C0 1.27268 0.318208 1.59089 0.795482 1.59089H4.93188L8.75008 21.0001C9.22735 23.5455 11.6137 25.4546 14.1592 25.4546H32.4546C32.9319 25.4546 33.2501 25.1364 33.2501 24.6591C33.2501 24.1818 32.9319 23.8636 32.4546 23.8636H14.3182C13.0455 23.8636 11.7728 23.2273 11.1364 22.1136L34.3637 18.9318C34.6819 18.9318 35.0001 18.6136 35.0001 18.2955L38.1819 5.56815C38.1819 5.56815 38.1819 5.24994 38.0229 5.09087ZM33.5683 17.5L10.3409 20.5227L7.47724 6.20449H36.2728L33.5683 17.5Z" fill="#333333"/>
-	              <path d="M13.5229 27.0459C11.2957 27.0459 9.54565 28.7959 9.54565 31.0232C9.54565 33.2505 11.2957 35.0004 13.5229 35.0004C15.7502 35.0004 17.5002 33.2504 17.5002 31.0232C17.5002 28.7959 15.7502 27.0459 13.5229 27.0459ZM13.5229 33.4095C12.2502 33.4095 11.1365 32.2958 11.1365 31.0232C11.1365 29.7505 12.2502 28.6368 13.5229 28.6368C14.7957 28.6368 15.9093 29.7505 15.9093 31.0232C15.9093 32.2958 14.7957 33.4095 13.5229 33.4095Z" fill="#333333"/>
-	              <path d="M29.4316 27.0459C27.2043 27.0459 25.4543 28.7959 25.4543 31.0232C25.4543 33.2505 27.2044 35.0004 29.4316 35.0004C31.6589 35.0004 33.4089 33.2504 33.4089 31.0232C33.4089 28.7959 31.6588 27.0459 29.4316 27.0459ZM29.4316 33.4095C28.1588 33.4095 27.0452 32.2958 27.0452 31.0232C27.0452 29.7505 28.1588 28.6368 29.4316 28.6368C30.7044 28.6368 31.818 29.7505 31.818 31.0232C31.818 32.2958 30.7043 33.4095 29.4316 33.4095Z" fill="#333333"/>
-	              <circle id="circle" cx="20.5" cy="12.5" r="3.5" fill="#FFAA2F"/>
-	              </svg>
-	          </a>
-	      </div>
-	      <div class="contacts">
-	          <p class="phone">+7 (985) 170-98-02</p>
-	          <p class="advice"><a href="#" data-toggle="modal" data-target="#ModalCenter">Получить консультацию</a></p>
-	      </div>
-	      <div class="contacts-mobile">
-	          <a href="#" data-toggle="modal" data-target="#ModalCenter">
-	            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-	            <path d="M14.5 1.8125C21.4951 1.8125 27.1875 7.50488 27.1875 14.5C27.1875 21.4951 21.4951 27.1875 14.5 27.1875C7.50488 27.1875 1.8125 21.4951 1.8125 14.5C1.8125 7.50488 7.50488 1.8125 14.5 1.8125ZM14.5 0C6.49243 0 0 6.49243 0 14.5C0 22.5076 6.49243 29 14.5 29C22.5076 29 29 22.5076 29 14.5C29 6.49243 22.5076 0 14.5 0ZM22.5837 19.3481L22.5022 19.1003C22.3111 18.5304 21.681 17.9356 21.1004 17.7763L18.9569 17.1904C18.3764 17.0329 17.548 17.2453 17.1215 17.6719L16.3462 18.4472C13.5283 17.6843 11.3176 15.4735 10.5565 12.6557L11.3317 11.8804C11.7566 11.4556 11.969 10.6272 11.8114 10.0449L11.2272 7.90137C11.0697 7.3208 10.4714 6.69067 9.90152 6.49951L9.65723 6.41806C9.0855 6.2269 8.26953 6.41982 7.84473 6.84644L6.68359 8.00757C6.47652 8.21289 6.34375 8.80229 6.34375 8.80411C6.30478 12.4893 7.74917 16.0382 10.3546 18.6454C12.953 21.2438 16.4896 22.6864 20.1623 22.6545C20.1818 22.6545 20.7889 22.5253 20.996 22.3182L22.1571 21.157C22.5819 20.734 22.773 19.918 22.5837 19.3481Z" fill="#CC2C11"/>
-	            </svg>
-	          </a>
-	      </div>
-	    </div>
-	  </nav>
-	<!-- End Navigation -->
-
-	<div class="menu-catalog">
-		<div class="container">
-			<div class="row">
-				<ul class="catalog-items">
-					<li class="catalog-item"><a href="/product.html">Печи длительного горения</a></li>
-					<li class="catalog-item"><a href="/product.html">Печи отопительные</a></li>
-					<li class="catalog-item"><a href="/product.html">Банные печи</a></li>
-					<li class="catalog-item"><a href="/product.html">Мангалы</a></li>
-					<li class="catalog-item"><a href="/product.html">Дымоходы</a></li>
-					<li class="catalog-item"><a href="/product.html">Аксессуары</a></li>
-					<li class="catalog-item"><a href="/product.html">Товары для бани и сауны</a></li>
-					<li class="catalog-item"><a href="/product.html">Сопутствующие товары</a></li>
-				</ul>
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</div>
-	<!-- /.menu-catalog -->
-
-	<section id="catalog">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h1 class="catalog-header">Печи отопительные Буран</h1>
-				</div>
-			</div>
-			<!-- /.row -->
-			<div class="row">
-					<div class="d-none d-xl-block">
-						<div class="vertical_menu_advanced">
-							<h3 class="vertical_menu-header">Категории</h3>
-							<ul class="catalog-items">
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Печи длительного горения</a></li>
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Печи отопительные</a></li>
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Банные печи</a></li>
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Мангалы</a></li>
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Дымоходы</a></li>
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Аксессуары</a></li>
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Товары для бани и сауны</a></li>
-								<li class="catalog-item"><a class="catalog-item-link" href="/product.html">Сопутствующие товары</a></li>
-							</ul>
-						</div>
-						<!-- /.vertical_menu_advanced -->
-						<div class="filters-header">
-							<h3>Фильтры</h3>
-						</div>
-						<!-- /.filters-header -->
-					</div>
-					<!-- /.col-3 -->
-					<div class="col-sm-12 col-xl-9">
-						<div class="row no-gutters">
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-								<div class="catalog-item">
-									<a href="/product.html">
-										<img src="images/catalog/image-1.png">
-									</a>
-									<h3 class="item-header">Печь дачная «Буран»</h3>
-									<p class="short-descr">Объем помещения до 80 м3</p>
-									<p class="price">5 350 Р</p>
-									<div class="button-wrapper">
-										<a href="#" class="button in-cart">В корзину</a>
-										<a href="#" class="button">Быстрый заказ</a>
-									</div>
-								</div>
-								<!-- /.catalog-item -->
-							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-								<div class="catalog-item">
-									<a href="/product.html">
-										<img src="images/catalog/image-2.png">
-									</a>
-									<h3 class="item-header">Печь буржуйка «Буран»</h3>
-									<p class="short-descr">Объем помещения до 100 м3</p>
-									<p class="price">10 200 Р</p>
-									<div class="button-wrapper">
-										<a href="#" class="button in-cart">В корзину</a>
-										<a href="#" class="button">Быстрый заказ</a>
-									</div>
-								</div>
-								<!-- /.catalog-item -->
-							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-								<div class="catalog-item">
-									<a href="/product.html">
-										<img src="images/catalog/image-3.png">
-									</a>
-									<h3 class="item-header">Печь дачная «Буран»</h3>
-									<p class="short-descr">Объем помещения до 70 м3</p>
-									<p class="price">8 000 Р</p>
-									<div class="button-wrapper">
-										<a href="#" class="button in-cart">В корзину</a>
-										<a href="#" class="button">Быстрый заказ</a>
-									</div>
-								</div>
-								<!-- /.catalog-item -->
-							</div>
-							<!-- /.col-lg-3 -->
-							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-								<div class="catalog-item">
-									<a href="/product.html">
-										<img src="images/catalog/image-4.png">
-									</a>
-									<h3 class="item-header">Печь буржуйка «Буран» со стеклом</h3>
-									<p class="short-descr">Объем помещения до 80 м3</p>
-									<p class="price">5 350 Р</p>
-									<div class="button-wrapper">
-										<a href="#" class="button in-cart">В корзину</a>
-										<a href="#" class="button">Быстрый заказ</a>
-									</div>
-								</div>
-								<!-- /.catalog-item -->
-							</div>
-							<!-- /.col-lg-3 -->
-						</div>
-						<!-- /.row -->
-					</div>
-					<!-- /.col-9 -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</section>
-	<!-- /# catalog -->
-
-	    <footer id="footer">
-	        <div class="container-fluid">
-	            <div class="row">
-	                <div class="col-lg-3">
-	                    <div class="footer-logo">
-	                        <img src="images/logo_white-text.svg">
-	                    </div>
-	                </div>
-	                <div class="col-lg-3">
-	                    <div class="footer-list">
-	                        <ul>
-	                            <li><a href="/catalog.html">Каталог</a></li>
-	                            <li><a href="#">О компании</a></li>
-	                            <li><a href="#">Доставка и оплата</a></li>
-	                            <li><a href="/where-to-buy.html">Где купить</a></li>
-	                            <li><a href="#">Правовая информация</a></li>
-	                            <li><a href="#">Контакты</a></li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="col-lg-3">
-	                    <div class="footer-contacts">
-	                        <ul>
-	                            <li>+7 (985) 170 98 02</li>
-	                            <li>buran-pechi@mail.ru</li>
-	                            <li>Москва, Алтуфьевское ш., 53, стр. 2</li>
-	                            <li>Пн-пт, 9:00-17:00</li>
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="col-lg-3">
-	                    <div class="footer-copyright">
-	                        <p>&copy;&nbsp;&nbsp;&nbsp;ООО Лаотерм 2018</p>
-	                    </div>
-	                    <div class="social-icons">
-	                      <ul class="social-icons-list">
-	                        <li class="social-icon">
-	                          <a href="#">
-	                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-	                            <path class="white" d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z" fill="white"/>
-	                            <path class="black" d="M21.8998 18.1851H18.7771V29.625H14.046V18.1851H11.7959V14.1646H14.046V11.5629C14.046 9.7024 14.9298 6.78906 18.8192 6.78906L22.3237 6.80372V10.7063H19.781C19.3639 10.7063 18.7774 10.9147 18.7774 11.8022V14.1683H22.3131L21.8998 18.1851Z" fill="black"/>
-	                            </svg>
-	                          </a>
-	                        </li>
-	                        <li class="social-icon">
-	                          <a href="#">
-	                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-	                            <path class="white" d="M22.7159 9.31152H12.2843C10.6193 9.31152 9.26465 10.6662 9.26465 12.3312V22.7628C9.26465 24.4278 10.6193 25.7829 12.2843 25.7829H22.7159C24.381 25.7829 25.736 24.4282 25.736 22.7628V12.3312C25.736 10.6662 24.3814 9.31152 22.7159 9.31152ZM17.5001 22.9695C14.5105 22.9695 12.078 20.537 12.078 17.547C12.078 14.5574 14.5105 12.1249 17.5001 12.1249C20.4902 12.1249 22.9226 14.5574 22.9226 17.547C22.9226 20.5367 20.4898 22.9695 17.5001 22.9695ZM23.0969 13.246C22.3892 13.246 21.8136 12.6704 21.8136 11.9631C21.8136 11.2558 22.3892 10.6802 23.0969 10.6802C23.8042 10.6802 24.3798 11.2558 24.3798 11.9631C24.3798 12.6704 23.8042 13.246 23.0969 13.246Z" fill="white"/>
-	                            <path class="white" d="M17.5003 14.4165C15.7745 14.4165 14.3691 15.8211 14.3691 17.5469C14.3691 19.2736 15.7745 20.6785 17.5003 20.6785C19.227 20.6785 20.6311 19.2736 20.6311 17.5469C20.6311 15.8214 19.2266 14.4165 17.5003 14.4165Z" fill="white"/>
-	                            <path class="white" d="M17.5 0C7.8354 0 0 7.8354 0 17.5C0 27.1646 7.8354 35 17.5 35C27.1646 35 35 27.1646 35 17.5C35 7.8354 27.1646 0 17.5 0ZM28.0267 22.763C28.0267 25.6918 25.6446 28.0739 22.7158 28.0739H12.2842C9.35577 28.0739 6.97325 25.6918 6.97325 22.763V12.3314C6.97325 9.40295 9.35577 7.02043 12.2842 7.02043H22.7158C25.6446 7.02043 28.0267 9.40295 28.0267 12.3314V22.763Z" fill="white"/>
-	                            </svg>
-	                          </a>
-	                        </li>
-	                      </ul>
-	                    </div>
-	                    <!-- /.social-icons -->
-	                </div>
-	            </div>
-	            <!-- /.row -->
-	        </div>
-	        <!-- /.container-fluid -->
-	    </footer>
-	    <!-- /#footer -->
-
-
-	<!-- Modal section -->
-
-	  <!-- Modal -->
-	  <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
-	    <div class="modal-dialog modal-dialog-centered" role="document">
-	      <div class="modal-content">
-	        <div class="modal-header">
-	          <h5 class="modal-title mx-auto" id="ModalLongTitle">Укажите свои контакты, <br>
-	            <small>мы обязательно с вами свяжемся.</small></h5>
-	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	            <span aria-hidden="true">&times;</span>
-	          </button>
-	        </div>
-	        <div class="modal-body">
-	          <form id="modal-contact-form" class="form needs-validation" role="form" novalidate>
-	              <div class="form-group">
-	                  <input type="text" class="form-control" id="name" name="name" placeholder="ИМЯ*" tabindex="1" required>
-	                  <div class="invalid-feedback">Укажите Ваше имя</div>
-	              </div>
-
-	              <div class="form-group">
-	                  <input type="email" class="form-control" id="email" name="email" placeholder="E-MAIL*" tabindex="2" required>
-	                  <div class="invalid-feedback">Адрес электронной почты указан неверно.</div>
-	              </div>
-
-	              <div class="form-group">
-	                  <textarea class="form-control" placeholder="Вопрос" id="question" rows="3"></textarea>
-	                </div>
-
-	              <div class="button-wrapper">
-	                  <button href="#" type="submit" class="btn btn-warning">
-	                      Жду ответа
-	                  </button>
-	              </div>
-
-	              <div class="form-check">
-	                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
-	                <label class="form-check-label" for="defaultCheck1">
-	                  <p>Нажимая на кнопку «Получить» вы соглашаетесь <a href="#">с пользовательским соглашением</a></p>
-	                  <div class="invalid-feedback">Обязательное поле</div>
-	                </label>
-	              </div>
-
-	          </form>
-	        </div>
-	        <!-- <div class="modal-footer">
-	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	          <button type="button" class="btn btn-primary">Save changes</button>
-	        </div> -->
-	      </div>
-	    </div>
-	  </div>
-	<!-- End Modal section -->
-
-	<!-- Scripts -->
-	<script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
-	<script type="text/javascript" src="scripts/main.min.js"></script>
+        <!-- /.col-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /# catalog -->
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-logo">
+            <img src="images/logo_white-text.svg">
+                      </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-list">
+              <ul>
+                <li><a href="/catalog.html">Каталог</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="/where-to-buy.html">Где купить</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-contacts">
+              <ul>
+                <li>+7 (985) 170 98 02</li>
+                <li>buran-pechi@mail.ru</li>
+                <li>Москва, Алтуфьевское ш., 53, стр. 2</li>
+                <li>Пн-пт, 9:00-17:00</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-copyright">
+              <p>&copy;&nbsp;&nbsp;&nbsp;ООО Лаотерм 2018</p>
+            </div>
+            <div class="social-icons">
+              <ul class="social-icons-list">
+                <li class="social-icon">
+                  <a href="#">
+                              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path class="white" d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z" fill="white"/>
+                              <path class="black" d="M21.8998 18.1851H18.7771V29.625H14.046V18.1851H11.7959V14.1646H14.046V11.5629C14.046 9.7024 14.9298 6.78906 18.8192 6.78906L22.3237 6.80372V10.7063H19.781C19.3639 10.7063 18.7774 10.9147 18.7774 11.8022V14.1683H22.3131L21.8998 18.1851Z" fill="black"/>
+                              </svg>
+                            </a>
+                </li>
+                <li class="social-icon">
+                  <a href="#">
+                              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path class="white" d="M22.7159 9.31152H12.2843C10.6193 9.31152 9.26465 10.6662 9.26465 12.3312V22.7628C9.26465 24.4278 10.6193 25.7829 12.2843 25.7829H22.7159C24.381 25.7829 25.736 24.4282 25.736 22.7628V12.3312C25.736 10.6662 24.3814 9.31152 22.7159 9.31152ZM17.5001 22.9695C14.5105 22.9695 12.078 20.537 12.078 17.547C12.078 14.5574 14.5105 12.1249 17.5001 12.1249C20.4902 12.1249 22.9226 14.5574 22.9226 17.547C22.9226 20.5367 20.4898 22.9695 17.5001 22.9695ZM23.0969 13.246C22.3892 13.246 21.8136 12.6704 21.8136 11.9631C21.8136 11.2558 22.3892 10.6802 23.0969 10.6802C23.8042 10.6802 24.3798 11.2558 24.3798 11.9631C24.3798 12.6704 23.8042 13.246 23.0969 13.246Z" fill="white"/>
+                              <path class="white" d="M17.5003 14.4165C15.7745 14.4165 14.3691 15.8211 14.3691 17.5469C14.3691 19.2736 15.7745 20.6785 17.5003 20.6785C19.227 20.6785 20.6311 19.2736 20.6311 17.5469C20.6311 15.8214 19.2266 14.4165 17.5003 14.4165Z" fill="white"/>
+                              <path class="white" d="M17.5 0C7.8354 0 0 7.8354 0 17.5C0 27.1646 7.8354 35 17.5 35C27.1646 35 35 27.1646 35 17.5C35 7.8354 27.1646 0 17.5 0ZM28.0267 22.763C28.0267 25.6918 25.6446 28.0739 22.7158 28.0739H12.2842C9.35577 28.0739 6.97325 25.6918 6.97325 22.763V12.3314C6.97325 9.40295 9.35577 7.02043 12.2842 7.02043H22.7158C25.6446 7.02043 28.0267 9.40295 28.0267 12.3314V22.763Z" fill="white"/>
+                              </svg>
+                            </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.social-icons -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+  </footer>
+  <!-- /#footer -->
+  <!-- Modal section -->
+  <!-- Modal -->
+  <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title mx-auto" id="ModalLongTitle">Укажите свои контакты, <br>
+              <small>мы обязательно с вами свяжемся.</small></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="modal-contact-form" class="form needs-validation" role="form" novalidate>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder="ИМЯ*" tabindex="1" required>
+              <div class="invalid-feedback">Укажите Ваше имя</div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-MAIL*" tabindex="2" required>
+              <div class="invalid-feedback">Адрес электронной почты указан неверно.</div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Вопрос" id="question" rows="3"></textarea>
+            </div>
+            <div class="button-wrapper">
+              <button href="#" type="submit" class="btn btn-warning">
+                Жду ответа
+              </button>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+              <label class="form-check-label" for="defaultCheck1">
+                <p>Нажимая на кнопку «Получить» вы соглашаетесь <a href="#">с пользовательским соглашением</a></p>
+                <div class="invalid-feedback">Обязательное поле</div>
+              </label>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- End Modal section -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/main.min.js"></script>
 </body>
+
 </html>

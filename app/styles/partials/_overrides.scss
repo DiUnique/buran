@@ -120,19 +120,19 @@ form.buys {
 .filters {
 	justify-content: flex-end;
 	
-	.filter-list {
+	.sort-list {
     position: relative;
     display: inline-block;
 
     &:hover {
 		
-			.filter-list-content {
+			.sort-list-content {
 			    display: block;
 			}
     }
 	}
 
-	.filter-list-btn {
+	.sort-list-btn {
     color: #333;
     background-color: #fff;
     padding: 16px;
@@ -141,7 +141,7 @@ form.buys {
     cursor: pointer;
 	}
 
-	.filter-list-content {
+	.sort-list-content {
 	    display: none;
 	    position: absolute;
 	    background-color: #fff;
@@ -156,10 +156,139 @@ form.buys {
         text-decoration: none;
         display: block;
 
+        &.priceDown:after {
+        	content: url('../images/catalog/arrowUp.svg');
+        	margin-left: 5px;
+        }
+
+        &.priceUp:after {
+        	content: url('../images/catalog/arrowDown.svg');
+        	margin-left: 5px;
+        }
+
         &.active, &:hover {
         	color: #000;
         }
 	    }
 	}
+
+		.filter-list-mobile {
+	    position: relative;
+	    display: inline-block;
+	    visibility: hidden;
+	    @media (max-width: 772px) {
+	    	visibility: visible;
+	    }
+		
+		.tooltipCounter {
+					background-color: $red;
+					display: none;
+			    padding: 5px 10px;
+			    border-radius: 50%;
+			    color: #fff;
+		}
+
+	    &:hover {
+			
+				.filter-list-content-mobile {
+				    display: block;
+				}
+	    }
+		}
+
+		.filter-list-btn-mobile {
+	    color: #333;
+	    background-color: #fff;
+	    padding: 16px;
+	    font-size: 16px;
+	    border: none;
+	    cursor: pointer;
+		}
+
+		.filter-list-content-mobile {
+		    display: none;
+		    position: absolute;
+		    background-color: #fff;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+
+		    a {
+	        color: rgba(0,0,0,.55);
+	        font-size: 14px;
+	        padding: 12px 16px;
+	        text-decoration: none;
+	        display: block;
+
+	        &.active, &:hover {
+	        	color: #000;
+	        }
+		    }
+		}
+
+			.filter_param_block-header {
+				margin: 10px 0 5px 20px;
+				font-weight: bold;
+				color: rgba(0,0,0,.75);
+			} // filter_param_block-header
+
+			.filter_param_block {
+				margin-left: 20px;
+			} // filter_param_block
+
+			.filter_param_block-label {
+				margin-left: 10px;
+				margin-bottom: 3px;
+				font-size: 14px;
+				position: relative;
+				bottom: 2px;
+			} // filter_param_block-label
+
+			.filter_results {
+				.count {
+					font-size: 14px;
+					font-weight: bold;
+					margin-top: 10px;
+					margin-bottom: 10px;
+
+					span {
+						background-color: #ffaa2f;
+				    padding: 5px 10px;
+				    border-radius: 50%;
+				    color: #000;
+					}
+				}
+
+				.filter_results-controls {
+					display: flex;
+					justify-content: space-between;
+					flex-flow: column wrap;
+
+					input {
+		    		padding: 10px 20px 20px;
+				    background-color: #ffaa2f;
+				    color: #000;
+				    border: unset;
+				    border-radius: 3px;
+				    height: 40px;
+				    width: 100%;
+				    box-sizing: border-box;
+				    font-size: 14px;
+					}
+
+					a {
+				    padding: 10px 20px;
+				    background-color: #cc2c11;
+				    color: #fff;
+				    height: 40px;
+				    width: 100%;
+				    border-radius: 3px;
+				    box-sizing: border-box;
+				    display: inline-block;
+				    text-align: center;
+					}
+				} // filter_results-controls
+
+			} // filter_results
 
 } // filters
